@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  gap: 5px;
+  background: #f4f4f4;
+}
+.footer__company-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1 1 50%;
+}
+.footer__menu-block {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1 1 50%;
+}
+.footer__office-phone {
+  flex: 1 1 49%;
+}
+.footer__service-phone {
+  flex: 1 1 49%;
+}
+.footer__company-name {
+  line-height: 0;
+}
+.footer__menu-header {
+  font-size: 16px;
+}
+.footer__menu-item {
+  font-size: 14px;
+  line-height: 35px;
+  color: #009bc6;
+  font-weight: 700;
+  text-decoration: none;
+}
+@media screen and (max-width:1300px) {
+  .footer__company-info {
+    flex-basis: 60%;
+  }
+  .footer__menu-block {
+    flex-basis: 40%;
+  }
+}
+@media screen and (max-width:986px) {
+  .footer__office-phone {
+    flex-basis: 100%;
+  }
+  .footer__service-phone {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width:650px) {
+  .footer__company-info {
+    flex-basis: 56%;
+  }
+  .footer__menu-block {
+    flex-basis: 44%;
+  }
+}
+@media screen and (max-width:575px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+}
