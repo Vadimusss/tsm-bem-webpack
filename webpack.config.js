@@ -4,7 +4,7 @@ const Copy = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
-      index: path.resolve(__dirname, "pages", "index.js"),
+      // index: path.resolve(__dirname, "pages", "index.js"),
       main: path.resolve(__dirname, "pages", "main.js"),
     },
     output: {
