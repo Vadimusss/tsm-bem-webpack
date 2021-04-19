@@ -87,12 +87,6 @@
 }
 /* header */
 /* menu */
-.menu {
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 /* page */
 .page {
   display: grid;
@@ -198,19 +192,7 @@
   padding: 5px 0;
 }
 /* logo */
-.logo {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/logo.png) no-repeat center;
-  width: 174px;
-  height: 90px;
-}
-.logo__link {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.logo_with-shadow {
-  box-shadow: 0 10px 95px 4px rgba(236, 236, 236, 1);
-}
+
 /* company-name */
 /* office-phone */
 .office-phone {
@@ -264,50 +246,10 @@
   font-size: 14px;
 }
 /* main-menu */
-.main-menu {
-  display: inline-flex;
-  /* gap: 45px; */
-  width: 100%;
-}
-.main-menu__item {
-  margin-right: 43px;
-}
-.main-menu__link {
-  font-size: 18px;
-  font-weight: 600;
-  color: #346c78;
-  text-decoration: none;
-  line-height: 19px;
-}
+
 /* mobile-main-menu-button */
-.mobile-main-menu-button {
-  cursor: pointer;
-  z-index: 1000;
-  display: none;
-  width: 48px;
-  height: 48px;
-  background-color: #ffcb00;
-}
-.mobile-main-menu-button_close-menu {
-  background: #ffcb00 url(/assets/templates/TSM-COMPANY_NEW/img/mobile-main-menu-button__cross.png) no-repeat 50% 50%;
-}
-.mobile-main-menu-button__line {
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  margin: 3px 0;
-}
 /* calc-button */
 /* mobile-service-menu-button */
-.mobile-service-menu-button {
-  background: #006eae url(/assets/templates/TSM-COMPANY_NEW/img/head_bot_after.png) no-repeat 90% 50%;
-}
-.mobile-service-menu-button__text {
-  line-height: 60px;
-  font-size: 20px;
-  color: #ffffff;
-  text-align: left;
-}
 /* service-menu */
 .service-menu {
   display: grid;
@@ -452,53 +394,6 @@
   display: none;
 }
 /* main-slider */
-.main-slider {
-  height: 390px;
-  width: 100%;
-  box-shadow: 0 13px 15px 0 rgba(223, 223, 223, 1);
-}
-.main-slider__slide {
-  display: flex;
-  justify-content: flex-end;
-}
-.main-slider__slide-overlay {
-  height: 100%;
-  flex-basis: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(241, 241, 241, 1) 10%);
-  text-transform: uppercase;
-  text-align: center;
-  white-space: normal;
-  min-width: 600px;
-}
-.main-slider__slide-title {
-  font-size: 40px;
-  font-family: 'Proxima Nova Cn Bl', sans-serif;
-  color: #006eae;
-}
-.main-slider__slide-description {
-  font-size: 20px;
-  color: #000000;
-  font-family: 'Proxima Nova ExCn Lt', sans-serif;
-}
-.main-slider__slide-link {
-  border: 1px solid #ffca00;
-  border-radius: 6px;
-  max-width: 270px;
-  width: 98%;
-  margin-top: 17px;
-  text-decoration: none;
-}
-.main-slider__slide-link::after {
-  content: "РїРѕРґСЂРѕР±РЅРµРµ";
-  font-size: 18px;
-  line-height: 55px;
-  color: #000000;
-}
 /* brends */
 .brends-header {
   margin-bottom: 20px;
@@ -1869,19 +1764,6 @@
   .service-page__header {
     padding-left: 20px;
   }
-  .main-menu {
-    flex-direction: column;
-    align-items: self-start;
-    /* row-gap: 30px; */
-    margin-bottom: -30px;
-  }
-  .main-menu__item {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-  .main-menu__link {
-    color: #000000;
-  }
   .service-menu {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: min-content;
@@ -1897,15 +1779,7 @@
   .service-menu__item:hover {
     border-radius: 0!important;
   }
-  .mobile-main-menu-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .mobile-main-menu-button_close-menu .mobile-main-menu-button__line {
-    display: none;
-  }
+
   .page-header__calc-button {
     grid-area: calc-button;
     align-self: flex-start;

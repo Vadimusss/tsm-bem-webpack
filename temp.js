@@ -1,8 +1,3 @@
-logo +
-main-menu +
-main-slider +
-menu +
-mobile-main-menu-button +
 mobile-service-menu-button +
 office-phone +
 order-of-work +
@@ -13,3 +8,9 @@ portfolio +
 service-menu +
 service-phone +
 services +
+
+/* const entryPoints = fs.readdirSync('./pages')
+.filter((value) => value.includes('.html'))
+.map((value) => value.replace('.html', ''))
+.reduce((acc, value) => ({ ...acc, ...{ [value]: path.resolve(__dirname, "pages", `${value}.js`) }}), {});
+console.log(entryPoints); */
