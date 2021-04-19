@@ -192,36 +192,8 @@
   padding: 5px 0;
 }
 /* logo */
-
 /* company-name */
 /* office-phone */
-.office-phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 90px;
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/fon.png) no-repeat 3% 50%;
-  padding: 0 0 0 40px;
-  line-height: 19px;
-}
-.office-phone__location {
-  font-size: 24px;
-}
-.office-phone__number {
-  font-size: 28px;
-  min-width: 220px;
-}
-.office-phone__link {
-  color: #000000;
-  text-decoration: none;
-}
-.office-phone__callback {
-  font-size: 14px;
-  color: #0075b2;
-  text-decoration: underline;
-  font-weight: 700;
-  cursor: pointer;
-}
 /* service-phone */
 .service-phone {
   display: flex;
@@ -2325,13 +2297,7 @@
   .page-header__main-menu_show {
     top: 0;
   }
-  .office-phone {
-    background: none;
-    padding-left: 10px;
-  }
-  .office-phone__number {
-    font-size: 26px;
-  }
+
   .service-phone {
     margin-left: 0;
     padding-left: 10px;

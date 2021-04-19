@@ -1,4 +1,3 @@
-mobile-service-menu-button +
 office-phone +
 order-of-work +
 owl-carousel +
