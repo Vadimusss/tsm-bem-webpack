@@ -4,14 +4,14 @@ const Copy = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const fs = require('fs');
 
-const pageNames = fs.readdirSync('./pages')
+const pageNames = fs.readdirSync('./src/pages')
   .filter((value) => value.includes('.html'))
   .map((value) => value.replace('.html', ''));
 
-const entryPoints = pageNames.reduce((acc, value) => ({ ...acc, ...{ [value]: path.resolve(__dirname, "pages", `${value}.js`) } }), {});
+const entryPoints = pageNames.reduce((acc, value) => ({ ...acc, ...{ [value]: path.resolve(__dirname, "src/pages", `${value}.js`) } }), {});
 
 const copyPaths = pageNames.map((name) => ({
-  from: path.resolve(__dirname, `pages/${name}.html`),
+  from: path.resolve(__dirname, `src/pages/${name}.html`),
   to: path.resolve(__dirname, `dist/${name}`),
 }));
 
@@ -34,7 +34,7 @@ module.exports = {
         use: [
           {
             loader: 'bemdecl-to-fs-loader',
-            options: { levels: ['desktop'], extensions: ['css', 'js'] } // Add css and js files of BEM entities to bundle
+            options: { levels: ['src/desktop'], extensions: ['css', 'js'] } // Add css and js files of BEM entities to bundle
           },
           {
             loader: 'html2bemdecl-loader'
@@ -59,6 +59,16 @@ module.exports = {
           esModule: false,
           publicPath: '../img/'
         },
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: '../dist/fonts/',
+          esModule: false,
+          publicPath: '../fonts/',
+        }
       },
     ]
   },
