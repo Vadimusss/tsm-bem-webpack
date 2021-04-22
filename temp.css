@@ -88,52 +88,6 @@
 /* header */
 /* menu */
 /* page */
-.page {
-  display: grid;
-  grid-template-rows: [header-top] min-content [main-top] auto [footer-top] min-content;
-  max-width: 1470px;
-  min-height: 100vh;
-  box-shadow: 0 0 13px 12px rgba(223, 223, 223, 1);
-  margin: 0 auto!important; /* important РґР»СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚Рё СЃ arcticmodal */
-  -webkit-font-smoothing: antialiased;
-     -moz-font-smoothing: antialiased;
-       -o-font-smoothing: antialiased;
-  font-family: 'Roboto', sans-serif;
-}
-.page__main {
-  grid-row: main-top / span 1;
-  overflow: hidden;
-}
-.page__section {
-  margin: 0 50px 40px 50px;
-}
-.page__section-header {
-  margin-bottom: 20px;
-}
-.page__section_type_introduction {
-  margin-bottom: 20px;
-}
-.page__section_type_wide {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.page__header {
-  grid-row: header-top / span 1;
-  display: grid;
-  grid-template-areas: "logo name name name name office-phone office-phone service-phone service-phone" "main-menu main-menu main-menu main-menu main-menu main-menu main-menu main-menu calc-button" "serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu" "breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
-  gap: 10px;
-  align-items: center;
-  padding: 15px 50px 0 50px;
-}
-.page__main-slider {
-  margin: 16px 0 40px 0;
-}
-.page__footer {
-  grid-row: footer-top / span 1;
-  padding: 30px 50px;
-}
 /* service-page */
 .service-page__header {
   display: flex;
@@ -149,48 +103,6 @@
   margin-bottom: 20px;
 }
 /* page-header */
-.page-header__logo {
-  grid-area: logo;
-}
-.page-header__company-name {
-  grid-area: name;
-}
-.page-header__office-phone {
-  grid-area: office-phone;
-}
-.page-header__service-phone {
-  grid-area: service-phone;
-  min-width: 300px;
-}
-.page-header__calc-button {
-  align-self: self-end;
-  width: 200px;
-  height: 35px;
-  padding: 0 0 0 56px;
-  margin-left: auto;
-}
-.page-header__mobile-main-menu-button {
-  grid-area: main-menu-button;
-  align-self: flex-end;
-  margin-left: auto;
-}
-.page-header__main-menu {
-  grid-area: main-menu;
-  padding: 40px 0 8px 0;
-  z-index: 1000;
-}
-.page-header__service-menu {
-  grid-area: serv-menu;
-}
-.page-header__mobile-service-menu-button {
-  grid-area: serv-menu-button;
-  border-radius: 0;
-  display: none;
-}
-.page-header__breadcrumbs {
-  grid-area: breadcrumbs;
-  padding: 5px 0;
-}
 /* logo */
 /* company-name */
 /* office-phone */
@@ -218,7 +130,6 @@
   font-size: 14px;
 }
 /* main-menu */
-
 /* mobile-main-menu-button */
 /* calc-button */
 /* mobile-service-menu-button */
@@ -471,200 +382,8 @@
   font-size: 14px;
 }
 /* order-of-work */
-.order-of-work {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 20px;
-  justify-content: space-around;
-}
-.order-of-work__header {
-  flex-basis: 100%;
-}
-.order-of-work__text {
-  line-height: 25px;
-}
-.order-of-work__card {
-  flex-basis: 18%;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 30px 0 0;
-}
-.order-of-work__card_min-width_216px {
-  min-width: 216px;
-}
-.order-of-work__card::before {
-  content: "";
-  display: block;
-  height: 31px;
-  width: 31px;
-  position: absolute;
-  right: 0;
-  top: 48px;
-  border: 1px solid #dbe3e3;
-  background-image: url(../img/work_after.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 50%;
-}
-.order-of-work__card:nth-child(7)::before {
-  display: none;
-}
-.order-of-work__card-image {
-  margin-bottom: 28px;
-  height: 57px;
-}
-.order-of-work__card-header {
-  color: #0078b3;
-  margin-bottom: 18px;
-}
-.order-of-work__card-header::after {
-  content: "";
-  width: 17px;
-  height: 17px;
-  display: inline-block;
-  background: url(../img/work_after2.png) no-repeat;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-.order-of-work__card-text {
-  color: #8a8a8a;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: bold;
-  text-align: center;
-}
 /* portfolio */
-.portfolio {
-  display: grid;
-  grid-template-columns: 370px repeat(3, 1fr);
-  grid-template-rows: repeat(2, 316px);
-  gap: 10px;
-}
-.portfolio__description {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  padding-right: 50px;
-}
-.portfolio__description-text {
-  margin-top: 34px;
-  line-height: 25px;
-}
-.portfolio__card {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* row-gap: 10px; */
-  background-position: center center;
-  background-size: cover;
-  box-shadow: 0 0 0 200px rgba(10, 74, 105, 0.5) inset;
-  color: #ffffff;
-}
-.portfolio__card:hover {
-  box-shadow: none;
-}
-.portfolio__card_no-shadow {
-  box-shadow: none;
-}
-.portfolio__card_inside-category {
-  justify-content: flex-end;
-  box-shadow: none;
-}
-.portfolio__card_bg-novorizhskoe-sh {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object01.jpg);
-}
-.portfolio__card_bg-istra {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/projekt1.png);
-}
-.portfolio__card_bg-solnechnogorsk {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/projekt2.png);
-}
-.portfolio__card_bg-taunhaus-180-m2 {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object09.jpg);
-}
-.portfolio__card_bg-dom-iz-kleenogo-brusa-300-m2 {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object08.jpg);
-}
-.portfolio__card_bg-kirpichnyj-dom-440-m2 {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object06.jpg);
-}
-.portfolio__card_bg-minskoe-sh {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object02.jpg);
-}
-.portfolio__card_bg-serpuhov {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object05.jpg);
-}
-.portfolio__card_bg-rublevskoe-sh {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object04.jpg);
-}
-.portfolio__card_bg-shinnyj-centr {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object07.jpg);
-}
-.portfolio__card_bg-shinnyj-centr-wide {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object03.jpg);
-}
-.portfolio__card_bg-kirpichnyj-dom-700-m2 {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object10.jpg);
-}
-.portfolio__card_bg-proekt-sistem-doma-220-m2 {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__project03.jpg);
-}
-.portfolio__card_bg-dom-350-m2 {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object11.jpg);
-}
-.portfolio__card_bg-kashirskoe-sh {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object12.jpg);
-}
-.portfolio__card_bg-zdanie-tc-odincovo {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__objects_object13.jpg);
-}
-.portfolio__card_bg-proekt-sistem-doma-i-bani {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/implemented-project__project04.jpg);
-}
-.portfolio__card_big {
-  grid-column: 2 / 4;
-  grid-row: 1 / 2;
-}
-.portfolio__card_small {
-  height: 152px;
-  width: 100%;
-}
-.portfolio__inset-card {
-  box-shadow: 0 6px 13px 0 rgba(136, 136, 136, 1)!important;
-  border-radius: 6px;
-  color: #000000;
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.portfolio__card-header {
-  margin-bottom: 10px;
-}
-.portfolio__inset-card-header {
-  font-size: 16px;
-}
-.portfolio__card-text {
-  font-size: 13px;
-  text-align: center;
-}
-.portfolio__card-object-description {
-  display: flex;
-  flex-basis: 80px;
-  background: rgba(255, 255, 255, 0.8);
-  font-weight: bold;
-  color: black;
-  align-self: stretch;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 5px;
-}
-.portfolio__card-button {
-  border: 1px solid #ffe590;
-  color: #5f5f5f;
-  width: 215px;
-  line-height: 45px;
-  font-weight: normal;
-}
+
 /* location */
 /* callback */
 /* systems */
@@ -1702,37 +1421,6 @@
 }
 /* footer */
 @media screen and (max-width:1300px) {
-  .page__header {
-    grid-template-areas: "logo name name main-menu-button"
-    "logo office-phone service-phone calc-button"
-    "serv-menu serv-menu serv-menu serv-menu"
-    "breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
-    grid-template-columns: min-content;
-    padding: 10px 10px 0 10px;
-  }
-  .page__section {
-    margin: 0 20px 20px 20px;
-  }
-  .page__section_type_wide {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .page-header__logo {
-    height: 156px;
-    width: 250px;
-    margin: 0 auto;
-  }
-  .page-header__main-menu {
-    right: 0;
-    position: absolute;
-    top: -490px;
-    background: #ffffff;
-    padding: 130px 40px 30px 20px;
-    transition: .4s top;
-    border: 1px solid #000000;
-  }
   .service-page__header {
     padding-left: 20px;
   }
@@ -1750,14 +1438,6 @@
   }
   .service-menu__item:hover {
     border-radius: 0!important;
-  }
-
-  .page-header__calc-button {
-    grid-area: calc-button;
-    align-self: flex-start;
-    width: 48px;
-    height: 48px;
-    padding: 0;
   }
   .services {
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 120px, #31c4f0 120px, #31c4f0 120px, #31c4f0 240px, #ffffff 240px);
@@ -1778,12 +1458,6 @@
   }
   .services__text {
     padding-top: 30px;
-  }
-  .order-of-work__card:nth-child(-n+5) {
-    flex-basis: 32%;
-  }
-  .order-of-work__card:nth-child(1n+6) {
-    flex-basis: 48%;
   }
   .shop-menu-in-header::after {
     position: absolute;
@@ -1819,23 +1493,7 @@
   .shop-category__brends {
     grid-template-columns: repeat(3, 1fr);
   }
-  .portfolio {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: min-content repeat(2, 316px);
-  }
-  .portfolio__description {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    padding-right: 0;
-  }
-  .portfolio__card_big {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-  }
-  .portfolio__projects-cards {
-    flex-basis: 100%;
-    justify-content: center;
-  }
+
   .examples-of-objects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1938,33 +1596,8 @@
   .example-of-complex__object_with-margin {
     margin-bottom: 20px;
   }
-  .page__footer {
-    padding: 30px 20px;
-  }
 }
 @media screen and (max-width:986px) {
-  .page__header {
-    grid-template-areas: "logo office-phone office-phone main-menu-button"
-    "logo service-phone service-phone calc-button"
-    "serv-menu serv-menu serv-menu serv-menu"
-    "breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
-    padding: 10px 10px 0 10px;
-  }
-  .page__section {
-    margin: 0 10px 40px 10px;
-  }
-  .page__section_type_wide {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .page__section_first-section {
-    margin-bottom: 20px;
-  }
-  .page-header__company-name {
-    display: none;
-  }
   .service-page__header {
     padding-left: 10px;
   }
@@ -2074,19 +1707,7 @@
   .services__card:nth-child(4) .services__card-price {
     font-size: 80px;
   }
-  .portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: min-content repeat(3, 316px);
-    gap: 10px;
-  }
-  .portfolio__description {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-  }
-  .portfolio__card_big {
-    grid-row: 2 / 3;
-  }
+
   .examples-of-objects {
     grid-auto-rows: 260px;
   }
@@ -2137,24 +1758,8 @@
   }
 }
 @media screen and (max-width:650px) {
-  .page__header {
-    grid-template-areas: "logo office-phone office-phone main-menu-button"
-    "logo service-phone service-phone calc-button"
-    "serv-menu serv-menu serv-menu serv-menu"
-    "breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
-    padding: 5px 5px 2px 5px;
-  }
-  .page-header__logo {
-    width: 174px;
-  }
-  .page__main-slider {
-    display: none;
-  }
   .service-menu__item {
     background-position: 3% 50%;
-  }
-  .order-of-work__card {
-    flex-basis: 46%!important;
   }
   .examples-of-objects {
     grid-auto-rows: 300px;
@@ -2175,9 +1780,6 @@
   .contacts__callback-button {
     margin-left: 0;
   }
-  .page__footer {
-    padding: 20px 10px;
-  }
   .example-of-complex__object {
     flex-direction: column;
   }
@@ -2187,40 +1789,15 @@
   }
 }
 @media screen and (max-width:575px) {
-  .page__header {
-    /* grid-template-columns: 1fr min-content min-content; */
-    grid-template-areas: "header header"
-    "office-phone main-menu-button "
-    "service-phone calc-button"
-    "serv-menu serv-menu";
-    row-gap: 1px;
-  }
-  .page-header__logo {
-    display: none;
-  }
-  .page-header__company-name {
-    display: block;
-    grid-area: header;
-    text-align: center;
-  }
   .service-phone {
     height: 70px;
     margin-left: 20px;
-  }
-  .page-header__mobile-main-menu-button {
-    align-self: center;
-  }
-  .page-header__calc-button {
-    align-self: start;
   }
   .service-menu__link::before {
     display: none!important;
   }
   .service-menu__item:hover {
     background-image: linear-gradient(to bottom, rgba(0, 130, 205, 1) 0%, rgba(0, 145, 198, 1) 100%);
-  }
-  .page-header__breadcrumbs {
-    display: none;
   }
   .services__card-header:after {
     width: 100%;
@@ -2237,18 +1814,7 @@
   .shop-menu-in-header::after {
     right: 10px;
   }
-  .portfolio {
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content repeat(2, 152px) 316px repeat(2, 152px);
-  }
-  .portfolio__description {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  .portfolio__card_big {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
+
   .examples-of-objects {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 315px;
@@ -2266,38 +1832,6 @@
   }
 }
 @media screen and (max-width:460px) {
-  .page__header {
-    grid-template-areas: "header header"
-    "office-phone main-menu-button "
-    "service-phone calc-button"
-    "serv-menu-button serv-menu-button"
-    "serv-menu serv-menu";
-    row-gap: 1px;
-    column-gap: 1px;
-    padding: 5px 1px 2px 1px;
-  }
-  .page__section {
-    margin: 0 5px 20px 5px;
-  }
-  .page__section_type_wide {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .page-header__mobile-service-menu-button {
-    display: block;
-  }
-  .page-header__service-menu {
-    display: none;
-  }
-  .page-header__service-menu_show {
-    display: grid;
-  }
-  .page-header__main-menu_show {
-    top: 0;
-  }
-
   .service-phone {
     margin-left: 0;
     padding-left: 10px;
@@ -2326,16 +1860,6 @@
   }
   .services__card-header:after {
     width: 130%;
-  }
-  .order-of-work__card {
-    flex-basis: 100%!important;
-    padding-right: 0;
-  }
-  .order-of-work__card::before {
-    right: auto;
-    top: auto;
-    bottom: -38px;
-    transform: rotate(90deg);
   }
   .systems {
     grid-template-columns: 1fr;
@@ -2420,9 +1944,6 @@
   }
   .examples-of-montage-tmp__item {
     width: 100%;
-  }
-  .page__footer {
-    padding: 10px 1px;
   }
   .footer__logo, .footer__company-name {
     margin: 0 auto;
