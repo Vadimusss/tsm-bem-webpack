@@ -1,1 +1,2 @@
-require('./main.html');
+import './main.html';
+import '../fonts/fonts.css';
