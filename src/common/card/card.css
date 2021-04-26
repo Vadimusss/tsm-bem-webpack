@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  position: relative;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+}
+.card__header {
+  font-size: 20px;
+  text-align: center;
+}
+.card__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.card__button {
+  line-height: 46px;
+  width: 216px;
+  background: rgba(10, 74, 105, 0.5);
+  border: 1px solid #ffc600;
+  color: #ffc600;
+}
