@@ -1,0 +1,99 @@
+.service-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto) minmax(260px, 270px);
+  border-radius: 6px;
+  background: linear-gradient(to bottom, rgba(0, 144, 196, 1) 0%, rgba(0, 98, 155, 1) 100%);
+  box-shadow: 0 10px 28px 0 rgba(186, 186, 186, 1);
+}
+.service-menu__item {
+  padding-left: 26px;
+}
+.service-menu__item:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 130, 205, 1) 0%, rgba(0, 145, 198, 1) 100%);
+}
+.service-menu__item:nth-child(1):hover {
+  border-radius: 6px 0 0 6px;
+}
+.service-menu__item:nth-child(6):hover {
+  border-radius: 0 6px 6px 0;
+}
+.service-menu__link {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 60px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+.service-menu__link::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  top: 8px;
+  left: -14px;
+}
+.service-menu__item:nth-child(1) .service-menu__link::before {
+  background: url(bot_menu_1.png) no-repeat;
+}
+.service-menu__item:nth-child(2) .service-menu__link::before {
+  background: url(bot_menu_2.png) no-repeat;
+}
+.service-menu__item:nth-child(3) .service-menu__link::before {
+  background: url(bot_menu_8.png) no-repeat;
+}
+.service-menu__item:nth-child(4) .service-menu__link::before {
+  background: url(bot_menu_4.png) no-repeat;
+}
+.service-menu__item:nth-child(5) .service-menu__link::before {
+  background: url(bot_menu_3.png) no-repeat;
+}
+.service-menu__item:nth-child(6) .service-menu__link::before {
+  background: url(bot_menu_5.png) no-repeat;
+}
+.service-menu__link:hover {
+  text-decoration: none;
+}
+@media screen and (max-width:1300px) {
+  .service-menu {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    border-radius: 0;
+    background: none;
+    gap: 1px;
+  }
+  .service-menu__item {
+    background-color: #006eae;
+    text-align: center;
+    padding: 0;
+  }
+  .service-menu__item:hover {
+    border-radius: 0!important;
+  }
+}
+@media screen and (max-width:860px) {
+  .service-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:650px) {
+  .service-menu__item {
+    background-position: 3% 50%;
+  }
+}
+@media screen and (max-width:575px) {
+  .service-menu__link::before {
+    display: none!important;
+  }
+  .service-menu__item:hover {
+    background-image: linear-gradient(to bottom, rgba(0, 130, 205, 1) 0%, rgba(0, 145, 198, 1) 100%);
+  }
+}
+@media screen and (max-width:460px) {
+  .service-menu {
+    grid-template-columns: 1fr;
+  }
+}
