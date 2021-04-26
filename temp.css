@@ -107,92 +107,11 @@
 /* company-name */
 /* office-phone */
 /* service-phone */
-.service-phone {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 80px;
-  padding: 0 0 0 20px;
-}
-.service-phone__number {
-  font-size: 14px;
-}
-.service-phone__link {
-  color: #000000;
-  font-weight: 600;
-  text-decoration: none;
-}
-.service-phone__e-mail {
-  padding: 0 0 0 22px;
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/mail.png) no-repeat 0 46%;
-  color: #000000;
-  font-weight: 600;
-  font-size: 14px;
-}
 /* main-menu */
 /* mobile-main-menu-button */
 /* calc-button */
 /* mobile-service-menu-button */
 /* service-menu */
-.service-menu {
-  display: grid;
-  grid-template-columns: repeat(5, auto) minmax(260px, 270px);
-  border-radius: 6px;
-  background: linear-gradient(to bottom, rgba(0, 144, 196, 1) 0%, rgba(0, 98, 155, 1) 100%);
-  box-shadow: 0 10px 28px 0 rgba(186, 186, 186, 1);
-}
-.service-menu__item {
-  padding-left: 26px;
-}
-.service-menu__item:hover {
-  background-image: linear-gradient(to bottom, rgba(0, 130, 205, 1) 0%, rgba(0, 145, 198, 1) 100%);
-}
-.service-menu__item:nth-child(1):hover {
-  border-radius: 6px 0 0 6px;
-}
-.service-menu__item:nth-child(6):hover {
-  border-radius: 0 6px 6px 0;
-}
-.service-menu__link {
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 600;
-  line-height: 60px;
-  width: 100%;
-  height: 100%;
-  display: block;
-  text-decoration: none;
-}
-.service-menu__link::before {
-  content: "";
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  position: relative;
-  top: 8px;
-  left: -14px;
-}
-.service-menu__item:nth-child(1) .service-menu__link::before {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/bot_menu_1.png) no-repeat;
-}
-.service-menu__item:nth-child(2) .service-menu__link::before {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/bot_menu_2.png) no-repeat;
-}
-.service-menu__item:nth-child(3) .service-menu__link::before {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/bot_menu_8.png) no-repeat;
-}
-.service-menu__item:nth-child(4) .service-menu__link::before {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/bot_menu_4.png) no-repeat;
-}
-.service-menu__item:nth-child(5) .service-menu__link::before {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/bot_menu_3.png) no-repeat;
-}
-.service-menu__item:nth-child(6) .service-menu__link::before {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/bot_menu_5.png) no-repeat;
-}
-.service-menu__link:hover {
-  text-decoration: none;
-}
 /* shop-menu-in-header */
 .shop-menu-in-header {
   position: relative;
@@ -314,76 +233,8 @@
   transform: scale(0.9)!important;
 }
 /* services */
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  /* row-gap: 20px; */
-  justify-content: space-between;
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 180px, #31c4f0 180px, #31c4f0 180px, #31c4f0 330px, #ffffff 330px);
-}
-.services__header {
-  flex-basis: 100%;
-  margin-bottom: 20px;
-}
-.services__card {
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-basis: 30%;
-  height: 208px;
-  background-color: #eeeeee;
-  background-position: 30px center;
-  padding: 0 20px 10px 0;
-  margin-bottom: 20px;
-}
-.services__card:hover {
-  background-color: #00a0d5;
-}
-.services__card_dezign-bg {
-  background-image: url(../img/montal_row1.png);
-}
-.services__card_montage-bg {
-  background-image: url(../img/montal_row2.png);
-}
-.services__card_maintenance-bg {
-  background-image: url(../img/montal_row3.png);
-}
-.services__card_dezign-bg:hover {
-  background-image: url(../img/montal_row1_hover.png);
-}
-.services__card_montage-bg:hover {
-  background-image: url(../img/montal_row2_hover.png);
-}
-.services__card_maintenance-bg:hover {
-  background-image: url(../img/montal_row3_hover.png);
-}
-.services__card-header {
-  position: relative;
-  font-size: 25px;
-  text-align: right;
-}
-.services__card-header:after {
-  content: "";
-  width: 126%;
-  height: 2px;
-  background-color: #b9b9b9;
-  display: block;
-  position: absolute;
-  bottom: -22px;
-  right: 0;
-}
-.services__card-price {
-  flex-basis: 100%;
-  text-align: right;
-  font-size: 60px;
-}
-.services__text {
-  padding-top: 60px;
-  font-size: 14px;
-}
 /* order-of-work */
 /* portfolio */
-
 /* location */
 /* callback */
 /* systems */
@@ -1424,41 +1275,6 @@
   .service-page__header {
     padding-left: 20px;
   }
-  .service-menu {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: min-content;
-    border-radius: 0;
-    background: none;
-    gap: 1px;
-  }
-  .service-menu__item {
-    background-color: #006eae;
-    text-align: center;
-    padding: 0;
-  }
-  .service-menu__item:hover {
-    border-radius: 0!important;
-  }
-  .services {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 120px, #31c4f0 120px, #31c4f0 120px, #31c4f0 240px, #ffffff 240px);
-  }
-  .services__card {
-    height: 140px;
-    background-size: 34%;
-  }
-  .services__card-header {
-    text-align: right;
-    font-size: 17px;
-  }
-  .services__card-header::after {
-    bottom: -12px;
-  }
-  .services__card-price {
-    font-size: 40px;
-  }
-  .services__text {
-    padding-top: 30px;
-  }
   .shop-menu-in-header::after {
     position: absolute;
     content: "+";
@@ -1493,7 +1309,6 @@
   .shop-category__brends {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .examples-of-objects {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1687,27 +1502,6 @@
   }
 }
 @media screen and (max-width:860px) {
-  .service-menu {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .services {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 120px, #31c4f0 120px, #31c4f0 120px, #31c4f0 510px, #ffffff 510px);
-  }
-  .services__card {
-    flex-basis: 48%;
-  }
-  .services__card:nth-child(4) {
-    flex-basis: 100%;
-    background-size: 26%;
-    height: 240px;
-  }
-  .services__card:nth-child(4) .services__card-header {
-    font-size: 38px;
-  }
-  .services__card:nth-child(4) .services__card-price {
-    font-size: 80px;
-  }
-
   .examples-of-objects {
     grid-auto-rows: 260px;
   }
@@ -1758,9 +1552,6 @@
   }
 }
 @media screen and (max-width:650px) {
-  .service-menu__item {
-    background-position: 3% 50%;
-  }
   .examples-of-objects {
     grid-auto-rows: 300px;
   }
@@ -1789,19 +1580,6 @@
   }
 }
 @media screen and (max-width:575px) {
-  .service-phone {
-    height: 70px;
-    margin-left: 20px;
-  }
-  .service-menu__link::before {
-    display: none!important;
-  }
-  .service-menu__item:hover {
-    background-image: linear-gradient(to bottom, rgba(0, 130, 205, 1) 0%, rgba(0, 145, 198, 1) 100%);
-  }
-  .services__card-header:after {
-    width: 100%;
-  }
   .shop {
     grid-template-rows: max-content;
   }
@@ -1814,7 +1592,6 @@
   .shop-menu-in-header::after {
     right: 10px;
   }
-
   .examples-of-objects {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 315px;
@@ -1832,34 +1609,8 @@
   }
 }
 @media screen and (max-width:460px) {
-  .service-phone {
-    margin-left: 0;
-    padding-left: 10px;
-    min-width: 250px;
-  }
   .service-page__header {
     padding-left: 5px;
-  }
-  .service-menu {
-    grid-template-columns: 1fr;
-  }
-  .services {
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 120px, #31c4f0 120px, #31c4f0 120px, #31c4f0 570px, #ffffff 570px);
-  }
-  .services__card, .services__card:nth-child(4) {
-    flex-basis: 100%;
-  }
-  .services__card:nth-child(4) {
-    height: 140px;
-  }
-  .services__card:nth-child(4) .services__card-header {
-    font-size: 17px;
-  }
-  .services__card:nth-child(4) .services__card-price {
-    font-size: 40px;
-  }
-  .services__card-header:after {
-    width: 130%;
   }
   .systems {
     grid-template-columns: 1fr;
