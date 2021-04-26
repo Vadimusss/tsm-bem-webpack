@@ -34,7 +34,7 @@ module.exports = {
         use: [
           {
             loader: 'bemdecl-to-fs-loader',
-            options: { levels: ['src/desktop'], extensions: ['css', 'js'] } // Add css and js files of BEM entities to bundle
+            options: { levels: ['src/common'], extensions: ['css', 'js'] } // Add css and js files of BEM entities to bundle
           },
           {
             loader: 'html2bemdecl-loader'
