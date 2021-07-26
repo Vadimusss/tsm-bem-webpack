@@ -1,0 +1,22 @@
+.company-name {
+  line-height: 28px;
+}
+.company-name__name {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #006eab;
+  font-weight: 700;
+}
+.company-name__name-sm {
+  font-size: 18px;
+}
+.company-name__slogan {
+  font-size: 18px;
+  color: red;
+  font-weight: 700;
+}
+@media screen and (max-width:575px) {
+  .company-name__slogan {
+    display: none;
+  }
+}
