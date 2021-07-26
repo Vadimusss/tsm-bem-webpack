@@ -37,7 +37,7 @@
   top: 6px;
   width: 22px;
   height: 22px;
-  background: url(https://www.tsm-company.ru/assets/templates/TSM-COMPANY_NEW/img/fon2.png) no-repeat;
+  background: url(fon2.png) no-repeat;
 }
 .callback__form {
   flex-basis: 42%;
