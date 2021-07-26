@@ -48,16 +48,16 @@
   min-height: 60px;
 }
 .advantages__list-item:nth-child(1) {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/montaj_before_1.png) no-repeat 2% 50%;
+  background: url(montaj_before_1.png) no-repeat 2% 50%;
 }
 .advantages__list-item:nth-child(2) {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/montaj_before_2.png) no-repeat 2% 50%;
+  background: url(montaj_before_2.png) no-repeat 2% 50%;
 }
 .advantages__list-item:nth-child(3) {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/montaj_before_3.png) no-repeat 2% 50%;
+  background: url(montaj_before_3.png) no-repeat 2% 50%;
 }
 .advantages__list-item:nth-child(4) {
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/montaj_before_4.png) no-repeat 2% 50%;
+  background: url(montaj_before_4.png) no-repeat 2% 50%;
 }
 .advantages__list-item-header {
   font-size: 20px;
