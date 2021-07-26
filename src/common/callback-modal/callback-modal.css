@@ -1,0 +1,107 @@
+.callback-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.callback-modal__close-button {
+  flex: 0 0 23px;
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+  color: #006eae;
+  cursor: pointer;
+}
+.callback-modal__header {
+  font-size: 33px;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+.callback-modal__form {
+  height: min-content;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.callback-modal__input {
+  border-width: 0 0 3px 0;
+  border-style: solid;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 15px 0;
+}
+.callback-modal__input_name {
+  border-color: #006eae;
+}
+.callback-modal__input_name::-webkit-input-placeholder {
+  color: #006eae;
+}
+.callback-modal__input_name::-moz-placeholder          {
+  color: #006eae;
+}
+.callback-modal__input_name:-moz-placeholder           {
+  color: #006eae;
+}
+.callback-modal__input_name:-ms-input-placeholder      {
+  color: #006eae;
+}
+.callback-modal__input_name:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.callback-modal__input_name:focus::-moz-placeholder          {
+  color: transparent;
+}
+.callback-modal__input_name:focus:-moz-placeholder           {
+  color: transparent;
+}
+.callback-modal__input_name:focus:-ms-input-placeholder      {
+  color: transparent;
+}
+.callback-modal__input_phone {
+  border-color: #ffcb00;
+  margin-bottom: 20px;
+}
+.callback-modal__input_phone::-webkit-input-placeholder {
+  color: #ffcb00;
+}
+.callback-modal__input_phone::-moz-placeholder          {
+  color: #ffcb00;
+}
+.callback-modal__input_phone:-moz-placeholder           {
+  color: #ffcb00;
+}
+.callback-modal__input_phone:-ms-input-placeholder      {
+  color: #ffcb00;
+}
+.callback-modal__input_phone:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.callback-modal__input_phone:focus::-moz-placeholder          {
+  color: transparent;
+}
+.callback-modal__input_phone:focus:-moz-placeholder           {
+  color: transparent;
+}
+.callback-modal__input_phone:focus:-ms-input-placeholder      {
+  color: transparent;
+}
+.callback-modal__submit-button {
+  border-radius: 6px;
+  background-color: #006eae;
+  max-width: 215px;
+  width: 100%;
+  border: none;
+  line-height: 45px;
+}
+@media screen and (max-width:650px) {
+  .callback-modal {
+    width: 80vw;
+  }
+  .callback-modal__form {
+    width: 70vw;
+  }
+}
