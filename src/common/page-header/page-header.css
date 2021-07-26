@@ -1,0 +1,108 @@
+.page-header__logo {
+  grid-area: logo;
+}
+.page-header__company-name {
+  grid-area: name;
+}
+.page-header__office-phone {
+  grid-area: office-phone;
+}
+.page-header__service-phone {
+  grid-area: service-phone;
+  min-width: 300px;
+}
+.page-header__calc-button {
+  align-self: self-end;
+  width: 200px;
+  height: 35px;
+  padding: 0 0 0 56px;
+  margin-left: auto;
+}
+.page-header__mobile-main-menu-button {
+  grid-area: main-menu-button;
+  align-self: flex-end;
+  margin-left: auto;
+}
+.page-header__main-menu {
+  grid-area: main-menu;
+  padding: 40px 0 8px 0;
+  z-index: 1000;
+}
+.page-header__service-menu {
+  grid-area: serv-menu;
+}
+.page-header__mobile-service-menu-button {
+  grid-area: serv-menu-button;
+  border-radius: 0;
+  display: none;
+}
+.page-header__breadcrumbs {
+  grid-area: breadcrumbs;
+  padding: 5px 0;
+}
+@media screen and (max-width:1300px) {
+  .page-header__logo {
+    height: 156px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  .page-header__main-menu {
+    right: 0;
+    position: absolute;
+    top: -490px;
+    background: #ffffff;
+    padding: 130px 40px 30px 20px;
+    transition: .4s top;
+    border: 1px solid #000000;
+  }
+  .page-header__main-menu_visible {
+    top: 0;
+  }
+  .page-header__calc-button {
+    grid-area: calc-button;
+    align-self: flex-start;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+  }
+}
+@media screen and (max-width:986px) {
+  .page-header__company-name {
+    display: none;
+  }
+}
+@media screen and (max-width:650px) {
+  .page-header__logo {
+    width: 174px;
+  }
+}
+@media screen and (max-width:575px) {
+  .page-header__logo {
+    display: none;
+  }
+  .page-header__company-name {
+    display: block;
+    grid-area: header;
+    text-align: center;
+  }
+  .page-header__mobile-main-menu-button {
+    align-self: center;
+  }
+  .page-header__calc-button {
+    align-self: start;
+  }
+  .page-header__breadcrumbs {
+    display: none;
+  }
+}
+@media screen and (max-width:460px) {
+  .page-header__mobile-service-menu-button {
+    display: block;
+  }
+  .page-header__service-menu {
+    display: none;
+  }
+  .page-header__service-menu_show {
+    display: grid;
+  }
+}
