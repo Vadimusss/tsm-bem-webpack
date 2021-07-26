@@ -29,7 +29,7 @@
   min-width: 288px;
 }
 .location__phone {
-  background-image: url(/assets/templates/TSM-COMPANY_NEW/img/fon.png);
+  background-image: url(fon.png);
 }
 .location__phone-number {
   font-weight: 600;
@@ -38,7 +38,7 @@
   text-decoration: none;
 }
 .location__e-mail {
-  background-image: url(/assets/templates/TSM-COMPANY.RU/img/mail2.png);
+  background-image: url(mail2.png);
 }
 .location__e-mail-link {
   font-weight: 600;
@@ -47,7 +47,7 @@
   text-decoration: none;
 }
 .location__address {
-  background-image: url(/assets/templates/TSM-COMPANY.RU/img/adres.png);
+  background-image: url(adres.png);
 }
 .location__address-text {
   font-weight: 600;
