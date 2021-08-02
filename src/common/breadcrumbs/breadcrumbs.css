@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+  /* gap: 10px; */
+}
+.breadcrumbs__item {
+  font-size: 12px;
+  line-height: 19px;
+  margin-right: 10px;
+}
+.breadcrumbs__item::before {
+  margin-right: 10px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 9px;
+  height: 4px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.tsm-company.ru/assets/templates/TSM-COMPANY_NEW/img/breadcrumbs.png);
+}
+.breadcrumbs__item_home-page::before {
+  display: none;
+}
+@media screen and (max-width:575px) {
+  .page-header__breadcrumbs {
+    display: none;
+  }
+}
