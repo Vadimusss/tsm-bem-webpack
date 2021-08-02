@@ -3,7 +3,7 @@
 }
 .brends-tmp__slider {
   margin: 0 50px;
-  width: auto;
+  width: auto!important;
 }
 .brends-tmp__item {
   padding: 10px;
@@ -18,7 +18,7 @@
   width: 30px;
   border-radius: 50%;
   background-color: #006eae;
-  background-image: url(https://www.tsm-company.ru/assets/templates/TSM-COMPANY_NEW/img/slider2_naw.png);
+  background-image: url('brends-tmp_arrow.png');
   background-repeat: no-repeat;
   background-position: 45% center;
   display: block;

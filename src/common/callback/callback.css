@@ -17,6 +17,7 @@
   flex-basis: 32%;
   padding-left: 40px;
   font-size: 28px;
+  box-sizing: border-box;
 }
 .callback__phone {
   flex-basis: 26%;
@@ -46,6 +47,7 @@
   background-color: #0080c1;
   border-radius: 6px;
   padding: 0 30px 0 34px;
+  box-sizing: border-box;
 }
 .callback__form-inner {
   flex-basis: 46%;
@@ -59,6 +61,7 @@
   padding-bottom: 9px;
   border-bottom: solid #ffffff;
   border-width: 0 0 2px 0;
+  box-sizing: border-box;
 }
 .callback__form-input::placeholder {
   color: #e3c000;

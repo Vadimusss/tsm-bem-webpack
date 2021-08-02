@@ -16,6 +16,28 @@
   align-items: center;
   padding: 30px 30px 0 0;
 }
+.order-of-work__icon {
+  width: 70px;
+  height: 58px;
+  margin-bottom: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.order-of-work__icon_bg_prep {
+  background-image: url('order-of-work_prep.png');
+}
+.order-of-work__icon_bg_meeting {
+  background-image: url('order-of-work_meeting.png');
+}
+.order-of-work__icon_bg_montage {
+  background-image: url('order-of-work_montage.png');
+}
+.order-of-work__icon_bg_launch {
+  background-image: url('order-of-work_launch.png');
+}
+.order-of-work__icon_bg_submission {
+  background-image: url('order-of-work_submission.png');
+}
 .order-of-work__card_min-width_216px {
   min-width: 216px;
 }
@@ -28,17 +50,13 @@
   right: 0;
   top: 48px;
   border: 1px solid #dbe3e3;
-  background-image: url(work_after.png);
+  background-image: url('order-of-work_arrow.png');
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 50%;
 }
-.order-of-work__card:nth-child(7)::before {
+.order-of-work__card_last::before {
   display: none;
-}
-.order-of-work__card-image {
-  margin-bottom: 28px;
-  height: 57px;
 }
 .order-of-work__card-header {
   color: #0078b3;
@@ -49,7 +67,7 @@
   width: 17px;
   height: 17px;
   display: inline-block;
-  background: url(work_after2.png) no-repeat;
+  background: url('order-of-work_question-mark.png') no-repeat;
   vertical-align: middle;
   margin-left: 5px;
 }

@@ -1,7 +1,6 @@
 .header {
   font-weight: 600;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin: 0;
   padding: 0;
   display: block;
   position: relative;

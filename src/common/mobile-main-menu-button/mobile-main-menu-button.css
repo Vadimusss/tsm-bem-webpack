@@ -6,8 +6,8 @@
   height: 48px;
   background-color: #ffcb00;
 }
-.mobile-main-menu-button_close-menu {
-  background: #ffcb00 url(mobile-main-menu-button__cross.png) no-repeat 50% 50%;
+.mobile-main-menu-button_close {
+  background: #ffcb00 url('mobile-main-menu-button__cross.png') no-repeat 50% 50%;
 }
 .mobile-main-menu-button__line {
   width: 24px;
@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
   }
-  .mobile-main-menu-button_close-menu .mobile-main-menu-button__line {
+  .mobile-main-menu-button_close .mobile-main-menu-button__line {
     display: none;
   }
 }

@@ -9,7 +9,7 @@
 }
 .page-header__service-phone {
   grid-area: service-phone;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 .page-header__calc-button {
   align-self: self-end;
@@ -40,6 +40,9 @@
   grid-area: breadcrumbs;
   padding: 5px 0;
 }
+.page-header__main-menu_visible {
+  top: 0!important;
+}
 @media screen and (max-width:1300px) {
   .page-header__logo {
     height: 156px;
@@ -54,9 +57,6 @@
     padding: 130px 40px 30px 20px;
     transition: .4s top;
     border: 1px solid #000000;
-  }
-  .page-header__main-menu_visible {
-    top: 0;
   }
   .page-header__calc-button {
     grid-area: calc-button;
@@ -73,7 +73,7 @@
 }
 @media screen and (max-width:650px) {
   .page-header__logo {
-    width: 174px;
+    width: 150px;
   }
 }
 @media screen and (max-width:575px) {
@@ -102,7 +102,7 @@
   .page-header__service-menu {
     display: none;
   }
-  .page-header__service-menu_show {
+  .page-header__service-menu_visible {
     display: grid;
   }
 }

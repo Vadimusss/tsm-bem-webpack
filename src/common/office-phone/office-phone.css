@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   height: 90px;
-  background: url(office-phone.png) no-repeat 3% 50%;
+  background: url('office-phone.png') no-repeat 3% 50%;
   padding: 0 0 0 40px;
   line-height: 19px;
 }

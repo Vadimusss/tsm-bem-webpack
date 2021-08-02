@@ -37,22 +37,22 @@
   left: -14px;
 }
 .service-menu__item:nth-child(1) .service-menu__link::before {
-  background: url(bot_menu_1.png) no-repeat;
+  background: url('bot_menu_1.png') no-repeat;
 }
 .service-menu__item:nth-child(2) .service-menu__link::before {
-  background: url(bot_menu_2.png) no-repeat;
+  background: url('bot_menu_2.png') no-repeat;
 }
 .service-menu__item:nth-child(3) .service-menu__link::before {
-  background: url(bot_menu_8.png) no-repeat;
+  background: url('bot_menu_8.png') no-repeat;
 }
 .service-menu__item:nth-child(4) .service-menu__link::before {
-  background: url(bot_menu_4.png) no-repeat;
+  background: url('bot_menu_4.png') no-repeat;
 }
 .service-menu__item:nth-child(5) .service-menu__link::before {
-  background: url(bot_menu_3.png) no-repeat;
+  background: url('bot_menu_3.png') no-repeat;
 }
 .service-menu__item:nth-child(6) .service-menu__link::before {
-  background: url(bot_menu_5.png) no-repeat;
+  background: url('bot_menu_5.png') no-repeat;
 }
 .service-menu__link:hover {
   text-decoration: none;

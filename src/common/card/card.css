@@ -3,6 +3,7 @@
   position: relative;
   border-radius: 6px;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 .card__header {
   font-size: 20px;

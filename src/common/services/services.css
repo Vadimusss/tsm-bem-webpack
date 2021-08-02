@@ -23,23 +23,23 @@
 .services__card:hover {
   background-color: #00a0d5;
 }
-.services__card_dezign-bg {
-  background-image: url(montal_row1.png);
+.services__card_bg_dezign {
+  background-image: url('montal_row1.png');
 }
-.services__card_montage-bg {
-  background-image: url(montal_row2.png);
+.services__card_bg_montage {
+  background-image: url('montal_row2.png');
 }
-.services__card_maintenance-bg {
-  background-image: url(montal_row3.png);
+.services__card_bg_maintenance {
+  background-image: url('montal_row3.png');
 }
-.services__card_dezign-bg:hover {
-  background-image: url(montal_row1_hover.png);
+.services__card_bg_dezign:hover {
+  background-image: url('montal_row1_hover.png');
 }
-.services__card_montage-bg:hover {
-  background-image: url(montal_row2_hover.png);
+.services__card_bg_montage:hover {
+  background-image: url('montal_row2_hover.png');
 }
-.services__card_maintenance-bg:hover {
-  background-image: url(montal_row3_hover.png);
+.services__card_bg_maintenance:hover {
+  background-image: url('montal_row3_hover.png');
 }
 .services__card-header {
   position: relative;

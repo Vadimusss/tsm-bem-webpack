@@ -16,9 +16,11 @@
 }
 .footer__office-phone {
   flex: 1 1 49%;
+  box-sizing: border-box;
 }
 .footer__service-phone {
   flex: 1 1 49%;
+  box-sizing: border-box;
 }
 .footer__company-name {
   line-height: 0;

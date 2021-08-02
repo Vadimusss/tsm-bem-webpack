@@ -34,59 +34,59 @@
   line-height: 21px;
   padding: 15px 0;
 }
-.callback-modal__input_name {
+.callback-modal__input_type_name {
   border-color: #006eae;
 }
-.callback-modal__input_name::-webkit-input-placeholder {
+.callback-modal__input_type_name::-webkit-input-placeholder {
   color: #006eae;
 }
-.callback-modal__input_name::-moz-placeholder          {
+.callback-modal__input_type_name::-moz-placeholder          {
   color: #006eae;
 }
-.callback-modal__input_name:-moz-placeholder           {
+.callback-modal__input_type_name:-moz-placeholder           {
   color: #006eae;
 }
-.callback-modal__input_name:-ms-input-placeholder      {
+.callback-modal__input_type_name:-ms-input-placeholder      {
   color: #006eae;
 }
-.callback-modal__input_name:focus::-webkit-input-placeholder {
+.callback-modal__input_type_name:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.callback-modal__input_name:focus::-moz-placeholder          {
+.callback-modal__input_type_name:focus::-moz-placeholder          {
   color: transparent;
 }
-.callback-modal__input_name:focus:-moz-placeholder           {
+.callback-modal__input_type_name:focus:-moz-placeholder           {
   color: transparent;
 }
-.callback-modal__input_name:focus:-ms-input-placeholder      {
+.callback-modal__input_type_name:focus:-ms-input-placeholder      {
   color: transparent;
 }
-.callback-modal__input_phone {
+.callback-modal__input_type_phone {
   border-color: #ffcb00;
   margin-bottom: 20px;
 }
-.callback-modal__input_phone::-webkit-input-placeholder {
+.callback-modal__input_type_phone::-webkit-input-placeholder {
   color: #ffcb00;
 }
-.callback-modal__input_phone::-moz-placeholder          {
+.callback-modal__input_type_phone::-moz-placeholder          {
   color: #ffcb00;
 }
-.callback-modal__input_phone:-moz-placeholder           {
+.callback-modal__input_type_phone:-moz-placeholder           {
   color: #ffcb00;
 }
-.callback-modal__input_phone:-ms-input-placeholder      {
+.callback-modal__input_type_phone:-ms-input-placeholder      {
   color: #ffcb00;
 }
-.callback-modal__input_phone:focus::-webkit-input-placeholder {
+.callback-modal__input_type_phone:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.callback-modal__input_phone:focus::-moz-placeholder          {
+.callback-modal__input_type_phone:focus::-moz-placeholder          {
   color: transparent;
 }
-.callback-modal__input_phone:focus:-moz-placeholder           {
+.callback-modal__input_type_phone:focus:-moz-placeholder           {
   color: transparent;
 }
-.callback-modal__input_phone:focus:-ms-input-placeholder      {
+.callback-modal__input_type_phone:focus:-ms-input-placeholder      {
   color: transparent;
 }
 .callback-modal__submit-button {

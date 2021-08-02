@@ -1,10 +1,7 @@
 .main-menu {
   display: inline-flex;
-  /* gap: 45px; */
+  gap: 45px;
   width: 100%;
-}
-.main-menu__item {
-  margin-right: 43px;
 }
 .main-menu__link {
   font-size: 18px;
@@ -17,12 +14,8 @@
   .main-menu {
     flex-direction: column;
     align-items: self-start;
-    /* row-gap: 30px; */
+    row-gap: 30px;
     margin-bottom: -30px;
-  }
-  .main-menu__item {
-    margin-right: 0;
-    margin-bottom: 30px;
   }
   .main-menu__link {
     color: #000000;

@@ -4,6 +4,7 @@
   justify-content: space-evenly;
   height: 80px;
   padding: 0 0 0 20px;
+  box-sizing: border-box;
 }
 .service-phone__number {
   font-size: 14px;
@@ -15,7 +16,7 @@
 }
 .service-phone__e-mail {
   padding: 0 0 0 22px;
-  background: url(/assets/templates/TSM-COMPANY_NEW/img/mail.png) no-repeat 0 46%;
+  background: url('mail.png') no-repeat 0 46%;
   color: #000000;
   font-weight: 600;
   font-size: 14px;
