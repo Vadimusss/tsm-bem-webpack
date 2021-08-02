@@ -26,6 +26,11 @@ module.exports = {
       filename: ({ chunk }) => `${chunk.name}/${chunk.name}.css`,
     }),
     new Copy(copyPaths),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
   ],
   module: {
     rules: [
