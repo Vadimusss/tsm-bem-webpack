@@ -15,7 +15,7 @@
   width: 9px;
   height: 4px;
   background-repeat: no-repeat;
-  background-image: url(https://www.tsm-company.ru/assets/templates/TSM-COMPANY_NEW/img/breadcrumbs.png);
+  background-image: url('breadcrumbs.png');
 }
 .breadcrumbs__item_home-page::before {
   display: none;
