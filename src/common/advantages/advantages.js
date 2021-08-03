@@ -1,4 +1,6 @@
 import 'jquery-colorbox';
 import './advantages__colorbox/colorbox.css'
 
-$('a.advantages__sertificat-link').colorbox();
+document.addEventListener('DOMContentLoaded', function () {
+  $('a.advantages__sertificat-link').colorbox();
+}, false);
