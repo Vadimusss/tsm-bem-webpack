@@ -89,6 +89,9 @@
 .callback-modal__input_type_phone:focus:-ms-input-placeholder      {
   color: transparent;
 }
+.callback-modal__blocker {
+  z-index: 2000!important;
+}
 .callback-modal__submit-button {
   border-radius: 6px;
   background-color: #006eae;
