@@ -1,0 +1,86 @@
+.zones {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "map prices" "cities cities";
+}
+.zones__map {
+  grid-area: map;
+  display: flex;
+  flex-direction: column;
+}
+.zones__header {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.zones__map-explanation {
+  font-size: 15px;
+  margin-bottom: 17px;
+}
+.zones__live-map {
+  height: 100%;
+}
+.zones__prices {
+  grid-area: prices;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  min-width: 492px;
+}
+.zones__prices-header {
+  margin-bottom: 40px;
+}
+.zones__prices-table {
+  font-weight: 600;
+}
+.zones__prices-table_position_first {
+  margin-bottom: 20px;
+}
+.zones__prices-amount {
+  min-width: 60px;
+}
+.zones__cities {
+  grid-area: cities;
+  padding-top: 20px;
+}
+.zones__cities-list {
+  line-height: 30px;
+}
+@media screen and (max-width:1300px) {
+  .zones__map-explanation {
+    font-size: 14px;
+  }
+  .zones__prices {
+    padding-left: 5px;
+  }
+  .zones__prices-header {
+    margin-bottom: 39px;
+  }
+}
+@media screen and (max-width:986px) {
+  .zones {
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr;
+    grid-template-areas: "prices" "map" "cities";
+    gap: 20px;
+  }
+  .zones__prices {
+    padding-left: 0;
+    min-width: 0;
+  }
+  .zones__prices-header {
+    margin-bottom: 10px;
+  }
+  .zones__live-map {
+    height: 50vh;
+  }
+  .zones__cities {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width:460px) {
+  .zones__prices-amount {
+    min-width: 52px;
+  }
+}
