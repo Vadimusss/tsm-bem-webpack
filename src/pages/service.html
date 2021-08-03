@@ -106,7 +106,7 @@
       <span data-link="/stati/sistema-distancionogo-kontrolja-raboty-kotelnoi-gsm.html"
         class="maintenance-header__gsm-promo-link hl">Система дистанционного контроля работы котельной GSM</span>
     </div>
-    <div class="button maintenance-header__callback-button modal">Заявка на обслуживание</div>
+    <a href="#callback-modal" rel="modal:open" class="button maintenance-header__callback-button">Заявка на обслуживание</a>
   </div>
   <div class="maintenance-header__basic-price">
     <a href="#contracts" class="button maintenance-header__basic-price-link">годовое обслуживание настенного котла
@@ -149,77 +149,77 @@
 </section>
 <a name="contracts"></a>
 <section class="contracts">
-    <span class="header header_level_h2 contracts__header">Варианты договоров ВДГО<div class="header__underline"></div></span>
-    <div class="contracts__cards">
-        <div class="card contracts__card">
-            <span class="header contracts__card-header contracts__card-header_bg_blue">Эконом</span>
-            <div class="contracts__card-price">
-                <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 5 400
-                        ₽</span></span>
-                <span class="contracts__card-price-item">Настенный 36-100 кВт <span class="contracts__price">- 8 000
-                        ₽</span></span>
-                <span class="contracts__card-price-item">Напольный газовый <span class="contracts__price">- 8 000
-                        ₽</span></span>
-                <span class="contracts__card-price-item contracts__card-price-item_last-item">Напольный дизельный <span class="contracts__price">- 9 000
-                        ₽</span></span>
-            </div>
-            <ul class="contracts__card-conditions">
-                <li class="contracts__card-conditions-item">Документы в газовую службу</li>
-                <li class="contracts__card-conditions-item">Срок прибытия мастера до 48 часов</li>
-                <li class="contracts__card-conditions-item">1 плановый выезд на тех. обслуживание в год</li>
-                <li class="contracts__card-conditions-item">Аварийные выезды оплачиваются согласно прайсу</li>
-            </ul>
-            <button class="button contacts__callback-button contacts__callback-button_bg_blue modal">заказать</button>
-        </div>
-        <div class="card contracts__card">
-            <span class="header contracts__card-header contracts__card-header_bg_red">Стандарт</span>
-            <div class="contracts__card-price">
-                <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 8 400
-                        ₽</span></span>
-                <span class="contracts__card-price-item">Настенный 36-100 кВт <span class="contracts__price">- 15 000
-                        ₽</span></span>
-                <span class="contracts__card-price-item">Напольный газовый <span class="contracts__price">- 15 000
-                        ₽</span></span>
-                <span class="contracts__card-price-item contracts__card-price-item_last-item">Напольный дизельный <span class="contracts__price">- 17 000
-                        ₽</span></span>
-            </div>
-            <ul class="contracts__card-conditions">
-                <li class="contracts__card-conditions-item">Документы в газовую службу</li>
-                <li class="contracts__card-conditions-item">Срок прибытия мастера до 24 часов</li>
-                <li class="contracts__card-conditions-item">2 плановых выезда на тех. обслуживание в год*</li>
-                <li class="contracts__card-conditions-item">До 4х бесплатных аварийных выездов*</li>
-                <li class="contracts__card-conditions-item">Скидка до 10% на запасные части для обслуживаемого
-                    отопительного оборудования</li>
-                <li class="contracts__card-conditions-item contracts__card-conditions-item_type_annotation">* Для настенных
-                    котлов 1-35 кВт 1 плановый выезд в год</li>
-            </ul>
-            <button class="button contacts__callback-button contacts__callback-button_bg_red modal">заказать</button>
-        </div>
-        <div class="card contracts__card">
-            <span class="header contracts__card-header contracts__card-header_bg_yellow">Премиум</span>
-            <div class="contracts__card-price">
-                <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 15 000
-                        ₽</span></span>
-                <span class="contracts__card-price-item">Настенный 36-100 кВт <span class="contracts__price">- 27 000
-                        ₽</span></span>
-                <span class="contracts__card-price-item">Напольный газовый <span class="contracts__price">- 27 000
-                        ₽</span></span>
-                <span class="contracts__card-price-item contracts__card-price-item_last-item">Напольный дизельный <span class="contracts__price">- 29 000
-                        ₽</span></span>
-            </div>
-            <ul class="contracts__card-conditions">
-                <li class="contracts__card-conditions-item">Документы в газовую службу</li>
-                <li class="contracts__card-conditions-item">Срок прибытия мастера до 12 часов</li>
-                <li class="contracts__card-conditions-item">2 плановых выезда на тех. обслуживание в год</li>
-                <li class="contracts__card-conditions-item">Количество бесплатных аварийных выездов не ограниченно*</li>
-                <li class="contracts__card-conditions-item">Скидка до 10% на запасные части для обслуживаемого
-                    отопительного оборудования</li>
-                <li class="contracts__card-conditions-item">Обследование всей отопительной системы включено в тех.
-                    обслуживание</li>
-            </ul>
-            <button class="button contacts__callback-button contacts__callback-button_bg_yellow modal">заказать</button>
-        </div>
-    </div>
+  <span class="header header_level_h2 contracts__header">Варианты договоров ВДГО<div class="header__underline"></div></span>
+  <div class="contracts__cards">
+      <div class="card contracts__card">
+          <span class="header contracts__card-header contracts__card-header_bg_blue">Эконом</span>
+          <div class="contracts__card-price">
+              <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 5 400
+                      ₽</span></span>
+              <span class="contracts__card-price-item">Настенный 36-100 кВт <span class="contracts__price">- 8 000
+                      ₽</span></span>
+              <span class="contracts__card-price-item">Напольный газовый <span class="contracts__price">- 8 000
+                      ₽</span></span>
+              <span class="contracts__card-price-item contracts__card-price-item_last-item">Напольный дизельный <span class="contracts__price">- 9 000
+                      ₽</span></span>
+          </div>
+          <ul class="contracts__card-conditions">
+              <li class="contracts__card-conditions-item">Документы в газовую службу</li>
+              <li class="contracts__card-conditions-item">Срок прибытия мастера до 48 часов</li>
+              <li class="contracts__card-conditions-item">1 плановый выезд на тех. обслуживание в год</li>
+              <li class="contracts__card-conditions-item">Аварийные выезды оплачиваются согласно прайсу</li>
+          </ul>
+          <button class="button contracts__callback-button contracts__callback-button_bg_blue modal">заказать</button>
+      </div>
+      <div class="card contracts__card">
+          <span class="header contracts__card-header contracts__card-header_bg_red">Стандарт</span>
+          <div class="contracts__card-price">
+              <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 8 400
+                      ₽</span></span>
+              <span class="contracts__card-price-item">Настенный 36-100 кВт <span class="contracts__price">- 15 000
+                      ₽</span></span>
+              <span class="contracts__card-price-item">Напольный газовый <span class="contracts__price">- 15 000
+                      ₽</span></span>
+              <span class="contracts__card-price-item contracts__card-price-item_last-item">Напольный дизельный <span class="contracts__price">- 17 000
+                      ₽</span></span>
+          </div>
+          <ul class="contracts__card-conditions">
+              <li class="contracts__card-conditions-item">Документы в газовую службу</li>
+              <li class="contracts__card-conditions-item">Срок прибытия мастера до 24 часов</li>
+              <li class="contracts__card-conditions-item">2 плановых выезда на тех. обслуживание в год*</li>
+              <li class="contracts__card-conditions-item">До 4х бесплатных аварийных выездов*</li>
+              <li class="contracts__card-conditions-item">Скидка до 10% на запасные части для обслуживаемого
+                  отопительного оборудования</li>
+              <li class="contracts__card-conditions-item contracts__card-conditions-item_type_annotation">* Для настенных
+                  котлов 1-35 кВт 1 плановый выезд в год</li>
+          </ul>
+          <button class="button contracts__callback-button contracts__callback-button_bg_red modal">заказать</button>
+      </div>
+      <div class="card contracts__card">
+          <span class="header contracts__card-header contracts__card-header_bg_yellow">Премиум</span>
+          <div class="contracts__card-price">
+              <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 15 000
+                      ₽</span></span>
+              <span class="contracts__card-price-item">Настенный 36-100 кВт <span class="contracts__price">- 27 000
+                      ₽</span></span>
+              <span class="contracts__card-price-item">Напольный газовый <span class="contracts__price">- 27 000
+                      ₽</span></span>
+              <span class="contracts__card-price-item contracts__card-price-item_last-item">Напольный дизельный <span class="contracts__price">- 29 000
+                      ₽</span></span>
+          </div>
+          <ul class="contracts__card-conditions">
+              <li class="contracts__card-conditions-item">Документы в газовую службу</li>
+              <li class="contracts__card-conditions-item">Срок прибытия мастера до 12 часов</li>
+              <li class="contracts__card-conditions-item">2 плановых выезда на тех. обслуживание в год</li>
+              <li class="contracts__card-conditions-item">Количество бесплатных аварийных выездов не ограниченно*</li>
+              <li class="contracts__card-conditions-item">Скидка до 10% на запасные части для обслуживаемого
+                  отопительного оборудования</li>
+              <li class="contracts__card-conditions-item">Обследование всей отопительной системы включено в тех.
+                  обслуживание</li>
+          </ul>
+          <button class="button contracts__callback-button contracts__callback-button_bg_yellow modal">заказать</button>
+      </div>
+  </div>
 </section>
 <a name="zones"></a>
 <section class="zones page__section">
@@ -1441,7 +1441,7 @@
     </div>
     </div>
   </footer>
-  <div class="modal" id="callback-modal">
+  <div class="modal callback-modal" id="callback-modal">
     <div class="callback-modal__header">Заявка на обратный звонок</div>
     <form method="post" class="callback-modal__form ajax_form" action="">
       <input type="text" id="name" name="name" placeholder="Ваше имя"
