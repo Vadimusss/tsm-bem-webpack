@@ -1,0 +1,187 @@
+.contracts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.contracts__header {
+  flex-basis: 100%;
+  margin: 0 0 20px 50px;
+}
+.contracts__cards {
+  display: flex;
+  position: relative;
+  margin-right: -10px;
+  background-color: #77c4ee;
+  padding: 30px 50px;
+}
+.contracts__cards::before {
+  content: "";
+  width: 824px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('contracts_bg.png');
+  background-size: cover;
+}
+.contracts__card {
+  flex: 0 1 350px;
+  margin-right: 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+.contracts__card-header {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: #67a8dc;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contracts__card-header_bg_blue {
+  background-color: #67a8dc;
+}
+.contracts__card-header_bg_red {
+  background-color: #d44f5e;
+}
+.contracts__card-header_bg_yellow {
+  background-color: #ebb946;
+}
+.contracts__card-price {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+.contracts__card-price-item {
+  flex-basis: 100%;
+  background-color: #eaf0f4;
+  border-radius: 6px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.contracts__price {
+  font-size: 20px;
+  color: #006eab;
+  float: right;
+}
+.contracts__card-conditions {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0 14px 0 10px;
+  list-style: none;
+}
+.contracts__card-conditions-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+.contracts__card-conditions-item::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  background-image: url('contracts_check-mark.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  left: 12px;
+  top: 3px;
+}
+.contracts__card-conditions-item_type_annotation {
+  font-weight: 600;
+}
+.contracts__card-conditions-item_type_annotation::before {
+  display: none;
+}
+.contracts__callback-button {
+  width: 215px;
+  line-height: 45px;
+  font-weight: 600;
+  border-width: 0;
+}
+.contracts__callback-button_bg_blue {
+  background-color: #67a8dc;
+}
+.contracts__callback-button_bg_red {
+  background-color: #d44f5e;
+}
+.contracts__callback-button_bg_yellow {
+  background-color: #ebb946;
+}
+@media screen and (max-width:1300px) {
+  .contracts__header {
+    margin-left: 20px;
+  }
+  .contracts__cards {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width:986px) {
+  .contracts__header {
+    margin-left: 10px;
+  }
+  .contracts__cards {
+    flex-wrap: wrap;
+    margin: 0 0 -10px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contracts__cards::before {
+    display: none;
+  }
+  .contracts__card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-basis: 100%;
+    min-height: auto;
+    margin: 0 0 10px 0;
+  }
+  .contracts__card-price {
+    margin-left: 10px;
+    min-width: 290px;
+  }
+  .contracts__card-conditions {
+    flex-basis: 50%;
+    padding-left: 0;
+  }
+  .contracts__callback-button {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width:650px) {
+  .contracts__card {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: min-content;
+  }
+  .contracts__card-price {
+    margin-left: 0;
+    width: 90%;
+  }
+  .contracts__callback-button {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:460px) {
+  .contracts__header {
+    margin-left: 5px;
+  }
+  .contracts__cards {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .contracts__card-price {
+    min-width: 0;
+    width: 98%;
+  }
+}
