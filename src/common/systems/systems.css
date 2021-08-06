@@ -1,0 +1,102 @@
+.systems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px;
+  grid-auto-rows: 310px;
+  gap: 10px;
+}
+.systems__header {
+  grid-column: 1 / -1;
+  grid-row: span 1;
+}
+.systems__card {
+  align-items: flex-end;
+  background-size: 100% 80%;
+  box-shadow: 0 6px 15px -3px rgba(136, 136, 136, 1);
+}
+.systems__card_bg_heating {
+  background-image:  url('systems_heating.png');;
+}
+.systems__card_bg_boiler {
+  background-image:  url('systems_boiler.png');;
+}
+.systems__card_bg_water-supply {
+  background-image:  url('systems_water-supply.png');;
+}
+.systems__card_bg_sewerage {
+  background-image:  url('systems_sewerage.png');;
+}
+.systems__card_bg_ventilation {
+  background-image:  url('systems_ventilation.png');;
+}
+.systems__card_bg_conditioning {
+  background-image:  url('systems_conditioning.png');;
+}
+.systems__card_bg_electrosupply {
+  background-image:  url('systems_electrosupply.png');;
+}
+.systems__card_bg_low-current {
+  background-image:  url('systems_low-current.png');;
+}
+.systems__card_bg_chimney {
+  background-image:  url('systems_chimney.png');;
+}
+.systems__card_bg_water-preparation {
+  background-image:  url('systems_water-preparation.png');;
+}
+.systems__card-overlay {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 20%;
+  font-weight: bold;
+  border-radius: 0 0 6px 6px;
+}
+.systems__card-title {
+  text-align: center;
+  color: #006faf;
+  font-size: 20px;
+  font-weight: bold;
+}
+.systems__card-title::after {
+  content: "";
+  width: 120%;
+  height: 1px;
+  background-color: #ffc018;
+  display: block;
+  left: -10%;
+  position: relative;
+}
+@media screen and (max-width:1300px) {
+  .systems {
+    grid-auto-rows: 270px;
+  }
+}
+@media screen and (max-width:986px) {
+  .systems {
+    grid-auto-rows: 230px;
+  }
+  .systems__card-title::after {
+    width: 110%;
+    left: -5%;
+  }
+}
+@media screen and (max-width:768px) {
+  .systems {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 264px;
+  }
+}
+@media screen and (max-width:575px) {
+  .systems__card-title::after {
+    width: 102%;
+    left: -1%;
+  }
+}
+@media screen and (max-width:460px) {
+  .systems {
+    grid-template-columns: 1fr;
+  }
+}
