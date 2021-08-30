@@ -1,4 +1,3 @@
-/* blocks connected first (instead of bemdecl) */
 import '../common/header/header.css';
 import '../common/button/button.css';
 
