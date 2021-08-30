@@ -20,6 +20,10 @@
 }
 .zones__live-map {
   height: 100%;
+  background-image: url('zones__static-map.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .zones__prices {
   grid-area: prices;
