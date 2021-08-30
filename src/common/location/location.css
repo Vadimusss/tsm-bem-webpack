@@ -5,6 +5,10 @@
 .location__map {
   width: 66%;
   margin-right: 60px;
+  background-image: url('location__static-map.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .location__header {
   font-size: 30px;
@@ -30,6 +34,7 @@
 }
 .location__phone {
   background-image: url('fon.png');
+  box-sizing: border-box;
 }
 .location__phone-number {
   font-weight: 600;
@@ -39,6 +44,7 @@
 }
 .location__e-mail {
   background-image: url('mail2.png');
+  box-sizing: border-box;
 }
 .location__e-mail-link {
   font-weight: 600;
@@ -48,6 +54,7 @@
 }
 .location__address {
   background-image: url('adres.png');
+  box-sizing: border-box;
 }
 .location__address-text {
   font-weight: 600;
