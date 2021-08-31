@@ -1,0 +1,100 @@
+.service-procedure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service-procedure__header {
+  flex-basis: 100%;
+}
+.service-procedure__card {
+  flex: 0 0 204px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 40px;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  height: 130px;
+}
+.service-procedure__card_bg_data {
+  background-image: url('service-procedure_data.png');
+}
+.service-procedure__card_bg_offer {
+  background-image: url('service-procedure_offer.png');
+}
+.service-procedure__card_bg_conclusion {
+  background-image: url('service-procedure_conclusion.png');
+}
+.service-procedure__card_bg_design {
+  background-image: url('service-procedure_design.png');
+}
+.service-procedure__card_bg_montage {
+  background-image: url('service-procedure_montage.png');
+}
+.service-procedure__card_bg_transfer {
+  background-image: url('service-procedure_transfer.png');
+}
+.service-procedure__card_position_last {
+  margin-right: 0;
+}
+.service-procedure__card::after {
+  content: "";
+  display: block;
+  height: 31px;
+  width: 31px;
+  position: absolute;
+  right: -28%;
+  top: 38%;
+  border: 1px solid #dbe3e3;
+  background-image: url('service-procedure_arrow.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+.service-procedure__card_position_last::after {
+  display: none;
+}
+.service-procedure__card-text {
+  text-align: center;
+  color: #0088be;
+  font-weight: bold;
+}
+@media screen and (max-width:1300px) {
+  .service-procedure {
+    justify-content: space-around;
+  }
+  .service-procedure__card {
+    flex-basis: 160px;
+    margin-right: 0;
+  }
+  .service-procedure__card::after {
+    right: 10px;
+    top: 30px;
+    color: #ffffff;
+    background-image: none;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ffca00;
+  }
+  .service-procedure__card_bg_data::after {
+    content: "1";
+  }
+  .service-procedure__card_bg_offer::after {
+    content: "2";
+  }
+  .service-procedure__card_bg_conclusion::after {
+    content: "3";
+  }
+  .service-procedure__card_bg_design::after {
+    content: "4";
+  }
+  .service-procedure__card_bg_montage::after {
+    content: "4";
+  }
+  .service-procedure__card_bg_transfer::after {
+    content: "5";
+  }
+}
