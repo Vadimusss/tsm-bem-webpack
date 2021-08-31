@@ -1,5 +1,5 @@
-import 'jquery-modal';
-import 'jquery-modal/jquery.modal.css'
+import '../jquery-modal/jquery-modal.js';
+import '../jquery-modal/jquery-modal.css';
 
 document.addEventListener('DOMContentLoaded', function () {
   $.modal.defaults = {
