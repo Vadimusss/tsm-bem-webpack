@@ -4,7 +4,7 @@ import '../../common/button/button.css';
 import '../../common/menu/menu.css';
 
 import './dev.html';
-import '../../fonts/fonts.css';
+import '../../fonts/shop-fonts.css';
 
 import '../../img/brands_buderus.jpg';
 import '../../img/brands_baxi.jpg';
