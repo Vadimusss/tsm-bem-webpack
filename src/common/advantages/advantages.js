@@ -1,5 +1,5 @@
-import 'jquery-colorbox';
-import './advantages__colorbox/colorbox.css'
+import '../colorbox/colorbox.css';
+import '../colorbox/jquery.colorbox.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   $('a.advantages__sertificat-link').colorbox();
