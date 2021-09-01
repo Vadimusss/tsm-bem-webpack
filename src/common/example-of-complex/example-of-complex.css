@@ -1,0 +1,49 @@
+.example-of-complex {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffd7;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.example-of-complex__header {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+.example-of-complex__object {
+  flex-basis: 50%;
+  display: flex;
+  height: 333px;
+}
+.example-of-complex__card {
+  flex: 0 0 333px;
+}
+.example-of-complex__description {
+  flex: 0 1 333px;
+  padding-left: 20px;
+}
+.example-of-complex__description-header {
+  margin-bottom: 10px;
+}
+@media screen and (max-width:1300px) {
+  .example-of-complex {
+    flex-direction: column;
+  }
+  .example-of-complex__card {
+    flex: 0 2 666px;
+  }
+  .example-of-complex__description {
+    flex-grow: 1;
+  }
+  .example-of-complex__object_with-margin {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width:650px) {
+  .example-of-complex__object {
+    flex-direction: column;
+  }
+  .example-of-complex__card {
+    flex: 0 0 333px;
+    margin-bottom: 10px;
+  }
+}
