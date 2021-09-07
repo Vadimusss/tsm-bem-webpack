@@ -1,0 +1,194 @@
+.shop-category {
+  display: grid;
+  grid-template-columns: 1fr 325px;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: 'header aside'
+  'products aside';
+  gap: 50px;
+}
+.shop-category__products-header {
+  grid-area: header;
+}
+.shop-category__products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: products;
+
+  gap: 50px;
+  grid-auto-rows: 310px;
+}
+.shop-category__card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 70px 1fr;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px -3px rgb(136 136 136);
+
+  justify-items: center;
+}
+.shop-category__card-header {
+  align-self: center;
+  color: #007db6;
+  text-decoration: none;
+  font-size: 20px;
+  grid-column: 1 / -1;
+}
+.shop-category__card-product-img {
+  grid-row: 2 / 4;
+}
+.shop-category__card-img {
+  width: 100%;
+}
+.shop-category__card-properties {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.shop-category__property {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 13px;
+  line-height: 16px;
+}
+.shop-category__property-name {
+  font-weight: bold;
+}
+.shop-category__card-button {
+  align-self: center;
+  width: 100%;
+  max-width: 200px;
+  min-height: 36px;
+  background-color: #006eae;
+  font-size: 13px;
+}
+.shop-category__aside {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 177px) min-content;
+  grid-area: aside;
+  row-gap: 20px;
+}
+.shop-category__servise-card {
+  height: 100%;
+}
+.shop-category__servise-card-header {
+  text-align: right;
+  font-size: 19px;
+  line-height: 22px;
+}
+.shop-category__servise-card-header:after {
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+  display: block;
+  width: 126%;
+  height: 1px;
+  content: '';
+  background-color: #eeeeee;
+}
+.shop-category__servise-card_bg_montage {
+  background-color: #c7fc98;
+  background-image: url('shop-category__montage.png');
+}
+.shop-category__servise-card_bg_maintenance {
+  background-color: #e3e56a;
+  background-image: url('shop-category__mainenance.png');
+}
+.shop-category__brends {
+  display: grid;
+  grid-template-rows: 55px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #ffdb3b;
+
+  gap: 20px;
+  grid-auto-rows: 80px;
+  grid-column: 1 / -1;
+  justify-items: center;
+}
+.shop-category__brends-header {
+  height: 100%;
+  font-size: 25px;
+
+  grid-column: 1 / -1;
+  justify-self: left;
+}
+.shop-category__brends-header::after {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 2px;
+  content: '';
+  background-color: #ffffff;
+}
+.shop-category__brends-item {
+  width: 100%;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px -3px rgb(136 136 136);
+}
+@media screen and (max-width:1300px) {
+  .shop-category {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content repeat(3, min-content);
+    grid-template-areas: 'header'
+    'products'
+    'aside';
+  }
+  .shop-category__aside {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 177px min-content;
+    column-gap: 20px;
+  }
+  .shop-category__servise-card {
+    height: 100%;
+    background-size: auto;
+  }
+  .shop-category__brends {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width:986px) {
+  .shop-category {
+    gap: 20px;
+  }
+  .shop-category__products {
+    gap: 20px;
+  }
+}
+@media screen and (max-width:768px) {
+  .shop-category__products {
+    grid-template-columns: 1fr;
+  }
+  .shop-category__aside {
+    grid-template-columns: 1fr;
+    grid-template-rows: 177px 177px min-content;
+  }
+  .shop-category__brends {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:575px) {
+  .shop-category__brends {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:460px) {
+  .shop-category__products {
+    grid-auto-rows: min-content;
+  }
+  .shop-category__card {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+  .shop-category__brends-header {
+    font-size: 24px;
+  }
+}
