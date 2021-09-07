@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+  column-gap: 40px;
+}
+.breadcrumbs__item {
+  position: relative;
+  margin: 0;
+  color: #687781;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+}
+.breadcrumbs__item::before {
+  position: absolute;
+  top: 3px;
+  left: -28px;
+  width: 13px;
+  height: 8px;
+  content: '';
+  background-image: url('breadcrumbs-in-shop-pages__arrow.png');
+  background-repeat: no-repeat;
+}
+.breadcrumbs__item_type_home::before {
+  display: none;
+}
