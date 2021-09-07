@@ -1,0 +1,33 @@
+.logo {
+  width: 174px;
+  height: 84px;
+  background-image: url('shop__logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (max-width:1300px) {
+  .logo {
+    width: 160px;
+    height: 77px;
+  }
+}
+@media screen and (max-width:986px) {
+  .logo {
+    width: 149px;
+    height: 72px;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width:650px) {
+  .logo {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width:460px) {
+  .logo {
+    width: 132px;
+    height: 64px;
+    margin-bottom: 0;
+  }
+}
