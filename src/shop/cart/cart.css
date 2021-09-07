@@ -1,10 +1,10 @@
 .cart {
   display: flex;
-  flex-direction: column;
   column-gap: 3px;
-  background: #e0eff9;
-  border-radius: 5px;
+  flex-direction: column;
   padding: 13px 24px 15px 22px;
+  border-radius: 5px;
+  background: #e0eff9;
 }
 .cart__link {
   text-decoration: none;
@@ -22,24 +22,24 @@
 }
 @media screen and (max-width:986px) {
   .cart {
-    padding: 8px 24px 8px 22px;
     margin-bottom: 12px;
+    padding: 8px 24px 8px 22px;
   }
 }
 @media screen and (max-width:768px) {
   .cart {
     position: absolute;
-    cursor: pointer;
     z-index: 1000;
-    width: 64px;
-    height: 78px;
     top: 0;
     right: 84px;
-    border-radius: 0 0 6px 6px;
+    width: 64px;
+    height: 78px;
     padding: 0;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
     background-image: url('cart__icon.png');
-    background-position: center center;
     background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 @media screen and (max-width:650px) {
@@ -49,7 +49,7 @@
 }
 @media screen and (max-width:460px) {
   .cart {
-    height: 60px;
     width: 60px;
+    height: 60px;
   }
 }
