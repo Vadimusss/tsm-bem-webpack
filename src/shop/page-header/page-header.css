@@ -1,0 +1,125 @@
+.page-header {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 'logo requisites requisites requisites cart'
+  'logo main-menu main-menu main-menu cart'
+  'logo search-field search-field search-field cart'
+  'service-menu service-menu service-menu service-menu service-menu';
+  column-gap: 60px;
+  row-gap: 0;
+  box-shadow: 0 4px 50px rgb(0 0 0 / 15%);
+}
+.page-header__logo {
+  grid-area: logo;
+  margin: 0;
+}
+.page-header__company-name {
+  display: none;
+  grid-area: name;
+}
+.page-header__main-menu {
+  z-index: 2000;
+  grid-area: main-menu;
+  margin-bottom: 16px;
+  padding: 0;
+}
+.page-header__requisites {
+  grid-area: requisites;
+  margin-bottom: 12px;
+}
+.page-header__search {
+  grid-area: search-field;
+  margin-bottom: 29px;
+}
+.page-header__cart {
+  grid-area: cart;
+}
+.page-header__service-menu {
+  grid-area: service-menu;
+}
+.page-header__mobile-service-menu-button {
+  display: none;
+  grid-area: serv-menu-button;
+  border-radius: 0;
+}
+@media screen and (max-width:1300px) {
+  .page-header {
+    grid-template-columns: min-content repeat(3, 1fr) 148px;
+    grid-template-areas: 'logo requisites requisites requisites requisites'
+    'logo main-menu main-menu main-menu cart'
+    'logo search-field search-field search-field cart'
+    'service-menu service-menu service-menu service-menu service-menu';
+    column-gap: 20px;
+  }
+  .page-header__main-menu {
+    position: static;
+    border: 0;
+  }
+  .page-header__search {
+    margin-bottom: 19px;
+  }
+}
+@media screen and (max-width:986px) {
+  .page-header {
+    grid-template-columns: min-content repeat(3, 1fr) max-content;
+    grid-template-areas: 'main-menu main-menu main-menu main-menu main-menu'
+    'logo requisites requisites requisites cart'
+    'search-field search-field search-field search-field search-field'
+    'service-menu service-menu service-menu service-menu service-menu';
+  }
+}
+@media screen and (max-width:768px) {
+  .page-header {
+    grid-template-areas: 'logo requisites requisites requisites requisites'
+    'search-field search-field search-field search-field search-field'
+    'service-menu service-menu service-menu service-menu service-menu';
+    column-gap: 34px;
+  }
+  .page-header__cart-header {
+    display: none;
+  }
+  .page-header__cart-text {
+    display: none;
+  }
+}
+@media screen and (max-width:650px) {
+  .page-header {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'logo'
+    'requisites'
+    'search-field'
+    'service-menu';
+    row-gap: 10px;
+  }
+  .requisites {
+    margin-bottom: 0;
+  }
+  .page-header__search {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width:575px) {
+  .page-header__company-name {
+    text-align: left;
+  }
+  .page-header__logo {
+    display: block;
+  }
+}
+@media screen and (max-width:460px) {
+  .page-header {
+    grid-template-areas: 'logo'
+    'requisites'
+    'search-field'
+    'serv-menu-button'
+    'service-menu';
+  }
+  .page-header__company-name {
+    text-align: center;
+  }
+  .page-header__mobile-service-menu-button {
+    display: block;
+    grid-area: serv-menu-button;
+  }
+}
