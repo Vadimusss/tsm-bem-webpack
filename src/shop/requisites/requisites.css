@@ -1,0 +1,27 @@
+.requisites {
+  display: flex;
+  column-gap: 6px;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 18px;
+}
+.requisites__requisite {
+  display: flex;
+  column-gap: 4px;
+  flex-wrap: wrap;
+}
+.requisites__requisite-text {
+  color: #819098;
+}
+.requisites__requisite-link {
+  text-decoration: none;
+  color: #1b313e;
+  font-weight: 600;
+}
+@media screen and (max-width:986px) {
+  .requisites {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:650px) {
+}
