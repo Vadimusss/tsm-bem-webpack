@@ -12,28 +12,26 @@
 .shop-category__products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-area: products;
-
-  gap: 50px;
   grid-auto-rows: 310px;
+  grid-area: products;
+  gap: 50px;
 }
 .shop-category__card {
   display: grid;
   align-items: center;
   grid-template-columns: 50% 50%;
   grid-template-rows: 70px 1fr;
+  justify-items: center;
   padding: 10px;
   background-color: #ffffff;
   box-shadow: 0 6px 15px -3px rgb(136 136 136);
-
-  justify-items: center;
 }
 .shop-category__card-header {
   align-self: center;
+  grid-column: 1 / -1;
   color: #007db6;
   text-decoration: none;
   font-size: 20px;
-  grid-column: 1 / -1;
 }
 .shop-category__card-product-img {
   grid-row: 2 / 4;
@@ -89,7 +87,7 @@
   width: 126%;
   height: 1px;
   content: '';
-  background-color: #eeeeee;
+  background-color: #c7c7c7;
 }
 .shop-category__servise-card_bg_montage {
   background-color: #c7fc98;
@@ -102,21 +100,19 @@
 .shop-category__brends {
   display: grid;
   grid-template-rows: 55px;
+  grid-auto-rows: 80px;
+  grid-column: 1 / -1;
+  gap: 20px;
+  justify-items: center;
   padding: 20px;
   border-radius: 6px;
   background-color: #ffdb3b;
-
-  gap: 20px;
-  grid-auto-rows: 80px;
-  grid-column: 1 / -1;
-  justify-items: center;
 }
 .shop-category__brends-header {
-  height: 100%;
-  font-size: 25px;
-
   grid-column: 1 / -1;
   justify-self: left;
+  height: 100%;
+  font-size: 25px;
 }
 .shop-category__brends-header::after {
   position: absolute;
