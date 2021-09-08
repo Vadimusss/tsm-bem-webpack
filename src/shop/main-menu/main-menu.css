@@ -1,0 +1,39 @@
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  gap: 0;
+}
+.main-menu__link {
+  color: #819098;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (max-width:1300px) {
+  .main-menu {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width:986px) {
+}
+@media screen and (max-width:768px) {
+  .main-menu {
+    position: absolute;
+    top: -490px;
+    right: 0;
+    row-gap: 12px;
+    flex-direction: column;
+    padding: 100px 30px 20px 20px;
+    transition: 0.4s top;
+    border: 1px solid #000000;
+  }
+  .main-menu__link {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:650px) {
+}
+@media screen and (max-width:575px) {
+}
+@media screen and (max-width:460px) {
+}
