@@ -1,3 +1,12 @@
+.page-header {
+  display: grid;
+  grid-template-areas: "logo name name name name office-phone office-phone service-phone service-phone"
+  "main-menu main-menu main-menu main-menu main-menu main-menu main-menu main-menu mini-cart"
+  "serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu"
+  "breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
+  gap: 10px;
+  align-items: center;
+}
 .page-header__logo {
   grid-area: logo;
 }
@@ -44,6 +53,13 @@
   top: 0!important;
 }
 @media screen and (max-width:1300px) {
+  .page-header {
+    grid-template-areas: "logo name name main-menu-button"
+    "logo office-phone service-phone mini-cart"
+    "serv-menu serv-menu serv-menu serv-menu"
+    "breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
+    grid-template-columns: min-content;
+}
   .page-header__logo {
     height: 156px;
     width: 250px;
@@ -67,16 +83,40 @@
   }
 }
 @media screen and (max-width:986px) {
+  .page-header {
+    grid-template-areas: "logo office-phone office-phone main-menu-button"
+    "logo service-phone service-phone mini-cart"
+    "serv-menu serv-menu serv-menu serv-menu"
+    "breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
+}
   .page-header__company-name {
     display: none;
   }
 }
-@media screen and (max-width:650px) {
+@media screen and (max-width:768px) {
   .page-header__logo {
     width: 150px;
   }
 }
+@media screen and (max-width:650px) {
+  .page-header {
+    grid-template-areas: "logo office-phone office-phone main-menu-button"
+    "logo service-phone service-phone service-phone"
+    "mini-cart mini-cart mini-cart mini-cart"
+    "serv-menu serv-menu serv-menu serv-menu"
+    "breadcrumbs breadcrumbs breadcrumbs breadcrumbs";
+    gap: 4px;
+  }
+}
 @media screen and (max-width:575px) {
+  .page-header {
+    grid-template-columns: 1fr max-content;
+    grid-template-areas: "header header"
+    "office-phone main-menu-button "
+    "service-phone service-phone"
+    "mini-cart mini-cart"
+    "serv-menu serv-menu";
+  }
   .page-header__logo {
     display: none;
   }
@@ -95,7 +135,20 @@
     display: none;
   }
 }
+@media screen and (max-width:575px) {
+  .page-header__breadcrumbs {
+    display: none;
+  }
+}
 @media screen and (max-width:460px) {
+  .page-header {
+    grid-template-areas: "header header"
+    "office-phone main-menu-button "
+    "service-phone service-phone"
+    "mini-cart mini-cart"
+    "serv-menu-button serv-menu-button"
+    "serv-menu serv-menu";
+  }
   .page-header__mobile-service-menu-button {
     display: block;
   }
