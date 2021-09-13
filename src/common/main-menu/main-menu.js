@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+/* eslint-disable no-undef */
+document.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('.mobile-main-menu-button');
   const menu = document.querySelector('.page-header__main-menu');
   button.addEventListener('click', () => {
@@ -6,4 +7,3 @@ document.addEventListener('DOMContentLoaded', function () {
     button.classList.toggle('mobile-main-menu-button_close');
   });
 }, false);
-
