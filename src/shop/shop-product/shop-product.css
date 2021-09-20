@@ -132,36 +132,7 @@
   font-weight: 600;
 }
 .shop-product__tabs {
-  display: flex;
   grid-area: tabs;
-  row-gap: 22px;
-  flex-direction: column;
-}
-.shop-product__tabs-list {
-  display: flex;
-  column-gap: 16px;
-}
-.shop-product__tabs-botton {
-  box-sizing: border-box;
-  padding: 10px 50px;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #006eae;
-}
-.shop-product__tabs-botton_active {
-  background-color: #3d98ce;
-  color: #ffffff;
-}
-.shop-product__tabs-content {
-  display: none;
-  color: #1b313e;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 28px;
-}
-.shop-product__tabs-content_active {
-  display: block;
 }
 @media screen and (max-width:1300px) {
   .shop-product {
@@ -233,10 +204,6 @@
     grid-area: button;
     width: 180px;
   }
-  .shop-product__tabs-list {
-    row-gap: 16px;
-    flex-wrap: wrap;
-  }
 }
 @media screen and (max-width:650px) {
   .shop-product {
@@ -245,7 +212,7 @@
   }
   .shop-product__cards {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 118px);
     grid-template-areas: 'departure replacement'
     'consultation consultation';
   }
@@ -278,6 +245,9 @@
   .shop-product__card_type_departure {
     background-position: 89% 76%;
   }
+  .product__card_type_consultation {
+    padding-top: 29px;
+  }
   .shop-product__order {
     grid-template-columns: 1fr;
     grid-template-areas: 'price'
@@ -287,9 +257,5 @@
   }
   .shop-product__add-to-card {
     width: 100%;
-  }
-  .shop-product__tabs-list {
-    row-gap: 5px;
-    flex-direction: column;
   }
 }
