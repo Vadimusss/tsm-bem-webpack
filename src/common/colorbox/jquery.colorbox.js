@@ -1,8 +1,8 @@
 /* eslint-disable */
 /*!
-  Colorbox 1.6.4
-  license: MIT
-  http://www.jacklmoore.com/colorbox
+	Colorbox 1.6.4
+	license: MIT
+	http://www.jacklmoore.com/colorbox
 */
 (function ($, document, window) {
   const
