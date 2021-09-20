@@ -116,6 +116,7 @@
   .service-menu {
     grid-template-columns: 1fr;
     padding-left: 20px;
+    padding-bottom: 12px;
   }
   .service-menu__item {
     padding-left: 40px;
