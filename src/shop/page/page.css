@@ -46,7 +46,7 @@
 }
 @media screen and (max-width:460px) {
   .page__header {
-    padding: 6px 2px 20px 2px;
+    padding: 6px 2px 0 2px;
   }
   .page__section {
     margin: 0 5px 20px 5px;
