@@ -1,7 +1,8 @@
+/* eslint-disable no-undef */
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   $('.brends-tmp__slider').owlCarousel({
     loop: true,
     autoplay: false,
@@ -13,19 +14,19 @@ document.addEventListener('DOMContentLoaded', function () {
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: true,
       },
       450: {
         items: 2,
-        nav: true
+        nav: true,
       },
       575: {
         items: 3,
-        nav: true
+        nav: true,
       },
       860: {
         items: 4,
-        nav: true
+        nav: true,
       },
       986: {
         items: 5,
@@ -35,6 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         items: 6,
         nav: true,
       },
-    }
+    },
   });
 }, false);

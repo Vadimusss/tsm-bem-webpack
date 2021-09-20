@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 /* Закрываем ссылки от поисковиков */
-document.addEventListener('DOMContentLoaded', function () {
-  $('.hl').replaceWith(function () {
+document.addEventListener('DOMContentLoaded', () => {
+  $('.hl').replaceWith(() => {
     const href = $(this).data('link') ? `href="${$(this).data('link')}"` : '';
     const tagClass = this.className ? `class="${this.className}"`.replace(' hl', '') : '';
     const title = $(this).text() ? `title="${$(this).text()}"` : '';

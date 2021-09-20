@@ -6,4 +6,3 @@ import './design-category.html';
 import '../fonts/fonts.css';
 
 import '../img/services_fon.png';
-
