@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 325px;
   grid-template-rows: min-content 1fr;
-  grid-template-areas: 'header aside'
-  'products aside';
+  grid-template-areas: 'products aside';
   gap: 50px;
 }
 .shop-category__products-header {
@@ -134,8 +133,7 @@
   .shop-category {
     grid-template-columns: 1fr;
     grid-template-rows: min-content repeat(3, min-content);
-    grid-template-areas: 'header'
-    'products'
+    grid-template-areas: 'products'
     'aside';
   }
   .shop-category__aside {
