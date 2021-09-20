@@ -153,11 +153,13 @@
         </ul>
       </div>
     </section>
-    <section class="page__section shop-product">
+    <section class="page__section">
       <h1 class="header header_level_h1 shop-product__header">
         Кабель для электрода розжига горелок ACV BG 2000-S 537d5000 с наконечником
         <div class="header__underline"></div>
       </h1>
+    </section>
+    <section class="page__section shop-product">
       <div style="background-color: aqua;" class="shop-product__gallery">
       </div>
       <div class="shop-product__properties">
@@ -177,7 +179,8 @@
       <div class="shop-product__order">
         <div class="shop-product__price">13659 руб.</div>
         <div class="shop-product__quantity">
-          <button class="button shop-product__order-quantity-button shop-product__order-quantity-button_type_decrease">-</button>
+          <button
+            class="button shop-product__order-quantity-button shop-product__order-quantity-button_type_decrease">-</button>
           <input type="number" class="shop-product__quantity-input" value="1" min="1">
           <button
             class="button shop-product__order-quantity-button shop-product__order-quantity-button_type_incrase">+</button>
@@ -198,7 +201,37 @@
           <div class="product__card-text">Звоните!</div>
         </a>
       </div>
-      <div style="background-color: teal;" class="shop-product__info"></div>
+      <div class="shop-product__tabs">
+        <div class="shop-product__tabs-list">
+          <div data-tabs-path="description" class="button shop-product__tabs-botton shop-product__tabs-botton_active">
+            Описание
+          </div>
+          <div data-tabs-path="specifications" class="button shop-product__tabs-botton">
+            Характеристики
+          </div>
+          <div data-tabs-path="compatibility" class="button shop-product__tabs-botton">
+            Совместимость
+          </div>
+        </div>
+        <div data-tabs-target="description" class="shop-product__tabs-content shop-product__tabs-content_active">
+          Настенные газовые котлы являются самыми востребованными на современном рынке бытового отопления. Они
+          экономичные и производительные, поэтому обеспечат дом любой площади нужным количеством тепла. Изделия
+          итальянского бренда BAXI характеризуются долговечностью и удобством управления, поэтому успешно реализуются в
+          России уже 15 лет. таба 1
+        </div>
+        <div data-tabs-target="specifications" class="shop-product__tabs-content">
+          Настенные газовые котлы являются самыми востребованными на современном рынке бытового отопления. Они
+          экономичные и производительные, поэтому обеспечат дом любой площади нужным количеством тепла. Изделия
+          итальянского бренда BAXI характеризуются долговечностью и удобством управления, поэтому успешно реализуются в
+          России уже 15 лет. таба 2
+        </div>
+        <div data-tabs-target="compatibility" class="shop-product__tabs-content">
+          Настенные газовые котлы являются самыми востребованными на современном рынке бытового отопления. Они
+          экономичные и производительные, поэтому обеспечат дом любой площади нужным количеством тепла. Изделия
+          итальянского бренда BAXI характеризуются долговечностью и удобством управления, поэтому успешно реализуются в
+          России уже 15 лет. таба 3
+        </div>
+      </div>
     </section>
     <section class="callback page__section page__section_without-padding">
       <div class="callback__call-to-action callback__inner">
