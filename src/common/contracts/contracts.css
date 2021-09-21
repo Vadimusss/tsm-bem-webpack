@@ -115,6 +115,11 @@
 .contracts__callback-button_bg_yellow {
   background-color: #ebb946;
 }
+.contracts__footnote {
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 0 50px;
+}
 @media screen and (max-width:1300px) {
   .contracts__header {
     margin-left: 20px;
@@ -123,6 +128,9 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .contracts__footnote {
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width:986px) {
   .contracts__header {
@@ -130,7 +138,7 @@
   }
   .contracts__cards {
     flex-wrap: wrap;
-    margin: 0 0 -10px 0;
+    margin: 0;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -155,6 +163,9 @@
   }
   .contracts__callback-button {
     margin-left: 10px;
+  }
+  .contracts__footnote {
+    padding: 0 10px;
   }
 }
 @media screen and (max-width:650px) {
@@ -183,5 +194,8 @@
   .contracts__card-price {
     min-width: 0;
     width: 98%;
+  }
+  .contracts__footnote {
+    padding: 0 2px;
   }
 }
