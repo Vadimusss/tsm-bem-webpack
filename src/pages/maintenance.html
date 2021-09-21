@@ -8,7 +8,8 @@
   <meta name="description"
     content="ООО ТСМ-ИНЖИНИРИНГ - Сервисное техническое обслуживание газовых котлов отопления. Официальный сервисный центр Buderus, BAXI, Viessmann, Valliant и др." />
   <meta name="keywords" content="Обслуживание котлов" />
-  <link rel="stylesheet" type="text/css" href="service.css">
+  <script src="maintenance.js"></script>
+  <link rel="stylesheet" type="text/css" href="maintenance.css">
 </head>
 
 <body class="page">
@@ -150,7 +151,7 @@
         </div></span>
       <div class="contracts__cards">
         <div class="card contracts__card">
-          <span class="header contracts__card-header contracts__card-header_bg_blue">Эконом</span>
+          <span class="header contracts__card-header contracts__card-header_bg_blue">Эконом*</span>
           <div class="contracts__card-price">
             <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 5 400
                 ₽</span></span>
@@ -171,7 +172,7 @@
           <button class="button contracts__callback-button contracts__callback-button_bg_blue modal">заказать</button>
         </div>
         <div class="card contracts__card">
-          <span class="header contracts__card-header contracts__card-header_bg_red">Стандарт</span>
+          <span class="header contracts__card-header contracts__card-header_bg_red">Стандарт*</span>
           <div class="contracts__card-price">
             <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 8 400
                 ₽</span></span>
@@ -186,17 +187,17 @@
           <ul class="contracts__card-conditions">
             <li class="contracts__card-conditions-item">Документы в газовую службу</li>
             <li class="contracts__card-conditions-item">Срок прибытия мастера до 24 часов</li>
-            <li class="contracts__card-conditions-item">2 плановых выезда на тех. обслуживание в год*</li>
+            <li class="contracts__card-conditions-item">2 плановых выезда на тех. обслуживание в год**</li>
             <li class="contracts__card-conditions-item">До 4х бесплатных аварийных выездов*</li>
             <li class="contracts__card-conditions-item">Скидка до 10% на запасные части для обслуживаемого
               отопительного оборудования</li>
-            <li class="contracts__card-conditions-item contracts__card-conditions-item_type_annotation">* Для настенных
+            <li class="contracts__card-conditions-item contracts__card-conditions-item_type_annotation">** Для настенных
               котлов 1-35 кВт 1 плановый выезд в год</li>
           </ul>
           <button class="button contracts__callback-button contracts__callback-button_bg_red modal">заказать</button>
         </div>
         <div class="card contracts__card">
-          <span class="header contracts__card-header contracts__card-header_bg_yellow">Премиум</span>
+          <span class="header contracts__card-header contracts__card-header_bg_yellow">Премиум*</span>
           <div class="contracts__card-price">
             <span class="contracts__card-price-item">Настенный 1-35 кВт <span class="contracts__price">- 15 000
                 ₽</span></span>
@@ -212,7 +213,7 @@
             <li class="contracts__card-conditions-item">Документы в газовую службу</li>
             <li class="contracts__card-conditions-item">Срок прибытия мастера до 12 часов</li>
             <li class="contracts__card-conditions-item">2 плановых выезда на тех. обслуживание в год</li>
-            <li class="contracts__card-conditions-item">Количество бесплатных аварийных выездов не ограниченно*</li>
+            <li class="contracts__card-conditions-item">Количество бесплатных аварийных выездов не ограниченно</li>
             <li class="contracts__card-conditions-item">Скидка до 10% на запасные части для обслуживаемого
               отопительного оборудования</li>
             <li class="contracts__card-conditions-item">Обследование всей отопительной системы включено в тех.
@@ -221,6 +222,7 @@
           <button class="button contracts__callback-button contracts__callback-button_bg_yellow modal">заказать</button>
         </div>
       </div>
+      <div class="contracts__footnote">* - Стоимость договора для <a href="#zones">1й зоны</a></div>
     </section>
     <a name="zones"></a>
     <section class="zones page__section">
@@ -228,9 +230,7 @@
         <span class="header zones__header">Стоимость выезда специалиста на карте</span>
         <span class="zones__map-explanation">(кликните на интересующую зону для того чтобы посмотреть цену)</span>
         <div class="zones__live-map">
-          <script type="text/javascript" charset="utf-8" async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0cd4096024309055b1d48e7d0647823821d80d5947240f0fff5b2e5e95e532f1&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
+        </div> 
       </div>
       <div class="zones__prices">
         <span class="header zones__header zones__prices-header">Расценки на обслуживание отопительных котлов*</span>
@@ -253,13 +253,11 @@
               <td class="price__cell zones__prices-amount" colspan="3">2 000 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Диагностика и ремонтные работы второй и последующие
-                часы</td>
+              <td class="price__cell price__cell_type_type-of-work">Диагностика и ремонтные работы второй и последующие часы</td>
               <td class="price__cell zones__prices-amount" colspan="3">1 500 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work" colspan="4">Зона 4 от А108 (Московское большое
-                кольцо) до
+              <td class="price__cell price__cell_type_type-of-work" colspan="4">Зона 4 от А108 (Московское большое кольцо) до
                 границ Московской области
                 выезд&nbspспециалиста&nbsp-&nbsp4000&nbsp₽. Выезд за границы МО - цена договорная.</td>
             </tr>
@@ -271,51 +269,42 @@
               <th class="price__column-header" colspan="2">Стоимость обслуживания котлов</th>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла
-                от&nbsp1&nbspдо&nbsp36&nbspкВт</td>
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла от&nbsp1&nbspдо&nbsp36&nbspкВт</td>
               <td class="price__cell zones__prices-amount">5 400 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла
-                от&nbsp36&nbspдо&nbsp100&nbspкВт</td>
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла от&nbsp36&nbspдо&nbsp100&nbspкВт</td>
               <td class="price__cell zones__prices-amount">8 000 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла
-                от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
               <td class="price__cell zones__prices-amount">12 000 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью
-                до&nbsp100&nbspкВт
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью до&nbsp100&nbspкВт
               </td>
               <td class="price__cell zones__prices-amount">8 000 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью
-                от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
               <td class="price__cell zones__prices-amount">12 000 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью
-                от&nbsp300&nbspкВт
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью от&nbsp300&nbspкВт
               </td>
               <td class="price__cell">Цена договорная</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью
-                до&nbsp100&nbspкВт
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью до&nbsp100&nbspкВт
               </td>
               <td class="price__cell zones__prices-amount">9 000 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью
-                от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
               <td class="price__cell zones__prices-amount">14 000 ₽</td>
             </tr>
             <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью
-                от&nbsp300&nbspкВт
+              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью от&nbsp300&nbspкВт
               </td>
               <td class="price__cell">Цена договорная</td>
             </tr>
@@ -323,8 +312,7 @@
         </table>
       </div>
       <div class="zones__cities">
-        <span class="header header_level_h3 zones__header">Мы работаем в городах:<div class="header__underline"></div>
-        </span>
+        <span class="header header_level_h3 zones__header">Мы работаем в городах:<div class="header__underline"></div></span>
         <span class="zones__cities-list">Котельники, Истра, Климовск, Наро-Фоминск, Солнечногорск, Ступино, Егорьевск,
           Фрязино, Дубна, Лобня, Видное, Воскресенск, Реутов, Долгопрудный, Красногорск, Одинцово, Балашиха, Люберцы,
           Электросталь, Коломна, Жуковский, Ногинск, Домодедово, Щелково, Серпухов, Сергиев Посад, Раменское, Пушкино,
@@ -1567,8 +1555,6 @@
       <input type="hidden" name="af_action" value="29e09fd502d5deabcd1eb1e0c9c2de76" />
     </form>
   </div>
-  <script src="service.js"></script>
-
 </body>
 
 </html>
