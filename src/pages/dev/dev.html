@@ -61,9 +61,12 @@
       <input class="search__input" type="text"></input>
       <button class="botton search__button"></button>
     </div>
-    <a href="" class="page-header__cart cart cart__link">
-      <span class="header cart__header page-header__cart-header">Корзина:</span>
-      <span class="cart__text page-header__cart-text">Вы ничего не выбрали</span>
+    <a href="" class="page-header__cart mini-cart mini-cart__link mini-cart_full">
+      <div class="mini-cart__wrapper">
+        <span class="header mini-cart__header">Корзина:</span>
+        <span class="mini-cart__text">товаров 2 шт.</span>
+        <span class="mini-cart__text">сумма 2000 руб.</span>
+      </div>
     </a>
     <div class="button mobile-service-menu-button page-header__mobile-service-menu-button">
       <span class="mobile-service-menu-button__text">Каталог услуг</span>
@@ -155,84 +158,37 @@
     </section>
     <section class="page__section">
       <h1 class="header header_level_h1 shop-product__header">
-        Кабель для электрода розжига горелок ACV BG 2000-S 537d5000 с наконечником
+        Корзина
         <div class="header__underline"></div>
       </h1>
     </section>
-    <section class="page__section shop-product">
-      <div style="background-color: aqua;" class="shop-product__gallery">
+
+    <section class="cart page__section">
+      <img src="" alt="" class="cart__image">
+      <div class="cart__property">
+        <div class="cart__property-header"></div>
+        <div class="cart__property-value"></div>
       </div>
-      <div class="shop-product__properties">
-        <div class="shop-product__propertiy">
-          <div class="shop-product__property-name">Производитель:</div>
-          <div class="shop-product__property-value">Buderus</div>
-        </div>
-        <div class="shop-product__propertiy">
-          <div class="shop-product__property-name">Наличие:</div>
-          <div class="shop-product__property-value shop-product__property-value_availability">в наличии</div>
-        </div>
-        <div class="shop-product__propertiy">
-          <div class="shop-product__property-name">Артикул:</div>
-          <div class="shop-product__property-value">5678250</div>
-        </div>
+      <div class="cart__property">
+        <div class="cart__property-header"></div>
+        <div class="cart__property-value"></div>
       </div>
-      <div class="shop-product__order">
-        <div class="shop-product__price">13659 руб.</div>
-        <div class="shop-product__quantity">
-          <button
-            class="button shop-product__order-quantity-button shop-product__order-quantity-button_type_decrease">-</button>
-          <input type="number" class="shop-product__quantity-input" value="1" min="1">
-          <button
-            class="button shop-product__order-quantity-button shop-product__order-quantity-button_type_incrase">+</button>
-        </div>
-        <button class="button shop-product__add-to-card">В корзину</button>
+      <div class="cart__property">
+        <div class="cart__property-header"></div>
+        <div class="cart__property-value"></div>
       </div>
-      <div class="shop-product__cards">
-        <a href="/" class="card shop-product__card shop-product__card_type_departure">
-          <div class="shop-product__card-description">Выезд специалиста</div>
-          <div class="product__card-text">от 2000₽</div>
-        </a>
-        <a href="/" class="card shop-product__card shop-product__card_type_replacement">
-          <div class="shop-product__card-description">Работы по замене</div>
-          <div class="product__card-text">от 600₽</div>
-        </a>
-        <a href="/" class="card shop-product__card shop-product__card_type_consultation">
-          <div class="shop-product__card-description">Бесплатная консультация</div>
-          <div class="product__card-text">Звоните!</div>
-        </a>
+      <div class="cart__property">
+        <div class="cart__property-header"></div>
+        <div class="cart__property-value"></div>
       </div>
-      <div class="tabs shop-product__tabs">
-        <div class="tabs__list">
-          <div data-tabs-path="description" class="button tabs__botton tabs__botton_active">
-            Описание
-          </div>
-          <div data-tabs-path="specifications" class="button tabs__botton">
-            Характеристики
-          </div>
-          <div data-tabs-path="compatibility" class="button tabs__botton">
-            Совместимость
-          </div>
-        </div>
-        <div data-tabs-target="description" class="tabs__content tabs__content_active">
-          Настенные газовые котлы являются самыми востребованными на современном рынке бытового отопления. Они
-          экономичные и производительные, поэтому обеспечат дом любой площади нужным количеством тепла. Изделия
-          итальянского бренда BAXI характеризуются долговечностью и удобством управления, поэтому успешно реализуются в
-          России уже 15 лет. таба 1
-        </div>
-        <div data-tabs-target="specifications" class="tabs__content">
-          Настенные газовые котлы являются самыми востребованными на современном рынке бытового отопления. Они
-          экономичные и производительные, поэтому обеспечат дом любой площади нужным количеством тепла. Изделия
-          итальянского бренда BAXI характеризуются долговечностью и удобством управления, поэтому успешно реализуются в
-          России уже 15 лет. таба 2
-        </div>
-        <div data-tabs-target="compatibility" class="tabs__content">
-          Настенные газовые котлы являются самыми востребованными на современном рынке бытового отопления. Они
-          экономичные и производительные, поэтому обеспечат дом любой площади нужным количеством тепла. Изделия
-          итальянского бренда BAXI характеризуются долговечностью и удобством управления, поэтому успешно реализуются в
-          России уже 15 лет. таба 3
-        </div>
+      <div class="cart__property">
+        <div class="cart__property-header"></div>
+        <div class="cart__property-value"></div>
       </div>
+      <div class="cart__reset"></div>
     </section>
+
+    <section class="order page__section"></section>
     <section class="callback page__section page__section_without-padding">
       <div class="callback__call-to-action callback__inner">
         <span class="header">Остались вопросы?</span>
@@ -258,8 +214,6 @@
         <input type="hidden" name="af_action" value="10e3c1f6f6b366a12f1a56bbe9172936" />
       </form>
     </section>
-
-
   </main>
   <footer class="footer page__footer">
     <div class="footer__menu-block">

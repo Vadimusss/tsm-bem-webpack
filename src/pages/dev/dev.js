@@ -9,3 +9,5 @@ import '../../shop/breadcrumbs/breadcrumbs.css';
 
 import './dev.html';
 import '../../fonts/shop-fonts.css';
+
+import '../../img/cart__dev-img.png';
