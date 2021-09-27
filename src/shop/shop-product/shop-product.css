@@ -45,28 +45,6 @@
   font-size: 25px;
   font-weight: 400;
 }
-.shop-product__quantity {
-  display: flex;
-  flex: 0 0 30px;
-  column-gap: 7px;
-  width: 154px;
-}
-.shop-product__quantity-input {
-  width: 60px;
-  border: 1px solid #006eae;
-  border-radius: 5px;
-  text-align: center;
-}
-.shop-product__quantity-input::-webkit-outer-spin-button, .shop-product__quantity-input::-webkit-inner-spin-button {
-  display: none;
-}
-.shop-product__order-quantity-button {
-  flex: 0 0 40px;
-  border-radius: 5px;
-  background-color: #3d98ce;
-  font-size: 20px;
-  font-weight: 600;
-}
 .shop-product__add-to-card {
   flex: 0 0 55px;
   width: 200px;
@@ -222,8 +200,6 @@
     'quantity'
     'button';
   }
-}
-@media screen and (max-width:575px) {
 }
 @media screen and (max-width:460px) {
   .shop-product {

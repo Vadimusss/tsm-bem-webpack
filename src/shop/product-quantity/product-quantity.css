@@ -1,0 +1,22 @@
+.product-quantity {
+  display: flex;
+  height: 30px;
+  column-gap: 7px;
+  width: 160px;
+}
+.product-quantity__input {
+  width: 60px;
+  border: 1px solid #006eae;
+  border-radius: 5px;
+  text-align: center;
+}
+.product-quantity__input::-webkit-outer-spin-button, .product-quantity__input::-webkit-inner-spin-button {
+  display: none;
+}
+.product-quantity__button {
+  flex: 0 0 40px;
+  border-radius: 5px;
+  background-color: #3d98ce;
+  font-size: 20px;
+  font-weight: 600;
+}
