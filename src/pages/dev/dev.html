@@ -156,39 +156,138 @@
         </ul>
       </div>
     </section>
-    <section class="page__section">
-      <h1 class="header header_level_h1 shop-product__header">
+    <section class="cart page__section">
+      <h1 class="header header_level_h1 cart__header">
         Корзина
         <div class="header__underline"></div>
       </h1>
-    </section>
+      <div class="cart__item">
+        <img src="../img/cart__dev-img.png" alt="" class="cart__image">
 
-    <section class="cart page__section">
-      <img src="" alt="" class="cart__image">
-      <div class="cart__property">
-        <div class="cart__property-header"></div>
-        <div class="cart__property-value"></div>
-      </div>
-      <div class="cart__property">
-        <div class="cart__property-header"></div>
-        <div class="cart__property-value"></div>
-      </div>
-      <div class="cart__property">
-        <div class="cart__property-header"></div>
-        <div class="cart__property-value"></div>
-      </div>
-      <div class="cart__property">
-        <div class="cart__property-header"></div>
-        <div class="cart__property-value"></div>
-      </div>
-      <div class="cart__property">
-        <div class="cart__property-header"></div>
-        <div class="cart__property-value"></div>
-      </div>
-      <div class="cart__reset"></div>
-    </section>
+        <div class="cart__property cart__property_first-property">
+          <div class="cart__product-name">Logalux ST 150-ST 300</div>
+          <div class="cart__article">Артикул: 5678250</div>
+        </div>
 
-    <section class="order page__section"></section>
+        <div class="cart__property cart__quantity">
+          <div class="cart__property-name">Количество</div>
+          <div class="product-quantity">
+            <button class="button product-quantity__button product-quantity__button_type_decrease">-</button>
+            <input type="number" class="product-quantity__input" value="1" min="1">
+            <button class="button product-quantity__button product-quantity__button_type_incrase">+</button>
+          </div>
+        </div>
+
+
+        <div class="cart__property">
+          <div class="cart__property-name">Вес</div>
+          <div class="cart__property-value">30 кг.</div>
+        </div>
+        <div class="cart__property">
+          <div class="cart__property-name">Цена</div>
+          <div class="cart__property-value">32600 руб.</div>
+        </div>
+        <div class="cart__property">
+          <div class="cart__property-name">Стоимость</div>
+          <div class="cart__property-value">65200 руб.</div>
+        </div>
+        <form method="post" class="cart__reset-form">
+          <input type="hidden" name="key">
+          <button class="button cart__reset-button" type="submit" name="ms2_action"></button>
+        </form>
+      </div>
+    </section>
+    <section class="page__section">
+      <div class="header header_level_h2 order__header">
+        Оформление заказа
+        <div class="header__underline"></div>
+      </div>
+      <form class="ms2_form order form" id="msOrder" method="post">
+        <div class="order__block">
+          <div class="order__block-header">Данные получателя</div>
+          <div class="order__form-item order__form-item_type_credential">
+            <label class="form__label" for="email">Email<span class="order__required">*</span>
+            </label>
+            <input type="text" class="form__input" id="email" placeholder="Email" name="email" value="">
+          </div>
+          <div class="order__form-item order__form-item_type_credential">
+            <label class="form__label" for="receiver">Получатель</label>
+            <input type="text" class="form__input" id="receiver" placeholder="Получатель" name="receiver" value="">
+          </div>
+          <div class="order__form-item order__form-item_type_credential">
+            <label class="form__label" for="phone">Телефон</label>
+            <input type="text" class="form__input" id="phone" placeholder="Телефон" name="phone" value="">
+          </div>
+          <div class="order__form-item order__form-item_type_comment">
+            <label class="form__label" for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" placeholder="Комментарий"
+              class="form__input order__textarea"></textarea>
+          </div>
+        </div>
+        <div id="payments" class="order__block">
+          <div class="order__block-header">Способы оплаты</div>
+          <label class="form__label form__label_type_radio-button">
+            <input type="radio" name="payment" id="payment_1" value="1" checked class="form__radio-button">
+            Оплата наличными</label>
+          <label class="form__label form__label_type_radio-button">
+            <input type="radio" name="payment" id="payment_2" value="2" class="form__radio-button">
+            Банковской картой</label>
+        </div>
+        <div id="deliveries" class="order__block">
+          <div class="order__block-header">Варианты получения</div>
+          <label class="form__label form__label_type_radio-button">
+            <input type="radio" name="deliveries" value="1" id="deliveries_1" checked="" class="form__radio-button">
+            Самовывоз</label>
+          <label class="form__label form__label_type_radio-button">
+            <input type="radio" name="deliveries" value="2" id="deliveries_2" class="form__radio-button">
+            Доставка мастером</label>
+          <div data-id="deliveries_1" class="form__radio-button-description">Доставка мастером осуществляется
+            бесплатно при заказе работ в нашей организации. После оформления заказа оператор свяжется с вами для
+            согласования перечня работ и даты выезда.</div>
+        </div>
+        <!-- <div class="order__block">
+          <div class="order__block-header">Адрес доставки</div>
+          <div class="order__form-item order__form-item_type_address">
+            <label for="" class="form__label" for="index">Почтовый индекс</label>
+            <input type="text" class="form__input" id="index" placeholder="Почтовый индекс" name="index" value="">
+          </div>
+          <div class="order__form-item order__form-item_type_address">
+            <label for="" class="form__label" for="region">Область</label>
+            <input type="text" class="form__input" id="region" placeholder="Область" name="region" value="">
+          </div>
+          <div class="order__form-item order__form-item_type_address">
+            <label for="" class="form__label" for="city">Город</label>
+            <input type="text" class="form__input" id="city" placeholder="Город" name="city" value="">
+          </div>
+          <div class="order__fields-group">
+            <div class="order__form-item order__form-item_type_street">
+              <label for="" class="form__label" for="street">Улица</label>
+              <input type="text" id="street" placeholder="Улица" name="street" value="" class="form__input">
+            </div>
+            <div class="order__form-item order__form-item_type_building">
+              <label for="" class="form__label" for="city">Дом</label>
+              <input type="text" id="building" placeholder="Дом" name="building" value="" class="form__input">
+            </div>
+            <div class="order__form-item order__form-item_type_room">
+              <label for="" class="form__label" for="city">Помещение</label>
+              <input type="text" id="room" placeholder="Пом." name="room" value="" class="form__input">
+            </div>
+          </div>
+        </div> -->
+        <div class="order__block">
+          <button type="button" name="ms2_action" value="order/clean" class="button order__button order__reset-button">
+            Очистить форму</button>
+        </div>
+        <div class="order__block order__total">
+          <div class="header order__total-header">Итого:</div>
+          <div class="order__total-value">Доставка: 0 руб.</div>
+          <div class="order__total-value">Общая стоимость: 1000 руб.</div>
+          <button type="submit" name="ms2_action" value="order/submit"
+            class="button  order__button order__get-order-button">
+            Заказать</button>
+        </div>
+      </form>
+    </section>
     <section class="callback page__section page__section_without-padding">
       <div class="callback__call-to-action callback__inner">
         <span class="header">Остались вопросы?</span>

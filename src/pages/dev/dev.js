@@ -6,6 +6,7 @@ import '../../common/services/services.css';
 import '../../common/callback/callback.css';
 import '../../common/breadcrumbs/breadcrumbs.css';
 import '../../shop/breadcrumbs/breadcrumbs.css';
+import '../../shop/cart/cart.css';
 
 import './dev.html';
 import '../../fonts/shop-fonts.css';
