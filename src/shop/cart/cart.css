@@ -3,9 +3,13 @@
   row-gap: 10px;
   flex-direction: column;
 }
+.cart__header {
+  margin-bottom: 10px;
+}
 .cart__item {
   display: flex;
-  column-gap: 4%;
+  column-gap: 20px;
+  justify-content: space-between;
   padding: 20px 30px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -16,9 +20,9 @@
   flex-direction: column;
 }
 .cart__property_first-property {
+  flex: 0 1 500px;
   row-gap: 0;
   justify-content: center;
-  margin-right: auto;
 }
 .cart__property-name {
   font-size: 15px;
