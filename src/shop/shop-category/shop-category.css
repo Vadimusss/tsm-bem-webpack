@@ -132,7 +132,7 @@
 @media screen and (max-width:1300px) {
   .shop-category {
     grid-template-columns: 1fr;
-    grid-template-rows: min-content repeat(3, min-content);
+    grid-template-rows: repeat(2, min-content);
     grid-template-areas: 'products'
     'aside';
   }
