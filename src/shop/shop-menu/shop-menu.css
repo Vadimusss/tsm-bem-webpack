@@ -7,7 +7,11 @@
 }
 .shop-menu__category {
   position: relative;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
   flex: 0 0 auto;
+  height: 37px;
   padding: 0 46px 0 16px;
   cursor: pointer;
   border-radius: 5px;
@@ -15,14 +19,12 @@
   color: #1b313e;
   text-decoration: none;
   text-transform: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
-  line-height: 35px;
-  z-index: 1000;
 }
 .shop-menu__category::after {
   position: absolute;
+  top: 3px;
   right: 20px;
   content: '+';
   color: #3d98ce;
@@ -39,8 +41,9 @@
 }
 .shop-menu__subcategories-list {
   position: absolute;
-  top: 38px;
+  top: 40px;
   left: 0;
+  display: none;
   box-sizing: border-box;
   width: 100%;
   padding: 5px 10px;
@@ -48,27 +51,32 @@
   background-color: #ffffff;
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
   line-height: 24px;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
 }
 .shop-menu__subcategories-list_visible {
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }
 .shop-menu__subcategories-list_visible:hover {
   cursor: auto;
-  opacity: 1;
 }
 .shop-menu__link {
   color: #3d98ce;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
 }
 @media screen and (max-width:460px) {
   .shop-menu {
     row-gap: 5px;
     flex-direction: column;
+  }
+  .shop-menu__category {
+    height: 38px;
+    font-size: 20px;
+  }
+  .shop-menu__subcategories-list {
+    line-height: 28px;
+  }
+  .shop-menu__link {
+    font-size: 18px;
   }
 }
