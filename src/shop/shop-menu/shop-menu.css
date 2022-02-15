@@ -31,6 +31,12 @@
   font-size: 23px;
   font-weight: 600;
 }
+.shop-menu__category_direct-link::after {
+  content: '>>';
+  top: 9px;
+  right: 16px;
+  font-size: 19px;
+}
 .shop-menu__category_open {
   z-index: 2000;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -41,6 +47,9 @@
 }
 .shop-menu__subcategories-list {
   position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 6px;
   top: 40px;
   left: 0;
   display: none;
@@ -50,19 +59,22 @@
   border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.15);
-  line-height: 24px;
+  line-height: 20px;
 }
 .shop-menu__subcategories-list_visible {
-  display: block;
+  display: flex;
 }
 .shop-menu__subcategories-list_visible:hover {
   cursor: auto;
 }
 .shop-menu__link {
-  color: #3d98ce;
+  color: black;
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;
+}
+.shop-menu__link:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width:460px) {
   .shop-menu {
