@@ -1,8 +1,10 @@
 .shop-category {
   display: grid;
   grid-template-columns: 1fr 325px;
-  grid-template-rows: min-content 1fr;
-  grid-template-areas: 'products aside';
+  grid-template-rows: repeat(3, min-content);
+  grid-template-areas: 'products aside'
+  'pagination aside'
+  'content content';
   gap: 50px;
 }
 .shop-category__products-header {
@@ -29,6 +31,7 @@
   align-self: center;
   grid-column: 1 / -1;
   color: #007db6;
+  text-align: center;
   text-decoration: none;
   font-size: 20px;
 }
@@ -55,6 +58,9 @@
 .shop-category__property-name {
   font-weight: bold;
 }
+.shop-category__property-value_color_green {
+  color: #4c8700;
+}
 .shop-category__card-button {
   align-self: center;
   width: 100%;
@@ -62,6 +68,25 @@
   min-height: 36px;
   background-color: #006eae;
   font-size: 13px;
+}
+.shop-category__pagination {
+  display: flex;
+  grid-area: pagination;
+  column-gap: 5px;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.shop-category__pagination-link {
+  color: #687781;
+}
+.shop-category__pagination-link_active {
+  font-weight: 600;
+}
+.shop-category__content {
+  grid-area: content;
+  margin-top: -30px;
 }
 .shop-category__aside {
   display: grid;
@@ -132,9 +157,11 @@
 @media screen and (max-width:1300px) {
   .shop-category {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, min-content);
+    grid-template-rows: repeat(4, min-content);
     grid-template-areas: 'products'
-    'aside';
+    'pagination'
+    'aside'
+    'content';
   }
   .shop-category__aside {
     grid-template-columns: 1fr 1fr;
