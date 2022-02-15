@@ -13,88 +13,86 @@
 </head>
 
 <body class="page">
-  <header class="page-header page__header">
+  <header class="page__header page-header">
     <div class="logo page-header__logo">
-      <span data-link="/" class="button__link hl"></span>
+      <a href="" class="logo__link">
+      </a>
     </div>
-    <div class="company-name page-header__company-name">
-      <div class="company-name__name">ТСМ-ИНЖИНИРИНГ</div>
-      <div class="company-name__slogan">Сервисная и аварийная службы работают в штатном режиме!</div>
-    </div>
-    <div class="office-phone page-header__office-phone">
-      <div class="office-phone__location">Москва</div>
-      <div class="office-phone__number">
-        <a class="office-phone__link" href="tel:+74951085821">+7 (495) 108-58-21</a>
+    <div class="page-header__requisites requisites">
+      <div class="requisites__requisite">
+        <span class="requisites__requisite-text">Москва:</span>
+        <a href="tel:+74951085821" class="requisites__requisite-link">+7 (495) 108-58-21</a>
       </div>
-      <a href="#callback-modal" rel="modal:open" class="office-phone__callback">Заказать обратный звонок</a>
-    </div>
-    <div class="service-phone page-header__service-phone">
-      <div class="service-phone__number">
-        Сервисная служба: <a class="service-phone__link" href="tel:+74952223632">+7&nbsp;(495)&nbsp;222‑36‑32</a>
+      <div class="requisites__requisite">
+        <span class="requisites__requisite-text">Сервисная служба:</span>
+        <a href="tel:+4952223632" class="requisites__requisite-link">+7 (495) 222‑36‑32</a>
       </div>
-      <a href="mailto:info@tsm-company.ru" class="service-phone__e-mail">info@tsm-company.ru</a>
+      <div class="requisites__requisite">
+        <span class="requisites__requisite-text">E-mail:</span>
+        <a href="mailto:info@tsm-company.ru" class="requisites__requisite-link">info@tsm-company.ru</a>
+      </div>
     </div>
-    <nav class="page-header__menu page-header__main-menu">
-      <ul class="menu main-menu">
-        <li class="main-menu__item">
-          <span data-link="/" class="main-menu__link hl">Главная</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/o-nas.html" class="main-menu__link hl">О компании</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/primery-rabot.html" class="main-menu__link hl">Примеры работ</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/sro-i-sertifikaty.html" class="main-menu__link hl">Сертификаты</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/kontakty.html" class="main-menu__link hl">Контакты</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/nashi-ceny.html" class="main-menu__link hl">Наши цены</span>
-        </li>
-      </ul>
-    </nav>
-    <div class="mobile-main-menu-button page-header__mobile-main-menu-button">
+    <botton class="button mobile-main-menu-button">
       <div class="mobile-main-menu-button__line"></div>
       <div class="mobile-main-menu-button__line"></div>
       <div class="mobile-main-menu-button__line"></div>
+    </botton>
+    <ul class="menu page-header__main-menu main-menu">
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Главная">Главная</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="О компании">О компании</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Примеры работ">Примеры работ</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Сертификаты">Сертификаты</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Контакты">Контакты</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Наши цены">Наши цены</a>
+      </li>
+    </ul>
+    <div class="page-header__search search">
+      <input class="search__input" type="text"></input>
+      <button class="botton search__button"></button>
     </div>
+    <a href="" class="page-header__cart mini-cart mini-cart__link mini-cart_full">
+      <div class="mini-cart__wrapper">
+        <span class="header mini-cart__header">Корзина:</span>
+        <span class="mini-cart__text">товаров 2 шт.</span>
+        <span class="mini-cart__text">сумма 2000 руб.</span>
+      </div>
+    </a>
     <div class="button mobile-service-menu-button page-header__mobile-service-menu-button">
       <span class="mobile-service-menu-button__text">Каталог услуг</span>
     </div>
-    <div class="page-header__menu  page-header__service-menu">
+    <nav class="page-header__service-menu">
       <ul class="menu service-menu">
         <li class="service-menu__item">
-          <span data-link="/catalog/1022/" class="service-menu__link button__link hl">Магазин оборудования</span>
+          <a class="service-menu__link" href="/" alt="Магазин оборудования">Магазин оборудования</a>
         </li>
         <li class="service-menu__item">
-          <span data-link="/proektirovanie-inzhenernyh-sistem.html"
-            class="service-menu__link button__link hl">Проектирование</span>
+          <a class="service-menu__link" href="/" alt="Проектирование">Проектирование</a>
         </li>
         <li class="service-menu__item">
-          <span data-link="/montazh-inzhenernyh-sistem.html" class="service-menu__link button__link hl">Монтаж</span>
+          <a class="service-menu__link" href="/" alt="Монтаж">Монтаж</a>
         </li>
         <li class="service-menu__item">
-          <a href="/obsluzhivanie-gazovykh-kotlov.html" class="service-menu__link button__link">Обслуживание котлов</a>
+          <a class="service-menu__link" href="/" alt="Обслуживание котлов">Обслуживание котлов</a>
         </li>
         <li class="service-menu__item">
-          <a href="/remont-gazovyh-kotlov.html" class="service-menu__link button__link">Ремонт котлов</a>
+          <a class="service-menu__link" href="/" alt="Ремонт котлов">Ремонт котлов</a>
         </li>
         <li class="service-menu__item">
-          <span data-link="/stati/puskonaladochnye-raboty.html"
-            class="service-menu__link button__link hl">Пусконаладочные
-            работы</span>
+          <a class="service-menu__link" href="/" alt="Пусконаладочные работы">Пусконаладочные работы</a>
         </li>
       </ul>
-    </div>
-    <div class="page-header__breadcrumbs">
-      <ul class="menu breadcrumbs">
-        <li class="breadcrumbs__item breadcrumbs__item_type_home">Главная</li>
-        <li class="breadcrumbs__item">Обслуживание газовых котлов в Московской области по выгодной цене</li>
-      </ul>
-    </div>
+    </nav>
   </header>
 
   <main class="page__main">
@@ -314,89 +312,63 @@
         <span class="header zones__header">Стоимость выезда специалиста на карте</span>
         <span class="zones__map-explanation">(кликните на интересующую зону для того чтобы посмотреть цену)</span>
         <div class="zones__live-map">
-        </div> 
+        </div>
       </div>
-      <div class="zones__prices">
-        <span class="header zones__header zones__prices-header">Расценки на обслуживание отопительных котлов*</span>
-        <table class="price__table zones__prices-table zones__prices-table_position_first">
-          <tbody>
-            <tr>
-              <th class="price__column-header">Тип работ</th>
-              <th class="price__column-header">Зона 1</th>
-              <th class="price__column-header">Зона 2</th>
-              <th class="price__column-header">Зона 3</th>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work zones__prices-table-cell">Выезд специалиста</td>
-              <td class="price__cell zones__prices-amount">2 000 ₽</td>
-              <td class="price__cell zones__prices-amount">2 500 ₽</td>
-              <td class="price__cell zones__prices-amount">3 500 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Диагностика и ремонтные работы первый час</td>
-              <td class="price__cell zones__prices-amount" colspan="3">2 000 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Диагностика и ремонтные работы второй и последующие часы</td>
-              <td class="price__cell zones__prices-amount" colspan="3">1 500 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work" colspan="4">Зона 4 от А108 (Московское большое кольцо) до
-                границ Московской области
-                выезд&nbspспециалиста&nbsp-&nbsp4000&nbsp₽. Выезд за границы МО - цена договорная.</td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="price__table zones__prices-table">
-          <tbody>
-            <tr>
-              <th class="price__column-header" colspan="2">Стоимость обслуживания котлов</th>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла от&nbsp1&nbspдо&nbsp36&nbspкВт</td>
-              <td class="price__cell zones__prices-amount">5 400 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла от&nbsp36&nbspдо&nbsp100&nbspкВт</td>
-              <td class="price__cell zones__prices-amount">8 000 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО настенного котла от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
-              <td class="price__cell zones__prices-amount">12 000 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью до&nbsp100&nbspкВт
-              </td>
-              <td class="price__cell zones__prices-amount">8 000 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
-              <td class="price__cell zones__prices-amount">12 000 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО газового напольного котла мощностью от&nbsp300&nbspкВт
-              </td>
-              <td class="price__cell">Цена договорная</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью до&nbsp100&nbspкВт
-              </td>
-              <td class="price__cell zones__prices-amount">9 000 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью от&nbsp100&nbspдо&nbsp300&nbspкВт</td>
-              <td class="price__cell zones__prices-amount">14 000 ₽</td>
-            </tr>
-            <tr>
-              <td class="price__cell price__cell_type_type-of-work">Разовое ТО дизельного напольного котла мощностью от&nbsp300&nbspкВт
-              </td>
-              <td class="price__cell">Цена договорная</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="zones__info">
+        <div>
+          <span class="header zones__header zones__price-header">Расценки на обслуживание отопительных котлов*</span>
+          <table class="price__table zones__price-table">
+            <tbody>
+              <tr>
+                <th class="price__column-header">Тип работ</th>
+                <th class="price__column-header">Зона 1</th>
+                <th class="price__column-header">Зона 2</th>
+                <th class="price__column-header">Зона 3</th>
+              </tr>
+              <tr>
+                <td class="price__cell price__cell_type_type-of-work">Выезд специалиста</td>
+                <td class="price__cell zones__price-amount">2 000 ₽</td>
+                <td class="price__cell zones__price-amount">2 500 ₽</td>
+                <td class="price__cell zones__price-amount">3 500 ₽</td>
+              </tr>
+              <tr>
+                <td class="price__cell price__cell_type_type-of-work">Диагностика и ремонтные работы первый час</td>
+                <td class="price__cell zones__price-amount" colspan="3">2 000 ₽</td>
+              </tr>
+              <tr>
+                <td class="price__cell price__cell_type_type-of-work">Диагностика и ремонтные работы второй и
+                  последующие
+                  часы</td>
+                <td class="price__cell zones__price-amount" colspan="3">1 500 ₽</td>
+              </tr>
+              <tr>
+                <td class="price__cell price__cell_type_type-of-work" colspan="4">Зона 4 от А108 (Московское большое
+                  кольцо) до
+                  границ Московской области
+                  выезд&nbspспециалиста&nbsp-&nbsp4000&nbsp₽. Выезд за границы МО - цена договорная.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="zones__agreements">
+          <span class="header zones__header zones__agreements-header">Соглашения с АО "Мособлгаз"</span>
+          <a href="/files/exemples/Соглашение АО Мособлгаз Восток.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf zones__document-exemple-link">Соглашение
+            с АО "Мособлгаз" <span class="zones__agreements-branch">филиал </span>Восток</a>
+          <a href="/files/exemples/Соглашение АО Мособлгаз Запад.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf zones__document-exemple-link">Соглашение
+            с АО "Мособлгаз" <span class="zones__agreements-branch">филиал </span>Запад</a>
+          <a href="/files/exemples/Соглашение АО Мособлгаз Север.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf zones__document-exemple-link">Соглашение
+            с АО "Мособлгаз" <span class="zones__agreements-branch">филиал </span>Север</a>
+          <a href="/files/exemples/Соглашение АО Мособлгаз Северо-Запад.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf zones__document-exemple-link">Соглашение
+            с АО "Мособлгаз" <span class="zones__agreements-branch">филиал </span>Северо-Запад</a>
+          <a href="/files/exemples/Соглашение АО Мособлгаз Юг.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf zones__document-exemple-link">Соглашение
+            с АО "Мособлгаз" <span class="zones__agreements-branch">филиал </span>Юг</a>
+          <a href="/files/exemples/Соглашение АО Мособлгаз Юго-Восток.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf zones__document-exemple-link">Соглашение
+            с АО "Мособлгаз" <span class="zones__agreements-branch">филиал </span>Юго-Восток</a>
+          </div>
       </div>
       <div class="zones__cities">
-        <span class="header header_level_h3 zones__header">Мы работаем в городах:<div class="header__underline"></div></span>
+        <span class="header header_level_h3 zones__header">Мы работаем в городах:<div class="header__underline"></div>
+        </span>
         <span class="zones__cities-list">Котельники, Истра, Климовск, Наро-Фоминск, Солнечногорск, Ступино, Егорьевск,
           Фрязино, Дубна, Лобня, Видное, Воскресенск, Реутов, Долгопрудный, Красногорск, Одинцово, Балашиха, Люберцы,
           Электросталь, Коломна, Жуковский, Ногинск, Домодедово, Щелково, Серпухов, Сергиев Посад, Раменское, Пушкино,
@@ -422,23 +394,23 @@
       </div>
       <div class="documents__inner documents__exemples">
         <span class="header documents__subheader documents__exemples-header">Примеры документов*</span>
-        <a href="/files/exemples/Договор на сервисное обслуживание Эконом.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Договор на сервисное обслуживание Эконом.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Договор на сервисное обслуживание Эконом">Договор эконом</a>
-        <a href="/files/exemples/Договор на сервисное обслуживание Стандарт.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Договор на сервисное обслуживание Стандарт.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Договор на сервисное обслуживание Стандарт">Договор стандарт</a>
-        <a href="/files/exemples/Договор на сервисное обслуживание Премиум.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Договор на сервисное обслуживание Премиум.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Договор на сервисное обслуживание Премиум">Договор премиум</a>
-        <a href="/files/exemples/Соглашение с Мособлгаз.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Соглашение с Мособлгаз.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Соглашение об осуществлении аварийно-диспетчерского обеспечения внутридомового и (или) внутриквартирного газового оборудования">Соглашение</a>
-        <a href="/files/exemples/Выписка СРО.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Выписка СРО.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Выписка из реестра членов саморегулируемой организации">Выписка
           СРО</a>
-        <a href="/files/exemples/Акт разграничения.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Акт разграничения.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Акт разграничения сфер ответственности по обслуживанию газового оборудования с АО Мособлгаз">Акт
           разграничения</a>
-        <a href="/files/exemples/Протокол обучения.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Протокол обучения.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Протокол обучения сотрудников">Протокол обучения</a>
-        <a href="/files/exemples/Удостоверения сотрудников.pdf" class="button documents__exemples-link"
+        <a href="/files/exemples/Удостоверения сотрудников.pdf" class="button button__document-exemple-link button__document-exemple-link_type_pdf"
           title="Сканы удостоверений сотрудников">Удостоверения</a>
       </div>
       <span class="documents__annotation">* документы для ознакомления. Обращайтесь в сервисный отдел нашей компании по
@@ -1576,51 +1548,47 @@
     </section>
   </main>
 
-  <footer class="footer page__footer">
-    <div class="footer__company-info">
-      <div class="office-phone footer__office-phone">
-        <div class="office-phone__location">Москва</div>
-        <div class="office-phone__number">
-          <a class="office-phone__link" href="tel:+74951085821">+7 (495) 108-58-21</a>
-        </div>
-        <a href="#callback-modal" rel="modal:open" class="office-phone__callback">Заказать обратный звонок</a>
-      </div>
-      <div class="service-phone footer__service-phone">
-        <div class="service-phone__number">
-          Сервисная служба: <a class="service-phone__link"
-            href="tel:+74952223632">+7&nbsp;(495)&nbsp;222&#8209;36&#8209;32</a>
-        </div>
-        <a href="mailto:info@tsm-company.ru" class="service-phone__e-mail">info@tsm-company.ru</a>
-      </div>
-      <div class="logo footer__logo">
-        <span data-link="/" class="button__link hl"></span>
-      </div>
-      <div class="company-name footer__company-name">
-        <p class="company-name__name company-name__name_size_small">ТСМ-ИНЖИНИРИНГ</p>
-      </div>
-    </div>
+  <footer class="footer page__footer footer_bg_grey">
     <div class="footer__menu-block">
       <div class="footer__menu">
-        <p class="footer__menu-header">Услуги</p>
+        <div class="footer__menu-header">Услуги</div>
         <ul class="menu">
           <li><span data-link="/proektirovanie-inzhenernyh-sistem.html"
               class="footer__menu-item hl">Проектирование</span></li>
-          <li><span data-link="/montazh-inzhenernyh-sistem.html" class="footer__menu-item hl">Монтаж</span></li>
-          <li><span data-link="/stati/puskonaladochnye-raboty.html" class="footer__menu-item hl">Пусконаладка</span>
+          <li><span data-link="/montazh-inzhenernyh-sistem.html" class="footer__menu-item hl">Монтаж</span>
           </li>
-          <li><span data-link="/promka/inzhenernoe-obespechenie-zdanii-i-soruzhenii.html"
-              class="footer__menu-item hl">Промка</span></li>
+          <li><a href="/stati/puskonaladochnye-raboty.html" class="footer__menu-item">Пусконаладка</a></li>
+          <li><a href="/promka/inzhenernoe-obespechenie-zdanii-i-soruzhenii.html" class="footer__menu-item">Промка</a>
+          </li>
         </ul>
       </div>
       <div class="footer__menu">
-        <p class="footer__menu-header">Информация</p>
+        <div class="footer__menu-header">Информация</div>
         <ul class="menu">
           <li><span data-link="/primery-rabot.html" class="footer__menu-item hl">Примеры работ</span></li>
           <li><span data-link="/sro-i-sertifikaty.html" class="footer__menu-item hl">Сертификаты</span></li>
           <li><span data-link="/nashi-ceny.html" class="footer__menu-item hl">Прайс</span></li>
+          <li><span data-link="/nashi-ceny.html" class="footer__menu-item hl">Статьи</span></li>
           <li><span data-link="/kontakty.html" class="footer__menu-item hl">Контакты</span></li>
         </ul>
       </div>
+    </div>
+    <div class="footer__company-info">
+      <div class="footer__requisites requisites">
+        <div class="requisites__requisite footer__requisite">
+          <span class="requisites__requisite-text">Москва:</span>
+          <a href="tel:+74951085821" class="requisites__requisite-link">+7 (495) 108-58-21</a>
+        </div>
+        <div class="requisites__requisite footer__requisite">
+          <span class="requisites__requisite-text">Сервисная служба:</span>
+          <a href="tel:+4952223632" class="requisites__requisite-link">+7 (495) 222‑36‑32</a>
+        </div>
+        <div class="requisites__requisite footer__requisite">
+          <span class="requisites__requisite-text">E-mail:</span>
+          <a href="mailto:info@tsm-company.ru" class="requisites__requisite-link">info@tsm-company.ru</a>
+        </div>
+      </div>
+      <span class="company-name footer__company-name">© 2021 ТСМ-ИНЖИНИРИНГ</span>
     </div>
     </div>
   </footer>
