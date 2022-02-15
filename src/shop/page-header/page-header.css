@@ -9,6 +9,7 @@
   column-gap: 60px;
   row-gap: 0;
   box-shadow: 0 4px 50px rgb(0 0 0 / 15%);
+  /* font-family: 'MuseoSansCyrl', sans-serif; */
 }
 .page-header__logo {
   grid-area: logo;
@@ -21,7 +22,7 @@
 .page-header__main-menu {
   z-index: 2000;
   grid-area: main-menu;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   padding: 0;
 }
 .page-header__requisites {
@@ -30,7 +31,8 @@
 }
 .page-header__search {
   grid-area: search-field;
-  margin-bottom: 29px;
+  margin-top: 6px;
+  margin-bottom: 23px;
 }
 .page-header__cart {
   grid-area: cart;
