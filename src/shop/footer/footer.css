@@ -2,6 +2,10 @@
   column-gap: 0;
   row-gap: 0;
   background-color: #ffffff;
+  font-family: 'MuseoSansCyrl', sans-serif;
+}
+.footer_bg_grey {
+  background-color: #f4f4f4;
 }
 .footer__company-info {
   align-items: flex-end;
