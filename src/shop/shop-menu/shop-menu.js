@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 document.addEventListener('DOMContentLoaded', () => {
-  const categoriesBlocks = document.querySelectorAll('.shop-menu__category');
+  const categoriesBlocks = document.querySelectorAll('div.shop-menu__category');
 
   if (categoriesBlocks) {
     categoriesBlocks.forEach(block => block.addEventListener('click', ({ target }) => {
