@@ -1,48 +1,55 @@
 .zones {
   display: grid;
-  grid-template-rows: min-content min-content;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "map prices" "cities cities";
+  grid-template-rows: min-content min-content;
+  grid-template-areas: 'map info' 'cities cities';
+  column-gap: 30px;
 }
 .zones__map {
-  grid-area: map;
   display: flex;
+  grid-area: map;
   flex-direction: column;
 }
 .zones__header {
+  margin-bottom: 5px;
   font-size: 20px;
   line-height: 25px;
-  margin-bottom: 5px;
 }
 .zones__map-explanation {
-  font-size: 15px;
   margin-bottom: 17px;
+  font-size: 15px;
 }
 .zones__live-map {
   height: 100%;
   background-image: url('zones__static-map.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
-.zones__prices {
-  grid-area: prices;
+.zones__info {
   display: flex;
+  grid-area: info;
+  row-gap: 30px;
   flex-direction: column;
-  padding-left: 30px;
-  min-width: 492px;
+  min-height: 620px;
 }
-.zones__prices-header {
+.zones__price-header {
   margin-bottom: 40px;
 }
-.zones__prices-table {
+.zones__price-table {
   font-weight: 600;
 }
-.zones__prices-table_position_first {
-  margin-bottom: 20px;
-}
-.zones__prices-amount {
+.zones__price-amount {
   min-width: 60px;
+}
+.zones__agreements {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.zones__document-exemple-link {
+  max-width: 458px;
 }
 .zones__cities {
   grid-area: cities;
@@ -55,26 +62,44 @@
   .zones__map-explanation {
     font-size: 14px;
   }
-  .zones__prices {
-    padding-left: 5px;
-  }
-  .zones__prices-header {
+  .zones__price-header {
     margin-bottom: 39px;
   }
 }
 @media screen and (max-width:986px) {
   .zones {
-    grid-template-rows: repeat(3, min-content);
     grid-template-columns: 1fr;
-    grid-template-areas: "prices" "map" "cities";
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas: 'info' 'map' 'cities';
     gap: 20px;
   }
-  .zones__prices {
-    padding-left: 0;
-    min-width: 0;
+  .zones__info {
+    min-height: auto;
   }
-  .zones__prices-header {
+  .zones__price {
+    min-width: 0;
+    padding-left: 0;
+  }
+  .zones__price-header {
+    flex: 0 1 100%;
     margin-bottom: 10px;
+  }
+  .zones__agreements {
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .zones__agreements-header {
+    flex: 1 0 100%;
+  }
+  .zones__agreements-branch {
+    display: none;
+  }
+  .zones__document-exemple-link {
+    flex: 0 1 394px;
+    max-width: none;
   }
   .zones__live-map {
     height: 50vh;
@@ -83,8 +108,39 @@
     padding-top: 0;
   }
 }
+@media screen and (max-width:860px) {
+  .zones__agreements {
+    justify-content: flex-start;
+  }
+  .zones__agreements-branch {
+    display: initial;
+  }
+  .zones__document-exemple-link {
+    flex: 0 1 458px;
+    max-width: none;
+  }
+}
+@media screen and (max-width:575px) {
+  .zones__agreements-branch {
+    display: none;
+  }
+  .zones__document-exemple-link {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
 @media screen and (max-width:460px) {
-  .zones__prices-amount {
+  .zones__price-amount {
     min-width: 52px;
+  }
+  .zones__document-exemple-link {
+    font-size: 3.6vw;
+  }
+  .zones__document-exemple-link::before {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin: 0 4px;
+    font-size: 10px;
   }
 }
