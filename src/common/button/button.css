@@ -24,3 +24,27 @@
   color: #656565;
   font-weight: normal;
 }
+.button__document-exemple-link {
+  border: 1px solid #ffcb00;
+  color: #006eae;
+  font-weight: bold;
+  font-size: 15px;
+  min-width: 200px;
+  line-height: 40px;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+}
+.button__document-exemple-link_type_pdf::before {
+  content: "PDF";
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 20px;
+  width: 50px;
+  height: 20px;
+  border-radius: 6px;
+  background-color: #ff7900;
+  display: inline-block;
+  margin: 0 10px;
+}
