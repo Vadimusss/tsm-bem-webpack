@@ -12,91 +12,89 @@
 </head>
 
 <body class="page">
-  <header class="page-header page__header">
+  <header class="page__header page-header">
     <div class="logo page-header__logo">
-      <span data-link="/" class="button__link hl"></span>
+      <a href="" class="logo__link">
+      </a>
     </div>
-    <div class="company-name page-header__company-name">
-      <div class="company-name__name">ТСМ-ИНЖИНИРИНГ</div>
-      <div class="company-name__slogan">Сервисная и аварийная службы работают в штатном режиме!</div>
-    </div>
-    <div class="office-phone page-header__office-phone">
-      <div class="office-phone__location">Москва</div>
-      <div class="office-phone__number">
-        <a class="office-phone__link" href="tel:+74951085821">+7 (495) 108-58-21</a>
+    <div class="page-header__requisites requisites">
+      <div class="requisites__requisite">
+        <span class="requisites__requisite-text">Москва:</span>
+        <a href="tel:+74951085821" class="requisites__requisite-link">+7 (495) 108-58-21</a>
       </div>
-      <a href="#callback-modal" rel="modal:open" class="office-phone__callback">Заказать обратный звонок</a>
-    </div>
-    <div class="service-phone page-header__service-phone">
-      <div class="service-phone__number">
-        Сервисная служба: <a class="service-phone__link" href="tel:+74952223632">+7&nbsp;(495)&nbsp;222‑36‑32</a>
+      <div class="requisites__requisite">
+        <span class="requisites__requisite-text">Сервисная служба:</span>
+        <a href="tel:+4952223632" class="requisites__requisite-link">+7 (495) 222‑36‑32</a>
       </div>
-      <a href="mailto:info@tsm-company.ru" class="service-phone__e-mail">info@tsm-company.ru</a>
+      <div class="requisites__requisite">
+        <span class="requisites__requisite-text">E-mail:</span>
+        <a href="mailto:info@tsm-company.ru" class="requisites__requisite-link">info@tsm-company.ru</a>
+      </div>
     </div>
-    <nav class="page-header__menu page-header__main-menu">
-      <ul class="menu main-menu">
-        <li class="main-menu__item">
-          <span data-link="/" class="main-menu__link hl">Главная</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/o-nas.html" class="main-menu__link hl">О компании</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/primery-rabot.html" class="main-menu__link hl">Примеры работ</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/sro-i-sertifikaty.html" class="main-menu__link hl">Сертификаты</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/kontakty.html" class="main-menu__link hl">Контакты</span>
-        </li>
-        <li class="main-menu__item">
-          <span data-link="/nashi-ceny.html" class="main-menu__link hl">Наши цены</span>
-        </li>
-      </ul>
-    </nav>
-    <div class="mobile-main-menu-button page-header__mobile-main-menu-button">
+    <botton class="button mobile-main-menu-button">
       <div class="mobile-main-menu-button__line"></div>
       <div class="mobile-main-menu-button__line"></div>
       <div class="mobile-main-menu-button__line"></div>
+    </botton>
+    <ul class="menu page-header__main-menu main-menu">
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Главная">Главная</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="О компании">О компании</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Примеры работ">Примеры работ</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Сертификаты">Сертификаты</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Контакты">Контакты</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="/" alt="Наши цены">Наши цены</a>
+      </li>
+    </ul>
+    <div class="page-header__search search">
+      <input class="search__input" type="text"></input>
+      <button class="botton search__button"></button>
     </div>
+    <a href="" class="page-header__cart mini-cart mini-cart__link mini-cart_full">
+      <div class="mini-cart__wrapper">
+        <span class="header mini-cart__header">Корзина:</span>
+        <span class="mini-cart__text">товаров 2 шт.</span>
+        <span class="mini-cart__text">сумма 2000 руб.</span>
+      </div>
+    </a>
     <div class="button mobile-service-menu-button page-header__mobile-service-menu-button">
       <span class="mobile-service-menu-button__text">Каталог услуг</span>
     </div>
-    <div class="page-header__menu  page-header__service-menu">
+    <nav class="page-header__service-menu">
       <ul class="menu service-menu">
         <li class="service-menu__item">
-          <span data-link="/catalog/1022/" class="service-menu__link button__link hl">Магазин оборудования</span>
+          <a class="service-menu__link" href="/" alt="Магазин оборудования">Магазин оборудования</a>
         </li>
         <li class="service-menu__item">
-          <span data-link="/proektirovanie-inzhenernyh-sistem.html"
-            class="service-menu__link button__link hl">Проектирование</span>
+          <a class="service-menu__link" href="/" alt="Проектирование">Проектирование</a>
         </li>
         <li class="service-menu__item">
-          <span data-link="/montazh-inzhenernyh-sistem.html" class="service-menu__link button__link hl">Монтаж</span>
+          <a class="service-menu__link" href="/" alt="Монтаж">Монтаж</a>
         </li>
         <li class="service-menu__item">
-          <span data-link="/obsluzhivanie-gazovykh-kotlov.html" class="service-menu__link button__link hl">Обслуживание
-            котлов</span>
+          <a class="service-menu__link" href="/" alt="Обслуживание котлов">Обслуживание котлов</a>
         </li>
         <li class="service-menu__item">
-          <a href="/remont-gazovyh-kotlov.html" class="service-menu__link button__link">Ремонт котлов</a>
+          <a class="service-menu__link" href="/" alt="Ремонт котлов">Ремонт котлов</a>
         </li>
         <li class="service-menu__item">
-          <span data-link="/stati/puskonaladochnye-raboty.html"
-            class="service-menu__link button__link hl">Пусконаладочные работы</span>
+          <a class="service-menu__link" href="/" alt="Пусконаладочные работы">Пусконаладочные работы</a>
         </li>
       </ul>
-    </div>
-    <div class="page-header__breadcrumbs">
-      <ul class="menu breadcrumbs">
-        <li class="breadcrumbs__item breadcrumbs__item_type_home">Главная</li>
-        <li class="breadcrumbs__item">Контакты - ООО "ТСМ-ИНЖИНИРИНГ"</li>
-      </ul>
-    </div>
+    </nav>
   </header>
 
-  <main class="page__main">
+  <main class="page__main page__main_bg_white">
     <section class="location page__section">
       <div class="location__map">
         <script type="text/javascript" charset="utf-8" async
@@ -143,51 +141,47 @@
     </section>
   </main>
 
-  <footer class="footer page__footer">
-    <div class="footer__company-info">
-      <div class="office-phone footer__office-phone">
-        <div class="office-phone__location">Москва</div>
-        <div class="office-phone__number">
-          <a class="office-phone__link" href="tel:+74951085821">+7 (495) 108-58-21</a>
-        </div>
-        <a href="#callback-modal" rel="modal:open" class="office-phone__callback">Заказать обратный звонок</a>
-      </div>
-      <div class="service-phone footer__service-phone">
-        <div class="service-phone__number">
-          Сервисная служба: <a class="service-phone__link"
-            href="tel:+74952223632">+7&nbsp;(495)&nbsp;222&#8209;36&#8209;32</a>
-        </div>
-        <a href="mailto:info@tsm-company.ru" class="service-phone__e-mail">info@tsm-company.ru</a>
-      </div>
-      <div class="logo footer__logo">
-        <span data-link="/" class="button__link hl"></span>
-      </div>
-      <div class="company-name footer__company-name">
-        <p class="company-name__name company-name__name_size_small">ТСМ-ИНЖИНИРИНГ</p>
-      </div>
-    </div>
+  <footer class="footer page__footer footer_bg_grey">
     <div class="footer__menu-block">
       <div class="footer__menu">
-        <p class="footer__menu-header">Услуги</p>
+        <div class="footer__menu-header">Услуги</div>
         <ul class="menu">
           <li><span data-link="/proektirovanie-inzhenernyh-sistem.html"
               class="footer__menu-item hl">Проектирование</span></li>
-          <li><span data-link="/montazh-inzhenernyh-sistem.html" class="footer__menu-item hl">Монтаж</span></li>
-          <li><span data-link="/stati/puskonaladochnye-raboty.html" class="footer__menu-item hl">Пусконаладка</span>
+          <li><span data-link="/montazh-inzhenernyh-sistem.html" class="footer__menu-item hl">Монтаж</span>
           </li>
-          <li><span data-link="/promka/inzhenernoe-obespechenie-zdanii-i-soruzhenii.html"
-              class="footer__menu-item hl">Промка</span></li>
+          <li><a href="/stati/puskonaladochnye-raboty.html" class="footer__menu-item">Пусконаладка</a></li>
+          <li><a href="/promka/inzhenernoe-obespechenie-zdanii-i-soruzhenii.html" class="footer__menu-item">Промка</a>
+          </li>
         </ul>
       </div>
       <div class="footer__menu">
-        <p class="footer__menu-header">Информация</p>
+        <div class="footer__menu-header">Информация</div>
         <ul class="menu">
           <li><span data-link="/primery-rabot.html" class="footer__menu-item hl">Примеры работ</span></li>
           <li><span data-link="/sro-i-sertifikaty.html" class="footer__menu-item hl">Сертификаты</span></li>
           <li><span data-link="/nashi-ceny.html" class="footer__menu-item hl">Прайс</span></li>
+          <li><span data-link="/nashi-ceny.html" class="footer__menu-item hl">Статьи</span></li>
           <li><span data-link="/kontakty.html" class="footer__menu-item hl">Контакты</span></li>
         </ul>
       </div>
+    </div>
+    <div class="footer__company-info">
+      <div class="footer__requisites requisites">
+        <div class="requisites__requisite footer__requisite">
+          <span class="requisites__requisite-text">Москва:</span>
+          <a href="tel:+74951085821" class="requisites__requisite-link">+7 (495) 108-58-21</a>
+        </div>
+        <div class="requisites__requisite footer__requisite">
+          <span class="requisites__requisite-text">Сервисная служба:</span>
+          <a href="tel:+4952223632" class="requisites__requisite-link">+7 (495) 222‑36‑32</a>
+        </div>
+        <div class="requisites__requisite footer__requisite">
+          <span class="requisites__requisite-text">E-mail:</span>
+          <a href="mailto:info@tsm-company.ru" class="requisites__requisite-link">info@tsm-company.ru</a>
+        </div>
+      </div>
+      <span class="company-name footer__company-name">© 2021 ТСМ-ИНЖИНИРИНГ</span>
     </div>
     </div>
   </footer>
