@@ -1,0 +1,29 @@
+.write-to-us {
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 16px;
+  height: 24px;
+  margin-left: auto;
+}
+
+.write-to-us__link {
+  background-repeat: no-repeat;
+}
+
+.write-to-us__link_type_e-mail {
+  background-image: url('write-to-us__e-mail.png');
+  width: 26px;
+  height: 18px;
+}
+
+.write-to-us__link_type_whatsapp {
+  background-image: url('write-to-us__whatsapp.png');
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width:986px) {
+  .write-to-us {
+    display: none;
+  }
+}
