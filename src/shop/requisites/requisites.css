@@ -1,14 +1,16 @@
 .requisites {
   display: flex;
-  column-gap: 6px;
-  justify-content: space-between;
+  column-gap: 66px;
   font-size: 15px;
-  line-height: 18px;
+  height: 30px;
 }
 .requisites__requisite {
   display: flex;
   column-gap: 4px;
   flex-wrap: wrap;
+}
+.requisites__requisite_visible-below_968px {
+  display: none;
 }
 .requisites__requisite-text {
   color: #819098;
@@ -21,6 +23,10 @@
 @media screen and (max-width:986px) {
   .requisites {
     flex-direction: column;
+    height: auto;
+  }
+  .requisites__requisite_visible-below_968px {
+    display: flex;
   }
 }
 @media screen and (max-width:650px) {

@@ -20,14 +20,13 @@
   grid-area: name;
 }
 .page-header__main-menu {
-  z-index: 2000;
+  z-index: 4000;
   grid-area: main-menu;
   margin-bottom: 10px;
   padding: 0;
 }
 .page-header__requisites {
   grid-area: requisites;
-  margin-bottom: 12px;
 }
 .page-header__search {
   grid-area: search-field;
@@ -70,13 +69,15 @@
     'search-field search-field search-field search-field search-field'
     'service-menu service-menu service-menu service-menu service-menu';
   }
+  .page-header__requisites {
+    margin-bottom: 12px;
+  }
 }
 @media screen and (max-width:768px) {
   .page-header {
     grid-template-areas: 'logo requisites requisites requisites requisites'
     'search-field search-field search-field search-field search-field'
     'service-menu service-menu service-menu service-menu service-menu';
-    column-gap: 34px;
   }
 }
 @media screen and (max-width:650px) {

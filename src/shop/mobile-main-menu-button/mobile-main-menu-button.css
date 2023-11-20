@@ -1,11 +1,11 @@
 .mobile-main-menu-button {
   position: absolute;
-  z-index: 3000;
+  z-index: 5000;
   top: 0;
-  right: 10px;
+  right: 4px;
   display: none;
-  width: 64px;
-  height: 78px;
+  width: 56px;
+  height: 56px;
   cursor: pointer;
   border-radius: 0 0 6px 6px;
   background: #3d98ce;
@@ -34,16 +34,5 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-  }
-}
-@media screen and (max-width:650px) {
-  .mobile-main-menu-button {
-    height: 64px;
-  }
-}
-@media screen and (max-width:460px) {
-  .mobile-main-menu-button {
-    width: 60px;
-    height: 60px;
   }
 }

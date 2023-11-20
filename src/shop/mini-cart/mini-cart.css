@@ -45,9 +45,9 @@
     position: absolute;
     z-index: 1000;
     top: 0;
-    right: 84px;
-    width: 64px;
-    height: 78px;
+    right: 64px;
+    width: 56px;
+    height: 56px;
     padding: 0;
     cursor: pointer;
     border-radius: 0 0 6px 6px;
@@ -60,16 +60,5 @@
   }
   .mini-cart__header, .mini-cart__text {
     display: none;
-  }
-}
-@media screen and (max-width:650px) {
-  .mini-cart {
-    height: 64px;
-  }
-}
-@media screen and (max-width:460px) {
-  .mini-cart {
-    width: 60px;
-    height: 60px;
   }
 }
