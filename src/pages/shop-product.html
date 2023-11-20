@@ -25,13 +25,19 @@
       </div>
       <div class="requisites__requisite">
         <span class="requisites__requisite-text">Сервисная служба:</span>
-        <a href="tel:+4952223632" class="requisites__requisite-link">+7 (495) 222‑36‑32</a>
+        <a href="tel:+74952223632" class="requisites__requisite-link">+7 (495) 222‑36‑32</a>
       </div>
-      <div class="requisites__requisite">
+      <div class="requisites__requisite requisites__requisite_visible-below_968px">
         <span class="requisites__requisite-text">E-mail:</span>
         <a href="mailto:info@tsm-company.ru" class="requisites__requisite-link">info@tsm-company.ru</a>
       </div>
+      <div class="requisites__requisite write-to-us">
+        <a href="https://wa.me/79852223632" class="write-to-us__link write-to-us__link_type_whatsapp"></a>
+        <a href="mailto:info@tsm-company.ru" class="write-to-us__link write-to-us__link_type_e-mail"></a>
+      </div>
     </div>
+    <a class="button mobile-whatsapp-button" href="https://wa.me/79852223632">
+    </a>
     <botton class="button mobile-main-menu-button">
       <div class="mobile-main-menu-button__line"></div>
       <div class="mobile-main-menu-button__line"></div>
@@ -172,7 +178,7 @@
         </div>
         <div class="shop-product__propertiy">
           <div class="shop-product__property-name">Наличие:</div>
-          <div class="shop-product__property-value shop-product__property-value_availability">в наличии</div>
+          <div class="shop-product__property-value shop-product__property-value_availability">в наличии (<span class="product-quantity__quantity-text_article_123456">3 шт.</span>)</div>
         </div>
         <div class="shop-product__propertiy">
           <div class="shop-product__property-name">Артикул:</div>
@@ -185,7 +191,7 @@
         <div class="product-quantity shop-product__quantity">
           <button
             class="button product-quantity__button product-quantity__button_type_decrease">-</button>
-          <input type="number" class="product-quantity__input" value="1" min="1">
+          <input type="number" data-article="123456" class="product-quantity__input" value="1" min="1" max="3">
           <button
             class="button product-quantity__button product-quantity__button_type_incrase">+</button>
         </div>
