@@ -1,0 +1,26 @@
+.mobile-whatsapp-button {
+  position: absolute;
+  z-index: 3000;
+  top: 54px;
+  right: 200px;
+  display: none;
+  width: 56px;
+  height: 56px;
+  background-image: url('mobile-whatsapp-button.png');
+  background-repeat: no-repeat;
+  border-radius: 11px;
+}
+
+@media screen and (max-width:986px) {
+  .mobile-whatsapp-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .mobile-whatsapp-button {
+    right: 124px;
+    top: 0;
+    border-radius: 0;
+  }
+}
