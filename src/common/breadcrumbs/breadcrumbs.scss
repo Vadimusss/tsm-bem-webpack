@@ -1,0 +1,27 @@
+.breadcrumbs {
+  display: flex;
+
+  &__item {
+    font-size: 12px;
+    line-height: 19px;
+    margin-right: 10px;
+
+    &::before {
+      margin-right: 10px;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 9px;
+      height: 4px;
+      background-repeat: no-repeat;
+      background-image: url('breadcrumbs.png');
+    }
+
+    &_type_home {
+      
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
