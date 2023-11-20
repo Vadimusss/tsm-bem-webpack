@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabsContent = document.querySelectorAll('.tabs__content');
 
   const tabsHandler = (path) => {
-    tabsContent.forEach(element => element.classList.remove('tabs__content_active'));
+    tabsContent.forEach((element) => element.classList.remove('tabs__content_active'));
     document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content_active');
   };
 
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs.addEventListener('click', ({ target }) => {
       if (target.classList.contains('tabs__botton')) {
         const { tabsPath } = target.dataset;
-        tabsBtn.forEach(element => element.classList.remove('tabs__botton_active'));
+        tabsBtn.forEach((element) => element.classList.remove('tabs__botton_active'));
         document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('tabs__botton_active');
         tabsHandler(tabsPath);
       }

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const categoriesBlocks = document.querySelectorAll('div.shop-menu__category');
 
   if (categoriesBlocks) {
-    categoriesBlocks.forEach(block => block.addEventListener('click', ({ target }) => {
+    categoriesBlocks.forEach((block) => block.addEventListener('click', ({ target }) => {
       if (target.classList.contains('shop-menu__category')) {
         categoriesBlocks.forEach((element) => {
           if (element !== target) {
