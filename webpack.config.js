@@ -8,12 +8,12 @@ module.exports = (env, argv) => {
   const pages = (argv.mode === 'development') ? './src/pages/dev' : './src/pages';
 
   const pageNames = fs.readdirSync(pages)
-    .filter(value => value.includes('.html'))
-    .map(value => value.replace('.html', ''));
+    .filter((value) => value.includes('.html'))
+    .map((value) => value.replace('.html', ''));
 
   const entryPoints = pageNames.reduce((acc, value) => ({ ...acc, ...{ [value]: path.resolve(__dirname, pages, `${value}.js`) } }), {});
 
-  const copyPaths = pageNames.map(name => ({
+  const copyPaths = pageNames.map((name) => ({
     from: path.resolve(__dirname, `${pages}/${name}.html`),
     to: path.resolve(__dirname, `dist/${name}`),
   }));
@@ -52,11 +52,18 @@ module.exports = (env, argv) => {
           },
         },
         {
+          test: /\.ts?$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'ts-loader',
+          },
+        },
+        {
           test: /\.html$/,
           use: [
             {
               loader: 'bemdecl-to-fs-loader',
-              options: { levels: ['src/common', 'src/shop'], extensions: ['css', 'js'] }, // Add css and js files of BEM entities to bundle
+              options: { levels: ['src/common', 'src/shop'], extensions: ['css', 'scss', 'js', 'ts'] }, // Add css and js files of BEM entities to bundle
             },
             {
               loader: 'html2bemdecl-loader',
@@ -70,6 +77,16 @@ module.exports = (env, argv) => {
               loader: MiniCssExtractPlugin.loader,
             },
             'css-loader',
+          ],
+        },
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader,
+            },
+            'css-loader',
+            'sass-loader',
           ],
         },
         {
