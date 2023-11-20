@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (currentInputValue > 1) {
         input.value = currentInputValue - 1;
       }
+      const { article } = input.dataset;
+      const quantityText = document.querySelector(`.product-quantity__quantity-text_article_${article}`);
+      if (quantityText.classList.contains('product-quantity__quantity-text_color_red')) {
+        quantityText.classList.remove('product-quantity__quantity-text_color_red');
+      }
     });
   });
 
@@ -22,8 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.target.classList.contains('product-quantity__button_prevent_true')) {
         event.preventDefault();
       }
+      const availableQuantity = parseInt(input.getAttribute('max'), 10);
       const currentInputValue = parseInt(input.value, 10);
-      input.value = currentInputValue + 1;
+      if (currentInputValue < availableQuantity) {
+        input.value = currentInputValue + 1;
+      } else {
+        const { article } = input.dataset;
+        const quantityText = document.querySelector(`.product-quantity__quantity-text_article_${article}`);
+        quantityText.classList.add('product-quantity__quantity-text_color_red');
+      }
     });
   });
 });

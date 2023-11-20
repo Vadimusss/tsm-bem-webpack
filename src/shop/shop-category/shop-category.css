@@ -61,6 +61,14 @@
 .shop-category__property-value_color_green {
   color: #4c8700;
 }
+.shop-category__property-quantity_color_red {
+  color: red;
+}
+.shop-category__quantity {
+  align-self: center;
+  padding-bottom: 5px;
+  height: 28px;
+}
 .shop-category__card-button {
   align-self: center;
   width: 100%;
