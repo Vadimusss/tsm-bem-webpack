@@ -1,0 +1,37 @@
+@import '../../sass/variables.scss';
+
+.requisites {
+  display: flex;
+  column-gap: 66px;
+  font-size: 15px;
+  min-height: 30px;
+
+  &__requisite {
+    display: flex;
+    column-gap: 4px;
+    flex-wrap: wrap;
+
+    &_visible-below_968px {
+      display: none;
+
+      @media screen and (max-width: $screen-lg) {
+        display: flex;
+      }
+    }
+  }
+
+  &__requisite-text {
+    color: #819098;
+  }
+
+  &__requisite-link {
+    text-decoration: none;
+    color: #1b313e;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    flex-direction: column;
+    height: auto;
+  }
+}
