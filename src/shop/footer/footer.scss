@@ -1,0 +1,69 @@
+.footer {
+  column-gap: 0;
+  row-gap: 0;
+  background-color: #ffffff;
+  font-family: 'MuseoSansCyrl', sans-serif;
+
+  @media screen and (max-width:650px) {
+    row-gap: 25px;
+    flex-direction: column;
+  }
+
+  &__company-info {
+    align-items: flex-end;
+    row-gap: 43px;
+    flex-direction: column;
+
+    @media screen and (max-width:650px) {
+      align-items: center;
+      row-gap: 25px;
+    }
+  }
+
+  &__requisites {
+    row-gap: 18px;
+    flex-direction: column;
+  }
+
+  &__requisite {
+    justify-content: flex-end;
+
+    @media screen and (max-width:650px) {
+      justify-content: center;
+    }
+  }
+
+  &__company-name {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__menu-block {
+    column-gap: 100px;
+    justify-content: flex-start;
+
+    @media screen and (max-width:986px) {
+      column-gap: 80px;
+    }
+
+    @media screen and (max-width:650px) {
+      column-gap: 0;
+      justify-content: space-around;
+    }
+  }
+
+  &__menu-header {
+    margin-bottom: 13px;
+    font-size: 17px;
+  }
+
+  &__menu-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &_bg_grey {
+    background-color: #f4f4f4;
+  }
+}

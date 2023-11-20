@@ -1,0 +1,72 @@
+.footer {
+  display: flex;
+  gap: 5px;
+  background: #f4f4f4;
+
+  @media screen and (max-width:575px) {
+    flex-direction: column-reverse;
+  }
+
+  &__company-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 50%;
+
+    @media screen and (max-width:1300px) {
+      flex-basis: 60%;
+    }
+
+    @media screen and (max-width:650px) {
+      flex-basis: 56%;
+    }
+  }
+
+  &__menu-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1 1 50%;
+
+    @media screen and (max-width:1300px) {
+      flex-basis: 40%;
+    }
+
+    @media screen and (max-width:650px) {
+      flex-basis: 44%;
+    }
+  }
+
+  &__office-phone {
+    flex: 1 1 49%;
+    box-sizing: border-box;
+
+    @media screen and (max-width:986px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__service-phone {
+    flex: 1 1 49%;
+    box-sizing: border-box;
+
+    @media screen and (max-width:986px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__company-name {
+    line-height: 0;
+  }
+
+  &__menu-header {
+    font-size: 16px;
+  }
+
+  &__menu-item {
+    font-size: 14px;
+    line-height: 35px;
+    color: #009bc6;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
