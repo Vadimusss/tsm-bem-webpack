@@ -1,0 +1,234 @@
+@import '../../sass/variables.scss';
+
+.contracts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+
+  &__header {
+    flex-basis: 100%;
+    margin: 0 0 20px 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      margin-left: 5px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    position: relative;
+    margin-right: -10px;
+    background-color: #77c4ee;
+    padding: 30px 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      flex-wrap: wrap;
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+
+    &::before {
+      content: "";
+      width: 824px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url('contracts_bg.png');
+      background-size: cover;
+
+      @media screen and (max-width: $screen-lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__card {
+    flex: 0 1 350px;
+    margin-right: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: $screen-lg) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      flex-basis: 100%;
+      min-height: auto;
+      margin: 0 0 10px 0;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      height: min-content;
+    }
+  }
+
+  &__card-header {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    line-height: 50px;
+    color: #ffffff;
+    background-color: #67a8dc;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &_bg_blue {
+      background-color: #67a8dc;
+    }
+
+    &_bg_red {
+      background-color: #d44f5e;
+    }
+
+    &_bg_yellow {
+      background-color: #ebb946;
+    }
+  }
+
+  &__card-price {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+
+    @media screen and (max-width: $screen-lg) {
+      margin-left: 10px;
+      min-width: 290px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      margin-left: 0;
+      width: 90%;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      min-width: 0;
+      width: 98%;
+    }
+  }
+
+  &__card-price-item {
+    flex-basis: 100%;
+    background-color: #eaf0f4;
+    border-radius: 6px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  &__price {
+    font-size: 20px;
+    color: #006eab;
+    float: right;
+  }
+
+  &__card-conditions {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 14px 0 10px;
+    list-style: none;
+
+    @media screen and (max-width: $screen-lg) {
+      flex-basis: 50%;
+      padding-left: 0;
+    }
+  }
+
+  &__card-conditions-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 10px;
+      background-image: url('contracts_check-mark.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      left: 12px;
+      top: 3px;
+    }
+
+    &_type_annotation {
+      font-weight: 600;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__callback-button {
+    width: 215px;
+    line-height: 45px;
+    font-weight: 600;
+    border-width: 0;
+
+    @media screen and (max-width: $screen-lg) {
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      margin-left: 0;
+    }
+
+    &_bg_blue {
+      background-color: #67a8dc;
+    }
+
+    &_bg_red {
+      background-color: #d44f5e;
+    }
+
+    &_bg_yellow {
+      background-color: #ebb946;
+    }
+  }
+
+  &__footnote {
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 0 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      padding: 0 10px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      padding: 0 2px;
+    }
+  }
+}
