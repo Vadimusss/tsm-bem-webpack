@@ -1,5 +1,5 @@
 import '../common/header/header.css';
-import '../common/button/button.css';
+import '../common/button/button.scss';
 import '../common/menu/menu.css';
 
 import './prices.html';
