@@ -1,0 +1,19 @@
+@import '../../sass/variables.scss';
+
+.calc-button {
+  background: #00b8ee url('kalkulatr.png') no-repeat 10% 47%;
+
+  @media screen and (max-width: $screen-xl) {
+    border-radius: 0;
+    background: #00b8ee url('kalkulatr.png') no-repeat 50% 50%;
+  }
+
+  &__text {
+    line-height: 35px;
+    color: #ffffff;
+
+    @media screen and (max-width: $screen-xl) {
+      display: none;
+    }
+  }
+}
