@@ -1,0 +1,26 @@
+@import '../../sass/variables.scss';
+
+.company-name {
+  line-height: 28px;
+
+  &__name {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #006eab;
+    font-weight: 700;
+
+    &_size_small {
+      font-size: 18px;
+    }
+  }
+
+  &__slogan {
+    font-size: 18px;
+    color: red;
+    font-weight: 700;
+
+    @media screen and (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+}
