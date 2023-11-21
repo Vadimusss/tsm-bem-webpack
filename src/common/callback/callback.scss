@@ -1,0 +1,151 @@
+@import '../../sass/variables.scss';
+
+.callback {
+  display: flex;
+  background-color: #006eae;
+  border-radius: 6px;
+
+  @media screen and (max-width: $screen-xl) {
+    flex-wrap: wrap;
+  }
+
+  &__inner {
+    height: 141px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+  }
+
+  &__inner-header {
+    font-size: 13px;
+  }
+
+  &__call-to-action {
+    flex-basis: 32%;
+    padding-left: 40px;
+    font-size: 28px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $screen-xl) {
+      flex-basis: 50%;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      flex-basis: 100%;
+      padding: 10px 6%;
+      height: 100%;
+    }
+  }
+
+  &__phone {
+    flex-basis: 26%;
+    row-gap: 16px;
+
+    @media screen and (max-width: $screen-xl) {
+      flex-basis: 50%;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      flex-basis: 100%;
+      padding: 10px 6%;
+      height: 100%;
+    }
+  }
+
+  &__phone-number {
+    position: relative;
+    font-size: 28px;
+    color: #ffffff;
+    padding-left: 40px;
+    text-decoration: none;
+
+    @media screen and (max-width: $screen-xs) {
+      padding-left: 0;
+      font-size: 27px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 22px;
+      height: 22px;
+      background: url(fon2.png) no-repeat;
+
+      @media screen and (max-width: $screen-xs) {
+        display: none;
+      }
+    }
+  }
+
+  &__form {
+    flex-basis: 42%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0080c1;
+    border-radius: 6px;
+    padding: 0 30px 0 34px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $screen-xl) {
+      flex-basis: 100%;
+      justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      padding: 0 14px 0 14px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      flex-direction: column;
+      padding: 16px 14px;
+      row-gap: 10px;
+      align-items: center;
+    }
+  }
+
+  &__form-inner {
+    flex-basis: 46%;
+    row-gap: 10px;
+    
+    @media screen and (max-width: $screen-xl) {
+      flex-basis: auto;
+      row-gap: 10px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      flex-basis: 100%;
+      height: 70px;
+    }
+  }
+
+  &__form-input {
+    color: #e3c000;
+    width: 217px;
+    background: transparent;
+    font-size: 15px;
+    padding-bottom: 9px;
+    border-bottom: solid #ffffff;
+    border-width: 0 0 2px 0;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #e3c000;
+    }
+  }
+
+  &__form-button {
+    line-height: 44px;
+    align-self: flex-end;
+    width: 208px;
+    background: transparent;
+    border: 1px solid #cdba04;
+
+    @media screen and (max-width: $screen-xl) {
+      align-self: flex-start;
+    }
+  }
+}
