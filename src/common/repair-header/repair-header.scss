@@ -1,0 +1,125 @@
+@import '../../sass/variables.scss';
+
+.repair-header {
+  display: flex;
+  min-height: 400px;
+  margin: 0 0 50px 0;
+  position: relative;
+  background-color: #cae7f5;
+
+  @media screen and (max-width: $screen-xl) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    flex-flow: column;
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    margin-bottom: 30px;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    background-image: url('repair-header__bg_men.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+
+    @media screen and (max-width: $screen-xl) {
+      opacity: .2;
+      background-size: cover;
+    }
+  }
+
+  &__info {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  &__header {
+    margin: 35px 0;
+    color: #006eab;
+    font-size: 40px;
+    font-weight: 400;
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 28px;
+      margin: 24px 0;
+    }
+  }
+
+  &__text {
+    min-height: 177px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__gsm-promo {
+    padding-left: 45px;
+    background-image: url('inform.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+
+    @media screen and (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__gsm-promo-link {
+    color: #0093c3;
+  }
+
+  &__callback-button {
+    line-height: 45px;
+    border-radius: 6px;
+    background: linear-gradient(#da0235, #a60027);
+    text-decoration: none;
+    max-width: 280px;
+    position: relative;
+    bottom: -20px;
+
+    @media screen and (max-width: $screen-lg) {
+      bottom: 0;
+    }
+  }
+
+  &__basic-price {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 40px;
+    z-index: 2;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $screen-lg) {
+      padding: 0;
+    }
+  }
+
+  &__basic-price-link {
+    font-size: 20px;
+    font-family: 'Proxima Nova Cn Bl', sans-serif;
+    color: #006eae;
+    text-decoration: none;
+    border-radius: 6px;
+    border: solid 2px #006eae;
+    background: rgba(249, 249, 249, 0.85);
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+}
