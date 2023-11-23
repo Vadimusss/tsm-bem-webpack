@@ -1,0 +1,58 @@
+@import '../../sass/variables.scss';
+
+.content {
+  font-size: 16px;
+
+  &__header {
+    margin-bottom: 1em;
+
+    &_first-element {
+      margin-top: 20px;
+    }
+  }
+
+  &__subheader {
+    margin-bottom: 0.6em;
+    font-size: 1.3em;
+  }
+
+  &__paragraph {
+    margin-top: 0;
+    margin-bottom: 1.2em;
+    line-height: 1.5;
+
+    &_hide-for-mobile {
+
+      @media screen and (max-width: $screen-xs) {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    margin: 0 0 1.2em 0;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  &__link {
+    color: #0093c3;
+  }
+
+  &__illustration {
+    margin-top: 6px;
+
+    &_position_left {
+      float: left;
+      margin-right: 10px;
+    }
+
+    &_position_right {
+      float: right;
+      margin-left: 10px;
+    }
+  }
+}

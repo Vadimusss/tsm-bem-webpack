@@ -1,0 +1,67 @@
+@import '../../sass/variables.scss';
+
+.example-of-complex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #ffffd7;
+
+  @media screen and (max-width: $screen-xl) {
+    flex-direction: column;
+  }
+
+  &__header {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__object {
+    display: flex;
+    flex-basis: 50%;
+    height: 333px;
+
+    @media screen and (max-width: $screen-md) {
+      flex-direction: column;
+    }
+
+    &_with-margin {
+
+      @media screen and (max-width: $screen-xl) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__card {
+    flex: 0 0 333px;
+    min-height: 222px;
+
+    @media screen and (max-width: $screen-xl) {
+      flex: 0 2 666px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      flex: 0 0 333px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__description {
+    flex: 0 1 333px;
+    padding-left: 20px;
+
+    @media screen and (max-width: $screen-xl) {
+      flex-grow: 1;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      flex: 0 1 auto;
+      padding-left: 20px;
+    }
+  }
+
+  &__description-header {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../sass/variables.scss';
+
+.certificates-tmp {
+  padding-bottom: 20px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 48px, #fff8bb 48px, #fff8bb 48px, #fff8bb 100%, #ffffff 100%);
+
+  &__header {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 1.2em;
+    }
+  }
+
+  &__slider {
+    width: auto;
+    margin: 0 50px;
+  }
+
+  &__nav-button {
+    position: absolute;
+    top: 40%;
+    left: -40px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 50%;
+    background-color: #006eae;
+    background-image: url('certificates-tmp_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 45% center;
+  }
+
+  &__nav-button_next {
+    right: -40px;
+    left: auto;
+    transform: rotate(180deg);
+  }
+
+  &__seo-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15px;
+  }
+
+  &__seo-link {
+    color: black;
+    text-decoration: none;
+  }
+}
