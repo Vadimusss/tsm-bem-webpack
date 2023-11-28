@@ -1,0 +1,42 @@
+.example-of-works-tmp {
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__slider {
+    position: relative;
+    margin: 10px 0;
+  }
+
+  &__nav-button {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    border-width: 0;
+    border-radius: 50%;
+    background-color: #006eae;
+    background-image: url('example-of-works-tmp_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 48% center;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &_next {
+      right: 10px;
+      left: auto;
+      transform: rotate(180deg);
+
+      &:hover {
+        transform: scale(1.1) rotate(180deg);
+      }
+    }
+  }
+}

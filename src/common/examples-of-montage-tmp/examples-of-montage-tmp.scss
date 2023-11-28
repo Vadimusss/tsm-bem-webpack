@@ -1,0 +1,73 @@
+@import '../../sass/variables.scss';
+
+.examples-of-montage-tmp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: $screen-xl) {
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
+
+  &__header {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $screen-xl) {
+      width: 31%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      width: 100%;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 15px;
+    box-shadow: 0 6px 15px -3px rgb(136 136 136);
+  }
+
+  &__nav-button {
+    position: absolute;
+    right: 23%;
+    bottom: -15px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 50%;
+    background-color: #006eae;
+    background-image: url('examples-of-montage-tmp_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 45% center;
+
+    &_next {
+      right: 6%;
+      left: auto;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__slider-description {
+    color: #0088be;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
