@@ -1,0 +1,207 @@
+@import '../../sass/variables';
+
+.maintenance-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &__content {
+    position: relative;
+    z-index: 2000;
+    display: flex;
+    flex: 350px 0 1;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #cae7f5;
+
+    @media screen and (max-width: $screen-lg) {
+      flex: fit-content 0 1;
+      background-position-x: center;
+    }
+  }
+
+  &__info {
+    z-index: 2;
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: column;
+    padding: 0 50px 30px 50px;
+
+    @media screen and (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__header {
+    margin: 35px 0;
+    color: #006eab;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  &__text {
+    min-height: 177px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  &__gsm-promo {
+    padding-left: 45px;
+    background-image: url('inform.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
+
+  &__gsm-promo-link {
+    color: #0093c3;
+  }
+
+  &__map {
+    position: relative;
+    flex: 50% 0 0;
+    background-image: url('maintenance-header__static-map.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__map-description {
+    position: absolute;
+    z-index: 2000;
+    top: 10px;
+    right: 10px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #ffffffd9;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 28px;
+
+    @media screen and (max-width: $screen-xl) {
+      top: 44px;
+      right: auto;
+      left: 10px;
+    }
+  }
+
+  &__promo {
+    position: relative;
+    display: flex;
+    flex: auto 0 1;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 6% 0 6%;
+
+    @media screen and (max-width: $screen-xl) {
+      padding: 0 3% 0 3%;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      padding-bottom: 30px;
+      background-image: url('maintenance-header__bg_map.jpg');
+      background-size: cover;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      padding: 0 4px 30px 4px;
+    }
+
+    &::before {
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      opacity: 0.4;
+      background-image: url('maintenance-header__bg_men.png');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: cover;
+
+      @media screen and (max-width: $screen-lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__promo-text {
+    margin-top: 10px;
+    padding: 10px;
+    border: solid 2px #006eae;
+    border-radius: 6px;
+    background: rgba(249, 249, 249, 0.85);
+    color: #006eae;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Proxima Nova Cn Bl', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 5.1vw;
+      line-height: 30px;
+    }
+
+    &_font-size_l {
+      font-size: 1.1em;
+    }
+  }
+
+  &__promo-link {
+    color: #006eae;
+    text-decoration: none;
+  }
+
+  &__callback-button {
+    position: relative;
+    z-index: 2000;
+    top: -23px;
+    flex: 45px 0 1;
+    max-width: 280px;
+    margin: 0 0 0 50px;
+    border-radius: 6px;
+    background: linear-gradient(#da0235, #a60027);
+    text-decoration: none;
+    line-height: 45px;
+
+    @media screen and (max-width: $screen-xs) {
+      margin: 0 0 0 5px;
+    }
+  }
+
+  &__basic-price {
+    z-index: 2;
+    display: flex;
+    flex: 1 1 45%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 10px;
+  }
+
+  &__basic-price-link {
+    margin-top: 10px;
+    padding: 10px;
+    border: solid 2px #006eae;
+    border-radius: 6px;
+    background: rgba(249, 249, 249, 0.85);
+    color: #006eae;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Proxima Nova Cn Bl', sans-serif;
+    font-size: 20px;
+  }
+
+  .ymaps-2-1-79-map-copyrights-promo {
+    display: none;
+  }
+}

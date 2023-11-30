@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+
+.main-menu {
+  display: inline-flex;
+  gap: 45px;
+  width: 100%;
+
+  @media screen and (max-width: $screen-xl) {
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  &__link {
+    color: #346c78;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+
+    @media screen and (max-width: $screen-xl) {
+      color: #000000;
+    }
+  }
+}

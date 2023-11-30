@@ -1,0 +1,107 @@
+@import '../../sass/variables.scss';
+
+.feedbacks {
+  display: grid;
+  grid-template-columns: 220px minmax(0px, 1120px);
+  grid-template-rows: 40px min-content;
+  grid-template-areas: 'header header'
+  'widget slider';
+  column-gap: 20px;
+  row-gap: 20px;
+
+  @media screen and (max-width: $screen-lg) {
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 78px min-content;
+    grid-template-areas: 'header widget'
+    'slider slider';
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 78px min-content;
+    grid-template-areas: 'header'
+    'widget'
+    'slider';
+  }
+
+  &__header {
+    grid-area: header;
+
+    @media screen and (max-width: $screen-lg) {
+      align-self: end;
+    }
+  }
+
+  &__widget {
+    grid-area: widget;
+  }
+
+  &__slider {
+    grid-area: slider;
+    background: #f4f4f4;
+    box-shadow: rgb(8 13 74 / 16%) 0 2px 8px;
+  }
+
+  &__feedback {
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 200px;
+    padding: 10px 66px;
+
+    @media screen and (max-width: $screen-xs) {
+      padding: 10px 50px;
+    }
+  }
+
+  &__feedback-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__feedback-stars {
+    display: flex;
+    flex: 0 0 95px;
+  }
+
+  &__feedback-star {
+    flex: 0 0 19px;
+    background-image: url('feedbacks_gold-star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &_type_gray {
+      background-image: url('feedbacks_gray-star.svg');
+    }
+  }
+
+  &__feedback-text {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  &__nav-button {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 50%;
+    background-color: #006eae;
+    background-image: url('feedbacks_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 45% center;
+
+    &_next {
+      right: 10px;
+      left: auto;
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import '../../sass/variables';
+
+.header {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+
+  &_level_h1 {
+    font-size: 1.5em;
+
+    .header__underline {
+      width: 100px;
+    }
+  }
+
+  &_level_h2 {
+    font-size: 1.4em;
+
+    .header__underline {
+      width: 80px;
+    }
+  }
+
+  &_level_h3 {
+    font-size: 1.3em;
+
+    .header__underline {
+      bottom: -4px;
+      width: 80px;
+    }
+  }
+
+  &_level_h4 {
+    font-size: 1.2em;
+
+    .header__underline {
+      bottom: -4px;
+      width: 70px;
+    }
+  }
+
+  &__underline {
+    position: relative;
+    bottom: -7px;
+    left: 0;
+    height: 2px;
+    background-color: #00aee6;
+  }
+
+  &__service-page {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 28px;
+    }
+
+    &:after {
+      @media screen and (max-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    .header__underline {
+      width: 120px;
+      background-color: #ffffff;
+    }
+  }
+}

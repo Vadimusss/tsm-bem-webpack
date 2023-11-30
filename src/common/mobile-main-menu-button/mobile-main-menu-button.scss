@@ -1,0 +1,35 @@
+@import '../../sass/variables';
+
+.mobile-main-menu-button {
+  z-index: 1000;
+  display: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  background-color: #ffcb00;
+
+  @media screen and (max-width: $screen-xl) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__line {
+    width: 24px;
+    height: 2px;
+    margin: 3px 0;
+    background-color: #000000;
+  }
+
+  &_close {
+    background: #ffcb00 url('mobile-main-menu-button__cross.png') no-repeat 50% 50%;
+
+    .mobile-main-menu-button__line {
+    
+      @media screen and (max-width: $screen-xl) {
+        display: none;
+      }
+    }
+  }
+}
