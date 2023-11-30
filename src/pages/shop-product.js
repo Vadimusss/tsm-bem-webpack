@@ -1,7 +1,7 @@
-import '../common/header/header.css';
+import '../common/header/header.scss';
 import '../common/button/button.scss';
-import '../common/menu/menu.css';
-import '../common/location/location.css';
+import '../common/menu/menu.scss';
+import '../common/location/location.scss';
 import '../common/services/services.css';
 import '../common/callback/callback.scss';
 import '../common/breadcrumbs/breadcrumbs.scss';

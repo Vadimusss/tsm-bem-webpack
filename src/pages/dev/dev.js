@@ -1,6 +1,7 @@
-import '../../common/header/header.css';
+import '../../common/header/header.scss';
 import '../../common/button/button.scss';
-import '../../common/menu/menu.css';
+import '../../common/portfolio/portfolio.css';
+import '../../common/menu/menu.scss';
 
 import './dev.html';
 import '../../fonts/fonts.css';
@@ -21,3 +22,4 @@ import '../../img/brands_lemax.png';
 import '../../img/sro_01.jpg';
 import '../../img/sro_02.jpg';
 import '../../common/maintenance-header/maintenance-header__oblgaz-logo.png';
+import '../../img/services_fon.png';

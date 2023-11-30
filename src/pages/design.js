@@ -1,7 +1,7 @@
-import '../common/header/header.css';
+import '../common/header/header.scss';
 import '../common/button/button.scss';
 import '../common/portfolio/portfolio.css';
-import '../common/menu/menu.css';
+import '../common/menu/menu.scss';
 
 import './design.html';
 import '../fonts/fonts.css';
