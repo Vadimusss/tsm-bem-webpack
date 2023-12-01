@@ -1,0 +1,42 @@
+@import '../../sass/variables';
+
+.office-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90px;
+  padding: 0 0 0 40px;
+  background: url('office-phone.png') no-repeat 3% 50%;
+  line-height: 19px;
+
+  @media screen and (max-width: $screen-xs) {
+    padding-left: 10px;
+    background: none;
+  }
+
+  &__location {
+    font-size: 24px;
+  }
+
+  &__number {
+    min-width: 220px;
+    font-size: 28px;
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 26px;
+    }
+  }
+
+  &__link {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &__callback {
+    cursor: pointer;
+    color: #0075b2;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,125 @@
+@import '../../sass/variables';
+
+.page {
+  display: grid;
+  grid-template-rows: [header-top] min-content [main-top] 1fr [footer-top] min-content;
+  max-width: 1470px;
+  min-height: 100vh;
+  margin: 0 auto !important;
+  /* important для совместимости с arcticmodal */
+  box-shadow: 0 0 13px 12px rgba(223, 223, 223, 1);
+  font-family: 'Roboto', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+       -o-font-smoothing: antialiased;
+
+  &__header {
+    grid-row: header-top / span 1;
+    padding: 15px 50px 0 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      padding: 10px 10px 0 10px;
+    }
+    
+    @media screen and (max-width: $screen-lg) {
+      padding: 10px 10px 0 10px;
+    }
+    
+    @media screen and (max-width: $screen-md) {
+      padding: 5px 5px 2px 5px;
+    }
+    
+    @media screen and (max-width: $screen-xs) {
+      padding: 5px 1px 2px 1px;
+    }
+  }
+
+  &__main {
+    overflow: hidden;
+    grid-row: main-top / span 1;
+
+    &__main_padding-top {
+      padding-top: 20px;
+    }
+  }
+
+  &__contacts-page {
+    padding-top: 40px;
+  }
+
+  &__section {
+    margin: 0 50px 40px 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      margin: 0 20px 20px 20px;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      margin: 0 10px 40px 10px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      margin: 0 5px 20px 5px;
+    }
+
+    &_introduction {
+      margin-bottom: 20px;
+    }
+
+    &_type_wide {
+      margin-right: 0;
+      margin-left: 0;
+      padding-right: 50px;
+      padding-left: 50px;
+
+      @media screen and (max-width: $screen-xl) {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      @media screen and (max-width: $screen-lg) {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+    }
+
+    &_position_first {
+      @media screen and (max-width: $screen-lg) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__section-header {
+    margin-bottom: 20px;
+  }
+
+  &__footer {
+    grid-row: footer-top / span 1;
+    padding: 30px 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      padding: 30px 20px;
+    } 
+    
+    @media screen and (max-width: $screen-md) {
+      padding: 20px 10px;
+    }
+    
+    @media screen and (max-width: $screen-xs) {
+    padding: 10px 1px;
+    }
+  }
+}

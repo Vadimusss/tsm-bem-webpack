@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 .mobile-whatsapp-button {
   position: absolute;
   z-index: 3000;
@@ -6,21 +8,17 @@
   display: none;
   width: 56px;
   height: 56px;
+  border-radius: 11px;
   background-image: url('mobile-whatsapp-button.png');
   background-repeat: no-repeat;
-  border-radius: 11px;
-}
 
-@media screen and (max-width:986px) {
-  .mobile-whatsapp-button {
+  @media screen and (max-width: $screen-lg) {
     display: block;
   }
-}
 
-@media screen and (max-width:768px) {
-  .mobile-whatsapp-button {
-    right: 124px;
+  @media screen and (max-width:768px) {
     top: 0;
+    right: 124px;
     border-radius: 0;
   }
 }

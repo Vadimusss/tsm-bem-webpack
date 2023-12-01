@@ -1,0 +1,179 @@
+@import '../../sass/variables';
+
+.page-header {
+  display: grid;
+  grid-template-areas: 'logo name name name name office-phone office-phone service-phone service-phone'
+  'main-menu main-menu main-menu main-menu main-menu main-menu main-menu main-menu mini-cart'
+  'serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu serv-menu'
+  'breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs breadcrumbs';
+  gap: 10px;
+  align-items: center;
+
+  @media screen and (max-width: $screen-xl) {
+    grid-template-columns: min-content;
+    grid-template-areas: 'logo name name main-menu-button'
+    'logo office-phone service-phone mini-cart'
+    'serv-menu serv-menu serv-menu serv-menu'
+    'breadcrumbs breadcrumbs breadcrumbs breadcrumbs';
+  } 
+  
+  @media screen and (max-width: $screen-lg) {
+    grid-template-areas: 'logo office-phone office-phone main-menu-button'
+    'logo service-phone service-phone mini-cart'
+    'serv-menu serv-menu serv-menu serv-menu'
+    'breadcrumbs breadcrumbs breadcrumbs breadcrumbs';
+  }
+  
+  @media screen and (max-width: $screen-md) {
+    grid-template-areas: 'logo office-phone office-phone main-menu-button'
+    'logo service-phone service-phone service-phone'
+    'mini-cart mini-cart mini-cart mini-cart'
+    'serv-menu serv-menu serv-menu serv-menu'
+    'breadcrumbs breadcrumbs breadcrumbs breadcrumbs';
+    gap: 4px;
+  }
+  
+  @media screen and (max-width: $screen-sm) {
+    grid-template-columns: 1fr max-content;
+    grid-template-areas: 'header header'
+    'office-phone main-menu-button '
+    'service-phone service-phone'
+    'mini-cart mini-cart'
+    'serv-menu serv-menu';
+  }
+  
+  @media screen and (max-width: $screen-xs) {
+    grid-template-areas: 'header header'
+    'office-phone main-menu-button '
+    'service-phone service-phone'
+    'mini-cart mini-cart'
+    'serv-menu-button serv-menu-button'
+    'serv-menu serv-menu';
+  }
+
+  &__logo {
+    grid-area: logo;
+
+    @media screen and (max-width: $screen-lg) {
+      width: 250px;
+      height: 156px;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 150px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      display: block;
+      grid-area: header;
+      text-align: center;
+    }
+  }
+
+  &__company-name {
+    grid-area: name;
+    
+    @media screen and (max-width: $screen-lg) {
+      display: none;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      display: block;
+      grid-area: header;
+      text-align: center;
+    }
+  }
+
+  &__office-phone {
+    grid-area: office-phone;
+  }
+
+  &__service-phone {
+    grid-area: service-phone;
+  }
+
+  &__calc-button {
+    align-self: self-end;
+    width: 200px;
+    height: 35px;
+    margin-left: auto;
+    padding: 0 0 0 56px;
+
+    @media screen and (max-width: $screen-xl) {
+      align-self: flex-start;
+      grid-area: calc-button;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      align-self: start;
+    }
+  }
+
+  &__mobile-main-menu-button {
+    align-self: flex-end;
+    grid-area: main-menu-button;
+    margin-left: auto;
+
+    @media screen and (max-width: $screen-sm) {
+      align-self: center;
+    }
+  }
+
+  &__main-menu {
+    z-index: 1000;
+    grid-area: main-menu;
+    padding: 40px 0 8px 0;
+
+    @media screen and (max-width: $screen-xl) {
+      position: absolute;
+      top: -490px;
+      right: 0;
+      padding: 130px 40px 30px 20px;
+      transition: 0.4s top;
+      border: 1px solid #000000;
+      background: #ffffff;
+    }
+
+    &__main-menu_visible {
+      top: 0!important;
+    }
+  }
+
+  &__service-menu {
+    grid-area: serv-menu;
+
+    @media screen and (max-width: $screen-xs) {
+      display: none;
+    }
+
+    &_visible {
+
+      @media screen and (max-width: $screen-xs) {
+        display: grid;
+      }
+    }
+  }
+
+  &__mobile-service-menu-button {
+    display: none;
+    grid-area: serv-menu-button;
+    border-radius: 0;
+
+    @media screen and (max-width: $screen-xs) {
+      display: block;
+    }
+  }
+
+  &__breadcrumbs {
+    grid-area: breadcrumbs;
+    padding: 5px 0;
+
+    @media screen and (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+}
