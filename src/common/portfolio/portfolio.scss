@@ -1,0 +1,218 @@
+@import '../../sass/variables';
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 370px repeat(3, 1fr);
+  grid-template-rows: repeat(2, 316px);
+  gap: 10px;
+
+  @media screen and (max-width: $screen-xl) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content repeat(2, 316px);
+  }
+
+  @media screen and (max-width: 860px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content repeat(3, 316px);
+    gap: 10px;
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content repeat(2, 152px) 316px repeat(2, 152px);
+  }
+
+  &__description {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    padding-right: 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      padding-right: 0;
+    }
+  
+    @media screen and (max-width: 860px) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+    }
+  
+    @media screen and (max-width: $screen-sm) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__description-text {
+    margin-top: 34px;
+    line-height: 25px;
+  }
+
+  &__card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 0 200px rgba(10, 74, 105, 0.5) inset;
+    color: #ffffff;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &_size_big {
+      grid-column: 2 / 4;
+      grid-row: 1 / 2;
+
+      @media screen and (max-width: $screen-xl) {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+      }
+    
+      @media screen and (max-width: 860px) {
+        grid-row: 2 / 3;
+      }
+    
+      @media screen and (max-width: $screen-sm) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+    }
+
+    &_size_small {
+      width: 100%;
+      height: 152px;
+    }
+
+    &_no-shadow {
+      box-shadow: none;
+    }
+
+    &_inside-category {
+      justify-content: flex-end;
+      box-shadow: none;
+    }
+
+    &_bg_novorizhskoe-sh {
+      background-image: url('implemented-project__objects_object01.jpg');
+    }
+
+    &_bg_istra {
+      background-image: url('projekt1.png');
+    }
+
+    &_bg_solnechnogorsk {
+      background-image: url('projekt2.png');
+    }
+
+    &_bg_taunhaus-180-m2 {
+      background-image: url('implemented-project__objects_object09.jpg');
+    }
+
+    &_bg_dom-iz-kleenogo-brusa-300-m2 {
+      background-image: url('implemented-project__objects_object08.jpg');
+    }
+
+    &_bg_kirpichnyj-dom-440-m2 {
+      background-image: url('implemented-project__objects_object06.jpg');
+    }
+
+    &_bg_minskoe-sh {
+      background-image: url('implemented-project__objects_object02.jpg');
+    }
+
+    &_bg_serpuhov {
+      background-image: url('implemented-project__objects_object05.jpg');
+    }
+
+    &_bg_rublevskoe-sh {
+      background-image: url('implemented-project__objects_object04.jpg');
+    }
+
+    &_bg_shinnyj-centr {
+      background-image: url('implemented-project__objects_object07.jpg');
+    }
+
+    &_bg_shinnyj-centr-wide {
+      background-image: url('implemented-project__objects_object03.jpg');
+    }
+
+    &_bg_kirpichnyj-dom-700-m2 {
+      background-image: url('implemented-project__objects_object10.jpg');
+    }
+
+    &_bg_proekt-sistem-doma-220-m2 {
+      background-image: url('implemented-project__project03.jpg');
+    }
+
+    &_bg_dom-350-m2 {
+      background-image: url('implemented-project__objects_object11.jpg');
+    }
+
+    &_bg_kashirskoe-sh {
+      background-image: url('implemented-project__objects_object12.jpg');
+    }
+
+    &_bg_zdanie-tc-odincovo {
+      background-image: url('implemented-project__objects_object13.jpg');
+    }
+
+    &_bg_proekt-sistem-doma-i-bani {
+      background-image: url('implemented-project__project04.jpg');
+    }
+  }
+
+  &__card-header {
+    margin-bottom: 10px;
+  }
+
+  &__inset-card {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 6px 13px 0 rgba(136, 136, 136, 1)!important;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__inset-card-header {
+    font-size: 16px;
+  }
+
+  &__card-text {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  &__card-object-description {
+    display: flex;
+    align-self: stretch;
+    flex-basis: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__card-button {
+    width: 215px;
+    border: 1px solid #ffe590;
+    color: #5f5f5f;
+    font-weight: normal;
+    line-height: 45px;
+  }
+
+  &__projects-cards {
+
+    @media screen and (max-width: $screen-xl) {
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+}
