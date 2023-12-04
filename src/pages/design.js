@@ -1,6 +1,6 @@
 import '../common/header/header.scss';
 import '../common/button/button.scss';
-import '../common/portfolio/portfolio.css';
+import '../common/portfolio/portfolio.scss';
 import '../common/menu/menu.scss';
 import '../common/grecaptcha-badge/grecaptcha-badge.scss';
 
