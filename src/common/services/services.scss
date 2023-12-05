@@ -1,0 +1,160 @@
+@import '../../sass/variables';
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 180px, #31c4f0 180px, #31c4f0 180px, #31c4f0 330px, #ffffff 330px);
+
+  @media screen and (max-width: $screen-xl) {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 120px, #31c4f0 120px, #31c4f0 120px, #31c4f0 240px, #ffffff 240px);
+  }
+
+  @media screen and (max-width: 860px) {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 120px, #31c4f0 120px, #31c4f0 120px, #31c4f0 510px, #ffffff 510px);
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 120px, #31c4f0 120px, #31c4f0 120px, #31c4f0 570px, #ffffff 570px);
+  }
+
+  &__header {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__card {
+    flex-basis: 30%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 208px;
+    margin-bottom: 20px;
+    padding: 0 20px 10px 0;
+    background-color: #eeeeee;
+    background-position: 30px center;
+
+    @media screen and (max-width: $screen-xl) {
+      height: 140px;
+      background-size: 34%;
+    }
+
+    @media screen and (max-width: 860px) {
+      flex-basis: 48%;
+    }
+
+    &:hover {
+      background-color: #00a0d5;
+    }
+
+    &:nth-child(4) {
+      @media screen and (max-width: 860px) {
+        flex-basis: 100%;
+        height: 240px;
+        background-size: 26%;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        flex-basis: 100%;
+        height: 140px;
+      }
+
+      .services__card-header {
+        @media screen and (max-width: 860px) {
+          font-size: 38px;
+        }
+
+        @media screen and (max-width: $screen-xs) {
+          font-size: 17px;
+        }
+      }
+
+      .services__card-price {
+        @media screen and (max-width: 860px) {
+          font-size: 80px;
+        }
+
+        @media screen and (max-width: $screen-xs) {
+          font-size: 40px;
+        }
+      }
+    }
+
+    &_bg_dezign {
+      background-image: url('montal_row1.png');
+
+      &:hover {
+        background-image: url('montal_row1_hover.png');
+      }
+    }
+
+    &_bg_montage {
+      background-image: url('montal_row2.png');
+
+      &:hover {
+        background-image: url('montal_row2_hover.png');
+      }
+    }
+
+    &_bg_maintenance {
+      background-image: url('montal_row3.png');
+
+      &:hover {
+        background-image: url('montal_row3_hover.png');
+      }
+    }
+  }
+
+  &__card-header {
+    position: relative;
+    text-align: right;
+    font-size: 25px;
+
+    @media screen and (max-width: $screen-xl) {
+      text-align: right;
+      font-size: 17px;
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: -22px;
+      display: block;
+      width: 126%;
+      height: 2px;
+      content: '';
+      background-color: #b9b9b9;
+
+      @media screen and (max-width: $screen-xl) {
+        bottom: -12px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        width: 130%;
+      }
+    }
+  }
+
+  &__card-price {
+    flex-basis: 100%;
+    text-align: right;
+    font-size: 60px;
+
+    @media screen and (max-width: $screen-xl) {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    padding-top: 60px;
+    font-size: 14px;
+
+    @media screen and (max-width: $screen-xl) {
+      padding-top: 30px;
+    }
+  }
+}

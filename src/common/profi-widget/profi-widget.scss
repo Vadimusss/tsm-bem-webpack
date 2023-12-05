@@ -1,0 +1,92 @@
+@import '../../sass/variables';
+
+.profi-widget {
+  display: flex;
+  row-gap: 8px;
+  flex-direction: column;
+  padding: 18px;
+  box-shadow: rgb(8 13 74 / 16%) 0 2px 8px;
+
+  @media screen and (max-width: $screen-lg) {
+    padding: 5px 18px;
+  }
+
+  &__header {
+    display: flex;
+    row-gap: 8px;
+    flex-direction: column;
+
+    @media screen and (max-width: $screen-lg) {
+      row-gap: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+
+    @media screen and (max-width: $screen-lg) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    width: 80px;
+    height: 16px;
+    background-image: url('profi-widget__logo_red.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__caption {
+    color: #141c25;
+    letter-spacing: 0.16px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__value {
+    display: flex;
+    column-gap: 4px;
+    font-size: 14px;
+  }
+
+  &__value-icon {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &_type_star {
+      background-image: url('profi-widget__star.svg');
+    }
+
+    &_type_review {
+      background-image: url('profi-widget__reviews.svg');
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 4px;
+    background: #ee1b39;
+    line-height: 24px;
+
+    @media screen and (max-width: $screen-lg) {
+      flex: 0 0 90px;
+    }
+  }
+
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}

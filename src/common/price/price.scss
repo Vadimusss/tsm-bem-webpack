@@ -1,0 +1,82 @@
+@import '../../sass/variables';
+
+.price {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, min-content);
+  background-color: #ffffff;
+
+  &__table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &__column-header {
+    box-sizing: border-box;
+    height: 38px;
+    border: 1px solid #000000;
+    background-color: #ffd200;
+
+    &:nth-child(2n+1) {
+      background-color: #ffcb00;
+    }
+
+    &_type_number {
+
+      @media screen and (max-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    &_type_annotation {
+
+      @media screen and (max-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+
+  &__cell {
+    box-sizing: border-box;
+    height: 36px;
+    border: 1px solid #000000;
+
+    &_type_type-of-work {
+      padding-left: 10px;
+      text-align: left;
+
+      @media screen and (max-width: $screen-xs) {
+        padding-left: 2px;
+      }
+    }
+
+    &_type_number {
+
+      @media screen and (max-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    &_type_annotation {
+
+      @media screen and (max-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    &_hide-text-for-mobile {
+
+      @media screen and (max-width: $screen-xs) {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: #0088be;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

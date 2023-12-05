@@ -1,0 +1,25 @@
+.service-page-price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #eefaff;
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__table {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+  }
+
+  &__button {
+    max-width: 270px;
+    border: none;
+    background-color: #006eae;
+    text-decoration: none;
+    line-height: 45px;
+  }
+}
