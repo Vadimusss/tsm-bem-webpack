@@ -1,0 +1,182 @@
+@import '../../sass/variables';
+
+.zones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  grid-template-areas: 'map info' 'cities cities';
+  column-gap: 30px;
+
+  @media screen and (max-width: $screen-lg) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas: 'info' 'map' 'cities';
+    gap: 20px;
+  }
+
+  &__map {
+    display: flex;
+    grid-area: map;
+    flex-direction: column;
+  }
+
+  &__header {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &__map-explanation {
+    margin-bottom: 17px;
+    font-size: 15px;
+
+    @media screen and (max-width: $screen-xl) {
+      font-size: 14px;
+    }
+  }
+
+  &__live-map {
+    height: 100%;
+    background-image: url('zones__static-map.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: $screen-lg) {
+      height: 50vh;
+    }
+  }
+
+  &__info {
+    display: flex;
+    grid-area: info;
+    row-gap: 30px;
+    flex-direction: column;
+    min-height: 620px;
+
+    @media screen and (max-width: $screen-lg) {
+      min-height: auto;
+    }
+  }
+
+  &__price-header {
+    margin-bottom: 40px;
+
+    @media screen and (max-width: $screen-xl) {
+      margin-bottom: 39px;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      flex: 0 1 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__price-table {
+    font-weight: 600;
+  }
+
+  &__price-amount {
+    min-width: 60px;
+
+    @media screen and (max-width: $screen-xs) {
+      min-width: 52px;
+    }
+  }
+
+  &__price {
+
+    @media screen and (max-width: $screen-lg) {
+      min-width: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__agreements {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: $screen-lg) {
+      display: flex;
+      gap: 4px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 860px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__agreements-header {
+
+    @media screen and (max-width: $screen-lg) {
+      flex: 1 0 100%;
+    }
+  }
+
+  &__agreements-branch {
+
+    @media screen and (max-width: $screen-lg) {
+      display: none;
+    }
+
+    @media screen and (max-width: 860px) {
+      display: initial;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__document-exemple-link {
+    max-width: 458px;
+
+    @media screen and (max-width: $screen-lg) {
+      flex: 0 1 394px;
+      max-width: none;
+    }
+
+    @media screen and (max-width: 860px) {
+      flex: 0 1 458px;
+      max-width: none;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      flex: 1 1 100%;
+      max-width: none;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      font-size: 3.6vw;
+    }
+
+    &::before {
+
+      @media screen and (max-width: $screen-xs) {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        margin: 0 4px;
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__cities {
+    grid-area: cities;
+    padding-top: 20px;
+
+    @media screen and (max-width: $screen-lg) {
+      padding-top: 0;
+    }
+  }
+
+  &__cities-list {
+    line-height: 30px;
+  }
+}
