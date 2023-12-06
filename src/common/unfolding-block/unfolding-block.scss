@@ -1,0 +1,46 @@
+@import '../../sass/variables';
+
+.unfolding-block {
+  display: flex;
+  flex-direction: column;
+
+  &__button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 0 20px;
+    border: 2px solid #ffcb00;
+    color: #000000;
+    font-weight: 600;
+    line-height: 50px;
+
+    &::after {
+      content: 'развернуть +';
+
+      @media screen and (max-width: $screen-xs) {
+        content: '+';
+      }
+    }
+
+    &_fold {
+
+      &::after {
+        content: 'свернуть -';
+
+        @media screen and (max-width: $screen-xs) {
+          content: '-';
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+    margin-bottom: 20px;
+
+    &_visible {
+      display: block;
+    }
+  }
+}

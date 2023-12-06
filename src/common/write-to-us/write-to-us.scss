@@ -1,0 +1,29 @@
+@import '../../sass/variables';
+
+.write-to-us {
+  column-gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 24px;
+  margin-left: auto;
+
+  @media screen and (max-width: $screen-lg) {
+    display: none;
+  }
+
+  &__link {
+    background-repeat: no-repeat;
+
+    &_type_e-mail {
+      width: 26px;
+      height: 18px;
+      background-image: url('write-to-us__e-mail.png');
+    }
+
+    &_type_whatsapp {
+      width: 24px;
+      height: 24px;
+      background-image: url('write-to-us__whatsapp.png');
+    }
+  }
+}
