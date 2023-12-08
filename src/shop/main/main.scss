@@ -1,0 +1,19 @@
+@import '../../sass/variables';
+
+.main {
+
+  &__shop-page {
+
+    @media screen and (max-width: $screen-sm) {
+      padding-top: 10px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-top: 25px;
+
+    @media screen and (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+}

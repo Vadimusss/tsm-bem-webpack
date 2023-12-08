@@ -1,0 +1,33 @@
+@import '../../sass/variables';
+
+.main-menu {
+  display: flex;
+  gap: 0;
+  justify-content: space-between;
+  width: auto;
+
+  @media screen and (max-width: $screen-xl) {
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: -490px;
+    right: 0;
+    row-gap: 12px;
+    flex-direction: column;
+    padding: 65px 30px 20px 20px;
+    transition: 0.4s top;
+    border: 1px solid #000000;
+  }
+
+  &__link {
+    color: #819098;
+    font-size: 16px;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}

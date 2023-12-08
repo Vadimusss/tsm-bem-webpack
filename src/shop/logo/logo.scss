@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 .logo {
   width: 174px;
   height: 84px;
@@ -5,27 +7,23 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-@media screen and (max-width:1300px) {
-  .logo {
+
+  @media screen and (max-width: $screen-xl) {
     width: 160px;
     height: 77px;
   }
-}
-@media screen and (max-width:986px) {
-  .logo {
+  
+  @media screen and (max-width: $screen-lg) {
     width: 149px;
     height: 72px;
     margin-bottom: 14px;
   }
-}
-@media screen and (max-width:650px) {
-  .logo {
+  
+  @media screen and (max-width: $screen-md) {
     margin-bottom: 0;
   }
-}
-@media screen and (max-width:460px) {
-  .logo {
+  
+  @media screen and (max-width: $screen-xs) {
     width: 132px;
     height: 64px;
     margin-bottom: 0;

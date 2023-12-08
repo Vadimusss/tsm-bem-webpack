@@ -1,0 +1,77 @@
+@import '../../sass/variables';
+
+.mini-cart {
+  padding: 13px 24px 15px 22px;
+  border-radius: 5px;
+  background: #e0eff9;
+
+  @media screen and (max-width: $screen-xl) {
+    padding: 5px 10px 5px 10px;
+  }
+
+  @media screen and (max-width: $screen-lg) {
+    margin-bottom: 12px;
+    padding: 8px 24px 8px 22px;
+  }
+
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 64px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    background-image: url('mini-cart__icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 3px;
+    flex-direction: column;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
+
+  &__header {
+    font-size: 15px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &_full {
+
+    &::before {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      display: none;
+      width: 10px;
+      height: 10px;
+      content: '';
+      background-image: url('mini-cart_full-icon.png');
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}
