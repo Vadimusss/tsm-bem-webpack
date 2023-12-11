@@ -1,0 +1,45 @@
+@import '../../sass/variables';
+
+.mobile-main-menu-button {
+  position: absolute;
+  z-index: 5000;
+  top: 0;
+  right: 4px;
+  display: none;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  border-radius: 0 0 6px 6px;
+  background: #3d98ce;
+
+  @media screen and (max-width: $screen-xl) {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__line {
+    width: 26px;
+    height: 3px;
+    margin: 3px 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    @media screen and (max-width: $screen-xl) {
+      display: none;
+    }
+  }
+
+  &_close {
+    background: #ffcb00 url('mobile-main-menu-button__cross.png') no-repeat 50% 50%;
+
+    @media screen and (max-width: $screen-xl) {
+      display: none;
+    }
+  }
+}
