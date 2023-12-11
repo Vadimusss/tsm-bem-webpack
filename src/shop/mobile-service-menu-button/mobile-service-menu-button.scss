@@ -1,0 +1,11 @@
+.mobile-service-menu-button {
+  z-index: 1000;
+  background: #006eae url('head_bot_after.png') no-repeat 90% 50%;
+
+  &__text {
+    color: #ffffff;
+    text-align: left;
+    font-size: 20px;
+    line-height: 60px;
+  }
+}
