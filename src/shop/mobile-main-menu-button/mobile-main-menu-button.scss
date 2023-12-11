@@ -29,17 +29,16 @@
     margin: 3px 0;
     border-radius: 4px;
     background-color: #ffffff;
-
-    @media screen and (max-width: $screen-xl) {
-      display: none;
-    }
   }
 
   &_close {
     background: #ffcb00 url('mobile-main-menu-button__cross.png') no-repeat 50% 50%;
 
-    @media screen and (max-width: $screen-xl) {
-      display: none;
+    .mobile-main-menu-button__line {
+
+      @media screen and (max-width: $screen-xl) {
+        display: none;
+      }
     }
   }
 }
