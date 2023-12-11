@@ -1,0 +1,121 @@
+@import '../../sass/variables';
+
+.order {
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  &__header {
+    margin-bottom: 18px;
+  }
+
+  &__block {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  &__block-header {
+    flex: 1 0 100%;
+    margin-bottom: 5px;
+  }
+
+  &__form-item {
+    display: flex;
+    flex-direction: column;
+
+    &_type_credential {
+      flex: 1 1 30%;
+    }
+
+    &_type_comment {
+      flex: 1 1 100%;
+    }
+
+    &_type_address {
+      flex: 0 1 180px;
+    }
+
+    &_type_street {
+      flex: 0 1 300px;
+    }
+
+    &_type_building {
+      flex: 0 1 85px;
+    }
+
+    &_type_room {
+      flex: 0 1 70px;
+    }
+
+    &_position_last {
+
+      @media screen and (max-width: $screen-xl) {
+        margin-right: 28%;
+      }
+      
+      @media screen and (max-width: $screen-lg) {
+        margin-right: 1%;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__fields-group {
+    display: flex;
+    flex: 1 1 40%;
+    column-gap: 20px;
+
+    @media screen and (max-width: $screen-sm) {
+      flex-basis: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__textarea {
+    height: 90px;
+    padding: 6px;
+  }
+
+  &__button {
+    background: #006eae;
+    font-size: 18px;
+  }
+
+  &__reset-button {
+    flex: 0 1 200px;
+    height: 40px;
+  }
+
+  &__total {
+    flex-direction: column;
+    padding-top: 16px;
+    font-size: 18px;
+
+    &_accepted {
+      padding-top: 0;
+    }
+  }
+
+  &__total-header {
+    margin-bottom: 13px;
+    font-weight: 600;
+  }
+
+  &__total-value {
+    font-weight: 300;
+  }
+
+  &__get-order-button {
+    flex: 0 1 55px;
+    width: 200px;
+    margin-top: 30px;
+  }
+}
