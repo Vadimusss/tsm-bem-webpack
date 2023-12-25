@@ -1,0 +1,177 @@
+@import '../../sass/variables';
+
+.service-menu {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+
+  @media screen and (max-width: $screen-xl) {
+    column-gap: 20px;
+  }
+
+  @media screen and (max-width: $screen-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    align-items: start;
+  }
+
+  @media screen and (max-width: $screen-xs) {
+    grid-template-columns: 1fr;
+    padding-bottom: 12px;
+    padding-left: 20px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 38px;
+
+    @media screen and (max-width: $screen-xl) {
+      background-color: #ffffff;
+    }
+
+    @media screen and (max-width: 860px) {
+      padding-left: 4.2%;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      padding-left: 40px;
+      text-align: left;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+      padding-left: 25px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      padding-left: 40px;
+    }
+
+    &:hover {
+      background-image: none;
+    }
+
+    &:nth-child(1) {
+
+      &:hover {
+        border-radius: 0;
+      }
+
+      .service-menu__link {
+
+        &::before {
+          background-image: url('service-menu__shop.png');
+        }
+      }
+    }
+
+    &:nth-child(2) {
+
+      @media screen and (max-width: 768px) {
+        flex-basis: 21%;
+      }
+
+      .service-menu__link {
+
+        &::before {
+          background-image: url('service-menu__design.png');
+        }
+      }
+    }
+
+    &:nth-child(3) {
+
+      .service-menu__link {
+
+        &::before {
+          background-image: url('service-menu__montage.png');
+        }
+      }
+    }
+
+    &:nth-child(4) {
+
+      .service-menu__link {
+
+        &::before {
+          background-image: url('service-menu__maintaining.png');
+        }
+      }
+    }
+
+    &:nth-child(5) {
+
+      .service-menu__link {
+
+        &::before {
+          background-image: url('service-menu__repair.png');
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      &:hover {
+        border-radius: 0;
+      }
+
+      .service-menu__link {
+        &::before {
+          background-image: url('service-menu__commissioning.png');
+        }
+      }
+    }
+
+    &:last-child {
+
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__link {
+    color: #006eae;
+    line-height: 24px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media screen and (max-width: 860px) {
+        width: 24px;
+        height: 24px;
+      }
+
+      @media screen and (max-width: $screen-md) {
+        width: 28px;
+        height: 28px;
+      }
+
+      @media screen and (max-width: $screen-sm) {
+        display: inline-block!important;
+        width: 22px;
+        height: 22px;
+      }
+
+      @media screen and (max-width: $screen-xs) {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

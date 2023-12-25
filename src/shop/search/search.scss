@@ -1,0 +1,45 @@
+@import '../../sass/variables';
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+
+  &__input {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    border-color: #3d98ce;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &__button {
+    flex: 0 0 125px;
+    padding-left: 4%;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #006eae;
+    background-image: url('search__button.png');
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    @media screen and (max-width: $screen-xs) {
+      flex: 0 0 45px;
+      background-position: 50% 50%;
+    }
+
+    &::after {
+      content: 'Поиск';
+
+      @media screen and (max-width: $screen-xs) {
+        display: none;
+      }
+    }
+  }
+}

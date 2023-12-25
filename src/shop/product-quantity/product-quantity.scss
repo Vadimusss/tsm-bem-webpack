@@ -1,0 +1,35 @@
+.product-quantity {
+  display: flex;
+  column-gap: 7px;
+  width: 160px;
+  height: 30px;
+
+  &__quantity-text {
+    &_color_red {
+      color: red;
+    }
+  }
+
+  &__input {
+    width: 60px;
+    border: 1px solid #070707;
+    border-radius: 5px;
+    text-align: center;
+
+    &::-webkit-outer-spin-button {
+      display: none;
+    }
+
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+
+  &__button {
+    flex: 0 0 40px;
+    border-radius: 5px;
+    background-color: #006eae;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
