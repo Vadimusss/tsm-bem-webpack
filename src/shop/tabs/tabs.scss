@@ -1,0 +1,48 @@
+@import '../../sass/variables';
+
+.tabs {
+  display: flex;
+  row-gap: 22px;
+  flex-direction: column;
+
+  &__list {
+    display: flex;
+    column-gap: 16px;
+
+    @media screen and (max-width: 768px) {
+      row-gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      row-gap: 5px;
+      flex-direction: column;
+    }
+  }
+
+  &__botton {
+    box-sizing: border-box;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #006eae;
+
+    &_active {
+      background-color: #3d98ce;
+      color: #ffffff;
+    }
+  }
+
+  &__content {
+    display: none;
+    color: #1b313e;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+
+    &_active {
+      display: block;
+    }
+  }
+}
