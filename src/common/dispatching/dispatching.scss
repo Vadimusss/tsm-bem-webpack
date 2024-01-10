@@ -1,0 +1,231 @@
+@import '../../sass/variables.scss';
+
+.dispatching {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+
+  &__header {
+    flex-basis: 100%;
+    margin: 0 0 20px 50px;
+
+    @media screen and (max-width: $screen-xl) {
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      margin-left: 5px;
+    }
+  }
+
+  &__cards {
+    position: relative;
+    display: flex;
+    margin-right: -10px;
+    padding: 30px 50px;
+    background-color: #77c4ee;
+
+    @media screen and (max-width: $screen-xl) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: $screen-lg) {
+      flex-wrap: wrap;
+      margin: 0;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 824px;
+      content: '';
+      background-image: url('dispatching_bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+
+      @media screen and (max-width: $screen-lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__card {
+    flex: 0 1 350px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+
+    @media screen and (max-width: $screen-lg) {
+      flex-basis: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      min-height: auto;
+      margin: 0 0 10px 0;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: min-content;
+    }
+
+    &_bg_basic {
+      background-image: url('dispatching__card_bg_basic.jpg');
+    }
+
+    &_bg_advanced {
+      background-image: url('dispatching__card_bg_advanced.jpg');
+    }
+
+    &_bg_maximum {
+      background-image: url('dispatching__card_bg_maximum.jpg');
+    }
+  }
+
+  &__card-header {
+    width: 100%;
+    margin-bottom: 270px;
+    border-radius: 6px 6px 0 0;
+    background-color: #67a8dc;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+
+    &_bg_blue {
+      background-color: #67a8dc;
+    }
+
+    &_bg_red {
+      background-color: #d44f5e;
+    }
+
+    &_bg_yellow {
+      background-color: #ebb946;
+    }
+  }
+
+  &__card-conditions {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 14px 0 10px;
+    list-style: none;
+
+    @media screen and (max-width: $screen-lg) {
+      flex-basis: 50%;
+      padding-left: 0;
+    }
+  }
+
+  &__card-conditions-item {
+    position: relative;
+    margin-bottom: 14px;
+    padding-left: 40px;
+
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: 12px;
+      width: 14px;
+      height: 14px;
+      content: '';
+      background-image: url('dispatching_check-mark.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    &_type_annotation {
+      font-weight: 600;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &_unavailable {
+      color: #9c9c9c;
+
+      &::before {
+        background-image: url('dispatching_unavailable-mark.png');
+      }
+    }
+  }
+
+  &__card-price {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background-color: #eaf0f4;
+    color: #006eab;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 40px;
+
+
+    @media screen and (max-width: $screen-lg) {
+      min-width: 290px;
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      width: 90%;
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      width: 98%;
+      min-width: 0;
+    }
+  }
+
+  &__callback-button {
+    width: 215px;
+    border-width: 0;
+    font-weight: 600;
+    line-height: 45px;
+
+    @media screen and (max-width: $screen-lg) {
+      margin-left: 10px;
+    }
+
+    @media screen and (max-width: $screen-md) {
+      margin-left: 0;
+    }
+
+    &_bg_blue {
+      background-color: #67a8dc;
+    }
+
+    &_bg_red {
+      background-color: #d44f5e;
+    }
+
+    &_bg_yellow {
+      background-color: #ebb946;
+    }
+  }
+}
