@@ -1,10 +1,10 @@
 @import '../../sass/variables.scss';
 
 .repair-header {
+  position: relative;
   display: flex;
   min-height: 400px;
   margin: 0 0 50px 0;
-  position: relative;
   background-color: #cae7f5;
 
   @media screen and (max-width: $screen-xl) {
@@ -20,29 +20,34 @@
   }
 
   &::after {
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     position: absolute;
     z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    opacity: 0.3;
     background-image: url('repair-header__bg_men.png');
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: contain;
 
     @media screen and (max-width: $screen-xl) {
-      opacity: .2;
+      opacity: 0.2;
       background-size: cover;
     }
   }
 
   &__info {
-    flex: 1 1 55%;
-    display: flex;
-    flex-direction: column;
     z-index: 2;
+    display: flex;
+    flex: 1 1 55%;
+    flex-direction: column;
+
+    @media screen and (max-width: $screen-xl) {
+      flex: 1 1 65%;
+    }
   }
 
   &__header {
@@ -52,16 +57,16 @@
     font-weight: 400;
 
     @media screen and (max-width: $screen-xs) {
-      font-size: 28px;
       margin: 24px 0;
+      font-size: 28px;
     }
   }
 
   &__text {
     min-height: 177px;
-    line-height: 30px;
-    text-align: justify;
     margin-bottom: 20px;
+    text-align: justify;
+    line-height: 30px;
 
     @media screen and (max-width: $screen-lg) {
       display: none;
@@ -69,6 +74,10 @@
   }
 
   &__gsm-promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 38px;
     padding-left: 45px;
     background-image: url('inform.png');
     background-repeat: no-repeat;
@@ -84,13 +93,13 @@
   }
 
   &__callback-button {
-    line-height: 45px;
+    position: relative;
+    bottom: -20px;
+    max-width: 280px;
     border-radius: 6px;
     background: linear-gradient(#da0235, #a60027);
     text-decoration: none;
-    max-width: 280px;
-    position: relative;
-    bottom: -20px;
+    line-height: 45px;
 
     @media screen and (max-width: $screen-lg) {
       bottom: 0;
@@ -98,12 +107,16 @@
   }
 
   &__basic-price {
-    flex: 1 1 45%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0 0 40px;
     z-index: 2;
+    display: flex;
+    flex: 1 1 45%;
+    flex-direction: column;
     box-sizing: border-box;
+    padding: 10px 0 0 40px;
+
+    @media screen and (max-width: $screen-xl) {
+      flex: 1 1 35%;
+    }
 
     @media screen and (max-width: $screen-lg) {
       padding: 0;
@@ -111,15 +124,21 @@
   }
 
   &__basic-price-link {
-    font-size: 20px;
-    font-family: 'Proxima Nova Cn Bl', sans-serif;
-    color: #006eae;
-    text-decoration: none;
-    border-radius: 6px;
-    border: solid 2px #006eae;
-    background: rgba(249, 249, 249, 0.85);
     margin-top: 10px;
-    text-align: center;
     padding: 10px;
+    border: solid 2px #006eae;
+    border-radius: 6px;
+    background: rgba(249, 249, 249, 0.85);
+    color: #006eae;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Proxima Nova Cn Bl', sans-serif;
+    font-size: 20px;
+  }
+
+  &_bg_dispatching {
+    &::after {
+      background-image: url('repair-header__bg_dispatching.png');
+    }
   }
 }
