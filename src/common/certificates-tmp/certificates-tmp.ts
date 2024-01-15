@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: false,
     margin: 40,
     nav: true,
-    navText: false,
+    navText: ['', ''],
     dots: false,
     navClass: ['certificates-tmp__nav-button', 'certificates-tmp__nav-button certificates-tmp__nav-button_next'],
     responsive: {
