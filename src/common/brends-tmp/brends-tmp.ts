@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: false,
     margin: 10,
     nav: true,
-    navText: false,
+    navText: ['', ''],
     dots: false,
     navClass: ['brends-tmp__nav-button', 'brends-tmp__nav-button brends-tmp__nav-button_next'],
     responsive: {
