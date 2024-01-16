@@ -106,6 +106,14 @@
     margin-bottom: 20px;
   }
 
+  &__main-slider {
+    margin: 0 0 40px 0;
+
+    @media screen and (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
   &__footer {
     grid-row: footer-top / span 1;
     padding: 30px 50px;
