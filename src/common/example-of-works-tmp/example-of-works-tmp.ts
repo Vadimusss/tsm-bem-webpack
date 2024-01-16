@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: false,
     margin: 10,
     nav: true,
-    navText: false,
+    navText: ['', ''],
     dots: false,
     navClass: ['example-of-works-tmp__nav-button', 'example-of-works-tmp__nav-button example-of-works-tmp__nav-button_next'],
     responsive: {
