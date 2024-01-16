@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: false,
     margin: 0,
     nav: true,
-    navText: false,
+    navText: ['', ''],
     dots: false,
     items: 1,
     navClass: ['feedbacks__nav-button', 'feedbacks__nav-button feedbacks__nav-button_next'],
