@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: false,
     margin: 0,
     nav: true,
-    navText: false,
+    navText: ['', ''],
     dots: false,
     items: 1,
     navClass: ['examples-of-projects-tmp__nav-button', 'examples-of-projects-tmp__nav-button examples-of-projects-tmp__nav-button_next'],
