@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let mapLoaded = false;
   function startLazyMap() {
-    if (!mapLoaded) {
+    if (!mapLoaded && mapContainer) {
       const ymapApiScript = document.createElement('script');
       const ymapInit = document.createElement('script');
       ymapApiScript.setAttribute('src', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=e2e62a8f-7129-4dfb-8886-eecaeee7ffec');
