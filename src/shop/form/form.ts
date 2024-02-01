@@ -21,10 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const { id, checked } = input;
       const description = document.querySelector(`[data-id="${id}"]`);
 
-      console.log(`ID ===> ${id}`);
-      console.log(`Checked ===> ${checked}`);
-      console.log(description);
-
       if (description) {
         if (checked) {
           description.classList.add('form__radio-button-description_visible');
